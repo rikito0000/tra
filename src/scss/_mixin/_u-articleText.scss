@@ -1,0 +1,10 @@
+@mixin u-articleText($color: $white) {
+  color: $color;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 1.8;
+
+  @include u-mqMax {
+    font-size: 12px;
+  }
+}
