@@ -2,6 +2,138 @@
 siteFooter
 ====================================================================*/
 .siteFooter {
-  background-color: $darkGray;
-  padding: 40px 0;
+  background-color: $red01;
+  padding: 104px 0 68px;
+  background-image: url('../../_assets/images/pc/footer_bg.png');
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  background-size: 115% auto;
+
+  &__inner {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1080px;
+
+  }
+  &__logo{
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    padding-left: 50px;
+    margin: 0 auto 48px;
+  }
+
+  &__addressArea{
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  &__address,
+  &__phoneNumber {
+    color: $white;
+    @include u-articleText($color:$white,$fs: 1.6rem,$lts: 0.5rem);
+    @include u-fontMincho;
+  }
+
+
+  &__navList{
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    @include u-flex($jc:center);
+
+  }
+  &__navItem{
+    margin-bottom: 18px;
+    position: relative;
+    border-right: 1px solid $white;
+    &:first-child{
+      border-left: 1px solid $white;
+    }
+  }
+
+  &__innerBox{
+    position: relative;
+    width: 100%;
+  }
+  &__navItemLink{
+    display: block;
+    @include u-articleText($color:$white,$fs: 1.6rem);
+    padding-right: 25px;
+    padding-left: 25px;
+    @include u-fontMincho;
+    @include u-trs($duration: 0.3s);
+    @include u-hoverOp;
+  }
+
+  &__snsList {
+    @include u-flex($jc:space-between);
+    margin: 0 auto;
+    width: 90px;
+    padding-left: 0;
+  }
+
+  &__snsListItem {
+    width: 38px;
+    display: block;
+  }
+  &__snsListItemlink {
+    width: 100%;
+  }
+
+
+
+
+
+
+}
+
+/*====================================================================
+sp
+====================================================================*/
+@include u-mqMax{
+
+  .siteFooter {
+    padding-bottom: 194px;
+    background-image: url('../../_assets/images/sp/footer_bg.png');
+    &__inner {
+      margin-left: 0;
+      position: relative;
+      padding-left: 57px;
+      padding-right: 0;
+      width: 100%;
+    }
+      &__innerBox{
+
+      }
+    &__logo{
+      display: block;
+      width: 100%;
+      max-width: 70px;
+      margin-right: 60px;
+    }
+    &__navi{
+      margin-top: 10px;
+
+    }
+    &__navItem{
+      padding-left: 40px;
+
+    }
+
+    &__addressArea{
+      bottom: -100px;
+      left: -120px;
+      padding-left: 0;
+    }
+    &__phoneNumber{
+      padding-left: 17px;
+
+    }
+
+  }
+
+
+
+
 }
