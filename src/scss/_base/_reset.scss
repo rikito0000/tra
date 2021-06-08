@@ -147,10 +147,6 @@ a {
   -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
 }
 
-a:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
 
 a:not([href]):not([class]) {
   color: inherit;
@@ -178,7 +174,7 @@ pre {
 }
 
 figure {
-  margin: 0 0 1rem;
+  margin: 0 0 0;
 }
 
 img {
