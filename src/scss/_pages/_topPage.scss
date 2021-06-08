@@ -58,6 +58,9 @@ ul li {
   }
 
   &__topContText {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    -o-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
     text-orientation: upright;
     margin: 0 auto;
