@@ -61,7 +61,7 @@ ul li {
     writing-mode: vertical-rl;
     text-orientation: upright;
     margin: 0 auto;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 100;
     font-family: YuMincho, Yu Mincho, serif;
     border-left: 1.5px solid #910000;
@@ -128,7 +128,7 @@ ul li {
     margin-bottom: 0;
     padding-bottom: 35px;
     line-height: 1;
-    
+
     &.red {
       color: #800707;
     }
@@ -198,14 +198,12 @@ ul li {
 
 &__itemMiddleDescRight {
   padding: 0 0 0 20px;
-  margin: 0 0 -5px;
 }
 
 &__itemMiddleDescPriceDetails {
   font-size: 12px;
   color: #000;
   text-align: center;
-  transform: translateY(-10px);
 
   &.second {
     font-size: 16px;
@@ -260,7 +258,7 @@ ul li {
     display: flex;
     align-items: center;
     border-top: 1px solid #888;
-    padding-top: 5px;
+    padding: 8px 0;
 
     &:last-child {
       border-bottom: 1px solid #888;
@@ -287,7 +285,7 @@ ul li {
     background-color: #1E5A0C;
     color: #fff;
     font-size: 24px;
-    font-weight: 500px;
+    font-weight: 500;
     padding: 10px 100px;
     margin-bottom: 0;
   }
