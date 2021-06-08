@@ -62,6 +62,7 @@ ul li {
     text-orientation: upright;
     margin: 0 auto;
     font-size: 26px;
+    font-weight: 100;
     font-family: YuMincho, Yu Mincho, serif;
     border-left: 1.5px solid #910000;
     padding-bottom: 80px;
@@ -122,7 +123,7 @@ ul li {
 
   &__itemTitleText {
     font-size: 60px;
-    font-weight: 600px;
+    font-weight: 600;
     font-family :	YuMincho, Yu Mincho,  serif;
     margin-bottom: 0;
     padding-bottom: 35px;
@@ -181,7 +182,7 @@ ul li {
     font-size: 33px;
     font-weight: 600;
     font-family :	YuMincho, Yu Mincho, serif;
-    margin-bottom: 0;
+    margin: -8px 0;
     padding: 0 20px;
 
     & .middleSec__price {
@@ -190,7 +191,19 @@ ul li {
 }
 
 &__itemMiddleDescRight {
-  padding: 0 20px;
+  padding: 0 0 0 20px;
+  margin: 0 0 -5px;
+}
+
+&__itemMiddleDescPriceDetails {
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  transform: translateY(-10px);
+
+  &.second {
+    font-size: 16px;
+  }
 }
 
   &__itemMiddleDescPriceText {
@@ -205,13 +218,10 @@ ul li {
     font-size: 24px;
     color: #000;
     padding: 0 24px;
-  }
 
-  &__itemMiddleDescPriceDetails {
-    font-size: 12px;
-    color: #000;
-    text-align: center;
-
+    &.second {
+      padding: 0 0 0 24px;
+    }
   }
 
   &__itemMiddleDescWideDetails {
@@ -244,7 +254,6 @@ ul li {
     align-items: center;
     border-top: 1px solid #888;
 
-
     &:last-child {
       border-bottom: 1px solid #888;
     }
@@ -261,6 +270,8 @@ ul li {
 
   &__itemMiddleDescFig {
     width: 437px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
   }
 
   &__itemMiddleDescText {
@@ -281,6 +292,7 @@ ul li {
   &__itemBottom {
     background-color: #FCF3CF;
     padding: 17px 45px 9px;
+    min-height: 111px;
   }
 
   &__itemBottomText {
