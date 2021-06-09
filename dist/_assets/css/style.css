@@ -1070,322 +1070,6 @@ PC/SP
     display: table-cell;
   }
 }
-/*-----------------------------------------------
-main
-------------------------------------------------*/
-.siteContent {
-  min-height: calc(100vh - 200px);
-  padding-top: 100px;
-}
-@media screen and (max-width: 768px) {
-  .siteContent {
-    min-height: calc(100vh - 50px);
-    padding-top: 50px;
-  }
-}
-
-/*====================================================================
-topPageFvSec
-====================================================================*/
-img {
-  width: 100%;
-}
-
-ul li {
-  list-style-type: none;
-  list-style: none;
-}
-
-.font {
-  color: #800707;
-  font-size: 20px;
-  font-weight: 600;
-  font-family: YuMincho, Yu Mincho, serif;
-  margin-bottom: 0;
-}
-
-.topSec {
-  width: 100%;
-}
-.topSec__topCont {
-  width: 100%;
-  background-image: url("../images/body_pc.jpg");
-  background-size: cover;
-}
-.topSec__topContInr {
-  padding: 60px 0 188px;
-}
-.topSec__bottomCont {
-  width: 1075px;
-  margin: 0 auto;
-  text-align: center;
-}
-.topSec__bottomContList {
-  display: flex;
-  justify-content: space-around;
-  margin-top: -150px;
-  margin-bottom: 0;
-  padding-left: 0;
-}
-.topSec__bottomContItemFig {
-  width: 271px;
-  margin-bottom: 0;
-}
-.topSec__topContInfo {
-  text-align: center;
-  padding-bottom: 52px;
-}
-.topSec__topContText {
-  -o-writing-mode: vertical-rl;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-  margin: 0 auto;
-  font-size: 20px;
-  font-weight: 100;
-  font-family: YuMincho, Yu Mincho, serif;
-  border-left: 1.5px solid #910000;
-  padding-bottom: 80px;
-}
-.topSec__bottomContItemText {
-  padding: 29px 0 27px;
-}
-.topSec__topContBottomText {
-  text-align: center;
-  color: #800707;
-  font-size: 32px;
-  font-weight: 600px;
-  font-family: YuMincho, Yu Mincho, serif;
-}
-.topSec__bottomContTopText {
-  color: #800707;
-  font-size: 28px;
-  font-weight: 600px;
-  font-family: YuMincho, Yu Mincho, serif;
-}
-.topSec__bottomContText {
-  color: #800707;
-  font-size: 20px;
-  font-weight: 500px;
-  font-family: YuMincho, Yu Mincho, serif;
-  margin-bottom: 0;
-}
-
-.middleSec {
-  margin: 0 auto;
-  background-color: #D9D8C4;
-}
-.middleSec__inr {
-  width: 1075px;
-  margin: 0 auto;
-  padding: 78px 0;
-}
-.middleSec__contListItem {
-  background-color: #fff;
-  padding: 39px 77px 26px;
-  margin-bottom: 34px;
-}
-.middleSec__contList {
-  padding: 0;
-}
-.middleSec__itemTitle {
-  display: flex;
-  justify-content: space-between;
-}
-.middleSec__itemTitleText {
-  font-size: 60px;
-  font-weight: 600;
-  font-family: YuMincho, Yu Mincho, serif;
-  margin-bottom: 0;
-  padding-bottom: 35px;
-  line-height: 1;
-}
-.middleSec__itemTitleText.red {
-  color: #800707;
-}
-.middleSec__itemTitleText.green {
-  color: #25500F;
-}
-.middleSec__itemTitleText.blue {
-  color: #0F1250;
-}
-.middleSec__itemTopDescText {
-  font-size: 18px;
-  color: #000;
-  line-height: 1.7;
-}
-.middleSec__itemTitleInfo {
-  display: flex;
-}
-.middleSec__itemTitleInfoLeft, .middleSec__itemTitleInfoRight {
-  width: 168px;
-  height: 50px;
-  color: #fff;
-  text-align: center;
-  line-height: 1;
-}
-.middleSec__itemTitleInfoLeft.bgRed, .middleSec__itemTitleInfoRight.bgRed {
-  background-color: #811102;
-}
-.middleSec__itemTitleInfoLeft.bgGreen, .middleSec__itemTitleInfoRight.bgGreen {
-  background-color: #25500F;
-}
-.middleSec__itemTitleInfoLeft.bgBlue, .middleSec__itemTitleInfoRight.bgBlue {
-  background-color: #0F1250;
-}
-.middleSec__itemTitleInfoLeft {
-  padding: 15px 0 13px;
-}
-.middleSec__itemTitleInfoRight {
-  padding: 15px 0 13px;
-  margin-left: 12px;
-}
-.middleSec__itemMiddleDescPrice {
-  color: #000;
-  font-size: 33px;
-  font-weight: 600;
-  font-family: YuMincho, Yu Mincho, serif;
-  padding: 0 20px;
-  line-height: 1;
-}
-.middleSec__itemMiddleDescPrice .middleSec__price {
-  font-size: 66px;
-}
-.middleSec__itemMiddleDescRight {
-  padding: 0 0 0 20px;
-}
-.middleSec__itemMiddleDescPriceDetails {
-  font-size: 12px;
-  color: #000;
-  text-align: center;
-}
-.middleSec__itemMiddleDescPriceDetails.second {
-  font-size: 16px;
-}
-.middleSec__itemMiddleDescPriceText {
-  width: 150px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 24px;
-  color: #000;
-}
-.middleSec__itemMiddleDescPriceTextSec {
-  font-size: 24px;
-  color: #000;
-  padding: 0 24px;
-}
-.middleSec__itemMiddleDescPriceTextSec.second {
-  padding: 0 0 0 24px;
-}
-.middleSec__itemMiddleDescWideDetails {
-  font-size: 12px;
-  color: #000;
-  text-align: left;
-}
-.middleSec__itemMiddleDesc {
-  display: flex;
-  justify-content: space-between;
-}
-.middleSec__itemMiddleDescBottom {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 13px;
-}
-.middleSec__itemMiddleDescBottomFig {
-  width: 444px;
-}
-.middleSec__itemMiddleText {
-  font-size: 24px;
-  color: #000;
-}
-.middleSec__itemMiddleDescPriceItem {
-  display: flex;
-  align-items: center;
-  border-top: 1px solid #888;
-  padding: 8px 0;
-}
-.middleSec__itemMiddleDescPriceItem:last-child {
-  border-bottom: 1px solid #888;
-}
-.middleSec .pd {
-  margin-bottom: 70px;
-}
-.middleSec__itemMiddleDescPriceList {
-  padding: 13px 0 0 0;
-}
-.middleSec__itemMiddleDescFig {
-  width: 437px;
-  padding-bottom: 20px;
-  margin-bottom: 0;
-}
-.middleSec__itemMiddleDescText {
-  display: inline-block;
-  background-color: #1E5A0C;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
-  padding: 10px 100px;
-  margin-bottom: 0;
-}
-.middleSec__itemMiddle {
-  padding-top: 45px;
-}
-.middleSec__itemBottom {
-  background-color: #FCF3CF;
-  padding: 17px 45px 9px;
-  min-height: 111px;
-}
-.middleSec__itemBottomText {
-  color: #800707;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  margin-bottom: 0;
-}
-
-.bottomSec {
-  width: 100%;
-  background-color: #EDCA6A;
-}
-.bottomSec__inr {
-  width: 1075px;
-  margin: 0 auto;
-  padding: 70px 0 64px;
-  display: flex;
-  justify-content: space-between;
-}
-.bottomSec__rightContact, .bottomSec__leftContact {
-  font-size: 36px;
-  color: #000;
-}
-.bottomSec__leftHourText {
-  color: #000;
-}
-.bottomSec__leftTel {
-  font-size: 62px;
-  color: #000;
-}
-.bottomSec__rightContactBtn {
-  font-size: 34px;
-  color: #000;
-  margin-left: 19px;
-}
-.bottomSec__rightContactBtnLink {
-  display: flex;
-  align-items: center;
-  padding: 42px 24px 44px 31px;
-  background-color: #fff;
-  margin-top: 13px;
-  transition: 0.6s;
-}
-@media screen and (min-width: 769px) {
-  .bottomSec__rightContactBtnLink:hover:hover {
-    opacity: 0.8;
-  }
-}
-.bottomSec__rightContBtnIcon {
-  width: 62px;
-}
-
 /*====================================================================
 aboutPage
 ====================================================================*/
@@ -1674,4 +1358,551 @@ aboutPage
 }
 .precinctsSec__topInner.mgb {
   margin-bottom: 40px;
+}
+
+/*====================================================================
+topPageFvSec
+====================================================================*/
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.br_sp {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .br_sp {
+    display: block;
+  }
+}
+
+.font {
+  color: #800707;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: YuMincho, Yu Mincho, serif;
+  margin-bottom: 0;
+}
+
+.cemetarySec {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec {
+    background-image: url("../images/cemetaryTopSec/cemetaryBg_sp.jpg");
+  }
+}
+.cemetarySec__topCont {
+  width: 100%;
+  background-image: url("../images/cemetaryTopSec/body_pc.jpg");
+  background-size: cover;
+}
+.cemetarySec__topContInr {
+  padding: 60px 0 230px;
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec__topContInr {
+    padding: 30px 0 230px;
+  }
+}
+.cemetarySec__bottomCont {
+  width: 1075px;
+  margin: 0 auto;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec__bottomCont {
+    width: 100%;
+  }
+}
+.cemetarySec__bottomContList {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -150px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec__bottomContList {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec__bottomContListItem {
+    margin: 0 auto;
+  }
+}
+.cemetarySec__bottomContItemFig {
+  width: 271px;
+  margin-bottom: 0;
+}
+.cemetarySec__topContText {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: YuMincho, Yu Mincho, serif;
+  margin-left: 0;
+  /* 縦書きにする */
+  /* 縦書きにする */
+  writing-mode: vertical-rl;
+  /* 縦書きにする */
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec__topContText {
+    font-size: 16px;
+    padding: 0;
+  }
+}
+.cemetarySec__topContInfo {
+  width: 20px;
+  height: 206px;
+  margin: 0 auto;
+  border-left: 1.5px solid #910000;
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec__topContInfo {
+    height: 172px;
+  }
+}
+.cemetarySec__bottomContItemText {
+  padding: 29px 0 27px;
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec__bottomContItemText {
+    margin: 0 auto;
+    padding: 29px 0 50px;
+  }
+}
+.cemetarySec__topContBottomText {
+  text-align: center;
+  color: #800707;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: YuMincho, Yu Mincho, serif;
+  padding-top: 52px;
+  margin-bottom: 0;
+  line-height: 1.8;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 768px) {
+  .cemetarySec__topContBottomText {
+    font-size: 24px;
+    padding: 18px 79px 0 79px;
+    letter-spacing: 0;
+  }
+}
+.cemetarySec__bottomContTopText {
+  color: #800707;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: YuMincho, Yu Mincho, serif;
+}
+.cemetarySec__bottomContText {
+  color: #800707;
+  font-size: 20px;
+  font-weight: 500px;
+  font-family: YuMincho, Yu Mincho, serif;
+  margin-bottom: 0;
+}
+
+.cemetaryMiddleSec {
+  margin: 0 auto;
+  background-color: #d9d8c4;
+}
+.cemetaryMiddleSec__inr {
+  width: 1075px;
+  margin: 0 auto;
+  padding: 78px 0;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__inr {
+    width: 100%;
+    padding: 46px 10px 35px;
+  }
+}
+.cemetaryMiddleSec__contListItem {
+  background-color: #fff;
+  padding: 39px 77px 26px;
+  margin-bottom: 34px;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__contListItem {
+    padding: 29px 11px 18px;
+    margin-bottom: 0;
+  }
+  .cemetaryMiddleSec__contListItem:nth-of-type(1), .cemetaryMiddleSec__contListItem:nth-of-type(2) {
+    margin-bottom: 3px;
+  }
+  .cemetaryMiddleSec__contListItem:last-child {
+    padding: 29px 11px 47px;
+  }
+  .cemetaryMiddleSec__contListItem:last-child li {
+    justify-content: start;
+  }
+}
+.cemetaryMiddleSec__contList {
+  padding: 0;
+}
+.cemetaryMiddleSec__itemTitle {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemTitle {
+    flex-direction: column;
+  }
+}
+.cemetaryMiddleSec__itemTitleText {
+  font-size: 60px;
+  font-weight: 600;
+  font-family: YuMincho, Yu Mincho, serif;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemTitleText {
+    font-size: 32px;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+}
+.cemetaryMiddleSec__itemTitleText.red {
+  color: #800707;
+}
+.cemetaryMiddleSec__itemTitleText.green {
+  color: #25500f;
+}
+.cemetaryMiddleSec__itemTitleText.blue {
+  color: #0f1250;
+}
+.cemetaryMiddleSec__itemTopDescText {
+  font-size: 18px;
+  color: #000;
+  line-height: 1.7;
+  letter-spacing: 2px;
+}
+.cemetaryMiddleSec__itemTitleInfo {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemTitleInfo {
+    justify-content: center;
+    padding-bottom: 23px;
+  }
+}
+.cemetaryMiddleSec__itemTitleInfoLeft, .cemetaryMiddleSec__itemTitleInfoRight {
+  width: 168px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  line-height: 1;
+  padding: 16px 0 13px;
+}
+.cemetaryMiddleSec__itemTitleInfoLeft.bgRed, .cemetaryMiddleSec__itemTitleInfoRight.bgRed {
+  background-color: #811102;
+}
+.cemetaryMiddleSec__itemTitleInfoLeft.bgGreen, .cemetaryMiddleSec__itemTitleInfoRight.bgGreen {
+  background-color: #25500f;
+}
+.cemetaryMiddleSec__itemTitleInfoLeft.bgBlue, .cemetaryMiddleSec__itemTitleInfoRight.bgBlue {
+  background-color: #0f1250;
+}
+.cemetaryMiddleSec__itemTitleInfoRight {
+  margin-left: 12px;
+}
+.cemetaryMiddleSec__itemMiddleDescPrice {
+  color: #000;
+  font-size: 33px;
+  font-weight: 600;
+  font-family: YuMincho, Yu Mincho, serif;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescPrice {
+    font-size: 27px;
+  }
+}
+.cemetaryMiddleSec__itemMiddleDescPrice .cemetaryMiddleSec__price {
+  display: inline-block;
+  font-size: 66px;
+  line-height: 1;
+  transform: translateY(5px);
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescPrice .cemetaryMiddleSec__price {
+    font-size: 56px;
+  }
+}
+.cemetaryMiddleSec__itemMiddleDescRight {
+  text-align: center;
+}
+.cemetaryMiddleSec__itemMiddleDescRight.second {
+  padding-right: 20px;
+}
+.cemetaryMiddleSec__itemMiddleDescPriceDetails {
+  font-size: 12px;
+  padding-right: 20px;
+  color: #000;
+  letter-spacing: 1px;
+  transform: translateY(5px);
+}
+.cemetaryMiddleSec__itemMiddleDescPriceDetails.second {
+  font-size: 16px;
+}
+.cemetaryMiddleSec__itemMiddleDescPriceText {
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescPriceText {
+    font-size: 20px;
+  }
+}
+.cemetaryMiddleSec__itemMiddleDescPriceText.second {
+  width: 100px;
+  display: block;
+}
+.cemetaryMiddleSec__itemMiddleDescPriceTextSec {
+  font-size: 24px;
+  color: #000;
+  padding: 0 24px;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescPriceTextSec {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+}
+.cemetaryMiddleSec__itemMiddleDescPriceTextSec.second {
+  padding: 0 35px 0 25px;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescPriceTextSec.second {
+    padding: 0;
+  }
+}
+.cemetaryMiddleSec__itemMiddleDescWideDetails {
+  font-size: 12px;
+  color: #000;
+  text-align: left;
+  margin-top: 10px;
+}
+.cemetaryMiddleSec__itemMiddleDesc {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDesc {
+    flex-direction: column;
+  }
+}
+.cemetaryMiddleSec__itemMiddleDescBottom {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 13px;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescBottom {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescBottom {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
+.cemetaryMiddleSec__itemMiddleDescBottomFig {
+  width: 444px;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescBottomFig {
+    padding-bottom: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescBottomFig {
+    width: 100%;
+  }
+}
+.cemetaryMiddleSec__itemMiddleText {
+  font-size: 24px;
+  color: #000;
+}
+.cemetaryMiddleSec__itemMiddleDescPriceItem {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #888;
+  padding: 16px 0;
+}
+.cemetaryMiddleSec__itemMiddleDescPriceItem.second {
+  justify-content: space-between;
+}
+.cemetaryMiddleSec__itemMiddleDescPriceItem:last-child {
+  border-bottom: 1px solid #888;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescPriceItem {
+    justify-content: space-between;
+  }
+  .cemetaryMiddleSec__itemMiddleDescPriceItem:nth-of-type(5) {
+    justify-content: start;
+  }
+}
+.cemetaryMiddleSec .pd {
+  margin-bottom: 70px;
+}
+.cemetaryMiddleSec__itemMiddleDescPriceList {
+  padding: 13px 0 0 0;
+  line-height: 0.7;
+}
+.cemetaryMiddleSec__itemMiddleDescFig {
+  width: 437px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescFig {
+    width: 100%;
+  }
+}
+.cemetaryMiddleSec__itemMiddleDescText {
+  display: inline-block;
+  background-color: #1e5a0c;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  padding: 9px 100px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemMiddleDescText {
+    width: 100%;
+    text-align: center;
+  }
+}
+.cemetaryMiddleSec__itemMiddle {
+  padding-top: 45px;
+}
+.cemetaryMiddleSec__itemBottom {
+  background-color: #fcf3cf;
+  padding: 17px 45px 9px;
+  min-height: 111px;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryMiddleSec__itemBottom {
+    padding: 13px 20px;
+  }
+}
+.cemetaryMiddleSec__itemBottomText {
+  color: #5c0404;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  margin-bottom: 0;
+}
+
+.cemetaryBottomSec {
+  width: 100%;
+  background-color: #edca6a;
+}
+.cemetaryBottomSec__inr {
+  width: 1075px;
+  margin: 0 auto;
+  padding: 70px 0 64px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryBottomSec__inr {
+    width: 100%;
+    flex-direction: column;
+    padding: 34px 22px 23px;
+  }
+}
+.cemetaryBottomSec__rightContact, .cemetaryBottomSec__leftContact {
+  font-size: 36px;
+  color: #000;
+  line-height: 1;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryBottomSec__rightContact, .cemetaryBottomSec__leftContact {
+    font-size: 24px;
+  }
+}
+.cemetaryBottomSec__leftHourText {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryBottomSec__leftHourText {
+    font-size: 12px;
+    padding-bottom: 22px;
+    border-bottom: solid 1px #fff;
+  }
+}
+.cemetaryBottomSec__leftTel {
+  font-size: 62px;
+  color: #000;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryBottomSec__leftTel {
+    font-size: 43px;
+    line-height: 1;
+    padding: 17px 0 16px 0;
+  }
+}
+.cemetaryBottomSec__rightContactBtn {
+  font-size: 34px;
+  color: #000;
+  margin-left: 19px;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryBottomSec__rightContactBtn {
+    font-size: 23px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cemetaryBottomSec__rightContact {
+    padding-top: 21px;
+  }
+}
+.cemetaryBottomSec__rightContactBtnLink {
+  display: flex;
+  align-items: center;
+  padding: 42px 24px 44px 31px;
+  background-color: #fff;
+  margin-top: 13px;
+  transition: 0.6s;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryBottomSec__rightContactBtnLink {
+    padding: 20px 18px 21px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .cemetaryBottomSec__rightContactBtnLink:hover:hover {
+    opacity: 0.8;
+  }
+}
+.cemetaryBottomSec__rightContBtnIcon {
+  width: 62px;
+}
+@media screen and (max-width: 768px) {
+  .cemetaryBottomSec__rightContBtnIcon {
+    width: 43px;
+  }
 }

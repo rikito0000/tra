@@ -76,19 +76,3 @@ PC/SP
     display: table-cell;
   }
 }
-
-/*-----------------------------------------------
-main
-------------------------------------------------*/
-.siteContent {
-  min-height: calc(100vh - #{$headerHeightPC + $headerHeightPC});
-  padding-top: $headerHeightPC;
-
-  .is_login_user & {
-  }
-
-  @include u-mqMax {
-    min-height: calc(100vh - #{$footerHeightSP});
-    padding-top: $headerHeightSP;
-  }
-}

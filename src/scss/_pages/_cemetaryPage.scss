@@ -1,0 +1,599 @@
+/*====================================================================
+topPageFvSec
+====================================================================*/
+img {
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+  list-style: none;
+}
+
+.br_sp {
+  display: none;
+
+  // SP
+  @include u-mqMax {
+    display: block;
+  }
+}
+
+.font {
+  color: #800707;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: YuMincho, Yu Mincho, serif;
+  margin-bottom: 0;
+}
+
+.cemetarySec {
+  width: 100%;
+
+  // SP
+  @include u-mqMax {
+    background-image: url("../images/cemetaryTopSec/cemetaryBg_sp.jpg");
+  }
+
+  &__topCont {
+    width: 100%;
+    background-image: url("../images/cemetaryTopSec/body_pc.jpg");
+    background-size: cover;
+  }
+
+  &__topContInr {
+    padding: 60px 0 230px;
+
+    // SP
+    @include u-mqMax {
+      padding: 30px 0 230px;
+    }
+  }
+
+  &__bottomCont {
+    width: 1075px;
+    margin: 0 auto;
+    text-align: center;
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+    }
+  }
+
+  &__bottomContList {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -150px;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    // SP
+    @include u-mqMax {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__bottomContListItem {
+    @include u-mqMax {
+      margin: 0 auto;
+    }
+  }
+
+  &__bottomContItemFig {
+    width: 271px;
+    margin-bottom: 0;
+  }
+
+  &__topContText {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: YuMincho, Yu Mincho, serif;
+    margin-left: 0;
+    -webkit-writing-mode: vertical-rl; /* 縦書きにする */
+    -ms-writing-mode: tb-rl; /* 縦書きにする */
+    writing-mode: vertical-rl; /* 縦書きにする */
+
+    // SP
+    @include u-mqMax {
+      font-size: 16px;
+      padding: 0;
+    }
+  }
+
+  &__topContInfo {
+    width: 20px;
+    height: 206px;
+    margin: 0 auto;
+    border-left: 1.5px solid #910000;
+
+    // SP
+    @include u-mqMax {
+      height: 172px;
+    }
+  }
+
+  &__bottomContItemText {
+    padding: 29px 0 27px;
+
+    // SP
+    @include u-mqMax {
+      margin: 0 auto;
+      padding: 29px 0 50px;
+    }
+  }
+
+  &__topContBottomText {
+    text-align: center;
+    color: #800707;
+    font-size: 32px;
+    font-weight: 600;
+    font-family: YuMincho, Yu Mincho, serif;
+    padding-top: 52px;
+    margin-bottom: 0;
+    line-height: 1.8;
+    letter-spacing: 2px;
+    // SP
+    @include u-mqMax {
+      font-size: 24px;
+      padding:  18px 79px 0 79px;
+      letter-spacing: 0;
+    }
+  }
+
+  &__bottomContTopText {
+    color: #800707;
+    font-size: 28px;
+    font-weight: 600;
+    font-family: YuMincho, Yu Mincho, serif;
+  }
+
+  &__bottomContText {
+    color: #800707;
+    font-size: 20px;
+    font-weight: 500px;
+    font-family: YuMincho, Yu Mincho, serif;
+    margin-bottom: 0;
+  }
+}
+
+.cemetaryMiddleSec {
+  margin: 0 auto;
+  background-color: #d9d8c4;
+
+  &__inr {
+    width: 1075px;
+    margin: 0 auto;
+    padding: 78px 0;
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+      padding: 46px 10px 35px;
+    }
+  }
+
+  &__contListItem {
+    background-color: #fff;
+    padding: 39px 77px 26px;
+    margin-bottom: 34px;
+
+    // SP
+    @include u-mqMax {
+      padding: 29px 11px 18px;
+      margin-bottom: 0;
+
+      &:nth-of-type(1),
+      &:nth-of-type(2) {
+        margin-bottom: 3px;
+      }
+
+      &:last-child {
+        padding: 29px 11px 47px;
+        
+        li {
+          justify-content: start;
+        }
+      }
+    }
+  }
+
+  &__contList {
+    padding: 0;
+  }
+
+  &__itemTitle {
+    display: flex;
+    justify-content: space-between;
+
+    // SP
+    @include u-mqMax {
+      flex-direction: column;
+    }
+  }
+
+  &__itemTitleText {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: YuMincho, Yu Mincho, serif;
+    margin-bottom: 0;
+    padding-bottom: 35px;
+    line-height: 1;
+
+    // SP
+    @include u-mqMax {
+      font-size: 32px;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    &.red {
+      color: #800707;
+    }
+
+    &.green {
+      color: #25500f;
+    }
+
+    &.blue {
+      color: #0f1250;
+    }
+  }
+
+  &__itemTopDescText {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.7;
+    letter-spacing: 2px;
+  }
+
+  &__itemTitleInfo {
+    display: flex;
+
+    // SP
+    @include u-mqMax {
+      justify-content: center;
+      padding-bottom: 23px;
+    }
+  }
+
+  &__itemTitleInfoLeft,
+  &__itemTitleInfoRight {
+    width: 168px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 1;
+    padding: 16px 0 13px;
+
+    &.bgRed {
+      background-color: #811102;
+    }
+
+    &.bgGreen {
+      background-color: #25500f;
+    }
+
+    &.bgBlue {
+      background-color: #0f1250;
+    }
+  }
+
+  &__itemTitleInfoRight {
+    margin-left: 12px;
+  }
+
+  &__itemMiddleDescPrice {
+    color: #000;
+    font-size: 33px;
+    font-weight: 600;
+    font-family: YuMincho, Yu Mincho, serif;
+    line-height: 1;
+    // SP
+    @include u-mqMax {
+      font-size: 27px;
+    }
+
+    & .cemetaryMiddleSec__price {
+      display: inline-block;
+      font-size: 66px;
+      line-height: 1;
+      transform: translateY(5px);
+
+      // SP
+      @include u-mqMax {
+        font-size: 56px;
+      }
+    }
+  }
+
+  &__itemMiddleDescRight {
+    text-align: center;
+
+    &.second {
+      padding-right: 20px;
+    }
+  }
+
+  &__itemMiddleDescPriceDetails {
+    font-size: 12px;
+    padding-right: 20px;
+    color: #000;
+    letter-spacing: 1px;
+    transform: translateY(5px);
+
+    &.second {
+      font-size: 16px;
+    }
+  }
+
+  &__itemMiddleDescPriceText {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #000;
+    // SP
+    @include u-mqMax {
+      font-size: 20px;
+    }
+
+    &.second {
+      width: 100px;
+      display: block;
+    }
+  }
+
+  &__itemMiddleDescPriceTextSec {
+    font-size: 24px;
+    color: #000;
+    padding: 0 24px;
+    // SP
+    @include u-mqMax {
+      font-size: 20px;
+      padding: 0 10px;
+    }
+
+    &.second {
+      padding: 0 35px 0 25px;
+
+      // SP
+      @include u-mqMax {
+      padding: 0;
+      }
+    }
+  }
+
+  &__itemMiddleDescWideDetails {
+    font-size: 12px;
+    color: #000;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  &__itemMiddleDesc {
+    display: flex;
+    justify-content: space-between;
+
+    // SP
+    @include u-mqMax {
+      flex-direction: column;
+    }
+  }
+
+  &__itemMiddleDescBottom {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    // SP
+    @include u-mqMax {
+      padding: 0;
+    }
+
+    // SP
+    @include u-mqMax {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  }
+  &__itemMiddleDescBottomFig {
+    width: 444px;
+    // SP
+    @include u-mqMax {
+      padding-bottom: 12px;
+    }
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+    }
+  }
+
+  &__itemMiddleText {
+    font-size: 24px;
+    color: #000;
+  }
+
+  &__itemMiddleDescPriceItem {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #888;
+    padding: 16px 0;
+
+    &.second {
+      justify-content: space-between;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #888;
+    }
+
+    // SP
+    @include u-mqMax {
+      justify-content: space-between;
+
+      &:nth-of-type(5) {
+        justify-content: start;
+      }
+    }
+  }
+
+  .pd {
+    margin-bottom: 70px;
+  }
+
+  &__itemMiddleDescPriceList {
+    padding: 13px 0 0 0;
+    line-height: 0.7;
+  }
+
+  &__itemMiddleDescFig {
+    width: 437px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+    }
+  }
+
+  &__itemMiddleDescText {
+    display: inline-block;
+    background-color: #1e5a0c;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 9px 100px;
+    margin-bottom: 0;
+    line-height: 1;
+    // SP
+    @include u-mqMax {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  &__itemMiddle {
+    padding-top: 45px;
+  }
+
+  &__itemBottom {
+    background-color: #fcf3cf;
+    padding: 17px 45px 9px;
+    min-height: 111px;
+
+    // SP
+    @include u-mqMax {
+      padding: 13px 20px;
+    }
+  }
+
+  &__itemBottomText {
+    color: #5c0404;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    margin-bottom: 0;
+  }
+}
+
+.cemetaryBottomSec {
+  width: 100%;
+  background-color: #edca6a;
+
+  &__inr {
+    width: 1075px;
+    margin: 0 auto;
+    padding: 70px 0 64px;
+    display: flex;
+    justify-content: space-between;
+
+    // SP
+    @include u-mqMax {
+      width: 100%;
+      flex-direction: column;
+      padding: 34px 22px 23px;
+    }
+  }
+
+  &__rightContact,
+  &__leftContact {
+    font-size: 36px;
+    color: #000;
+    line-height: 1;
+    // SP
+    @include u-mqMax {
+      font-size: 24px;
+    }
+  }
+
+  &__leftHourText {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+      "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
+
+    // SP
+    @include u-mqMax {
+      font-size: 12px;
+      padding-bottom: 22px;
+      border-bottom: solid 1px #fff;
+    }
+  }
+
+  &__leftTel {
+    font-size: 62px;
+    color: #000;
+
+    // SP
+    @include u-mqMax {
+      font-size: 43px;
+      line-height: 1;
+      padding: 17px 0 16px 0;
+    }
+  }
+
+  &__rightContactBtn {
+    font-size: 34px;
+    color: #000;
+    margin-left: 19px;
+
+    // SP
+    @include u-mqMax {
+      font-size: 23px;
+    }
+  }
+  &__rightContact {
+    @include u-mqMax {
+      padding-top: 21px;
+    }
+  }
+
+  &__rightContactBtnLink {
+    display: flex;
+    align-items: center;
+    padding: 42px 24px 44px 31px;
+    background-color: #fff;
+    margin-top: 13px;
+    transition: 0.6s;
+    @include u-mqMax {
+      padding: 20px 18px 21px;
+    }
+
+    &:hover {
+      @include u-hoverOp(0.8);
+    }
+  }
+
+  &__rightContBtnIcon {
+    width: 62px;
+    @include u-mqMax {
+      width: 43px;
+    }
+  }
+}
