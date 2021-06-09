@@ -165,6 +165,7 @@ ul li {
     color: #fff;
     text-align: center;
     line-height: 1;
+    padding: 16px 0 13px;
 
     &.bgRed {
       background-color: #811102;
@@ -179,12 +180,7 @@ ul li {
     }
   }
 
-  &__itemTitleInfoLeft {
-    padding: 15px 0 13px;
-  }
-
   &__itemTitleInfoRight {
-    padding: 15px 0 13px;
     margin-left: 12px;
   }
 
@@ -193,22 +189,31 @@ ul li {
     font-size: 33px;
     font-weight: 600;
     font-family :	YuMincho, Yu Mincho, serif;
-    padding-right: 20px;
+
     line-height: 1;
 
     & .cemetaryMiddleSec__price {
-    font-size: 66px
+    display: inline-block;
+    font-size: 66px;
+    line-height: 1;
+    transform: translateY(5px);
   }
 }
 
 &__itemMiddleDescRight {
-  padding-left: 15px;
+  text-align: center;
+
+  &.second {
+    padding-right: 20px;
+  }
 }
 
 &__itemMiddleDescPriceDetails {
   font-size: 12px;
+  padding-right: 20px;
   color: #000;
-  text-align: center;
+  letter-spacing: 1px;
+  transform: translateY(5px);
 
   &.second {
     font-size: 16px;
@@ -221,6 +226,11 @@ ul li {
     justify-content: space-between;
     font-size: 24px;
     color: #000;
+
+    &.second {
+      width: 100px;
+      display: block;
+    }
   }
 
   &__itemMiddleDescPriceTextSec {
@@ -229,7 +239,7 @@ ul li {
     padding: 0 24px;
 
     &.second {
-      padding: 0 0 0 24px;
+      padding: 0 35px 0 25px;
     }
   }
 
@@ -237,6 +247,7 @@ ul li {
     font-size: 12px;
     color: #000;
     text-align: left;
+    margin-top: 10px;
   }
 
   &__itemMiddleDesc {
@@ -263,7 +274,11 @@ ul li {
     display: flex;
     align-items: center;
     border-top: 1px solid #888;
-    padding: 8px 0;
+    padding: 16px 0;
+
+    &.second {
+      justify-content: space-between;
+    }
 
     &:last-child {
       border-bottom: 1px solid #888;
@@ -276,6 +291,7 @@ ul li {
 
   &__itemMiddleDescPriceList {
     padding: 13px 0 0 0;
+    line-height: .7;
   }
 
 
@@ -308,7 +324,7 @@ ul li {
   }
 
   &__itemBottomText {
-    color: #800707;
+    color: #5C0404;
     font-size: 18px;
     font-weight: bold;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -333,6 +349,7 @@ ul li {
   &__leftContact {
     font-size: 36px;
     color: #000;
+    line-height: 1;
   }
 
   &__leftHourText {

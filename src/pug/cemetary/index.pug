@@ -1,6 +1,6 @@
 //- META INFORMATION
 - const page_title = 'Website Name'
-- const relativePath = '.'
+- const relativePath = '..'
 - const meta_title = 'this is meta title'
 - const meta_keywords = 'this is meta keyworks'
 - const meta_description = 'this is meta description'
@@ -16,13 +16,13 @@ doctype html
 html(lang="ja")
     head
         //- HEAD
-        include ./_inc/_head.pug
+        include ../_inc/_head.pug
 
     body.topPage
+        include ../_inc/_siteHeaderLower.pug
 
         //- MAIN CONTENT
         main.siteContent(role="main")
-
             section.cemetarySec
                 .cemetarySec__inr
                     .cemetarySec__topCont
@@ -107,10 +107,10 @@ html(lang="ja")
                                     .cemetaryMiddleSec__itemMiddleDescTextCont
                                         p.cemetaryMiddleSec__itemMiddleDescText 供養料
                                         ul.cemetaryMiddleSec__itemMiddleDescPriceList
-                                            li.cemetaryMiddleSec__itemMiddleDescPriceItem
-                                                p.cemetaryMiddleSec__itemMiddleDescPriceText.font <span>永</span><span>代</span><span>供</span><span>養</span>
+                                            li.cemetaryMiddleSec__itemMiddleDescPriceItem.second
+                                                p.cemetaryMiddleSec__itemMiddleDescPriceText.font.second 永代供養
                                                 p.cemetaryMiddleSec__itemMiddleDescPriceTextSec.font.second 一区画
-                                                .cemetaryMiddleSec__itemMiddleDescRight
+                                                .cemetaryMiddleSec__itemMiddleDescRight.second
                                                     p.cemetaryMiddleSec__itemMiddleDescPrice <span class="cemetaryMiddleSec__price">65</span>万円
                                                     p.cemetaryMiddleSec__itemMiddleDescPriceDetails.font.second (原則2名まで)
                                     figure.cemetaryMiddleSec__itemMiddleDescFig
@@ -183,5 +183,5 @@ html(lang="ja")
                             p.cemetaryBottomSec__rightContactBtn.font お問い合わせはこちら
 
 
-        //- //- FOOTER:
-        //- include ./_inc/_siteFooter.pug
+        //- FOOTER:
+        include ../_inc/_siteFooter.pug

@@ -1,10 +1,10 @@
 //- META INFORMATION
-- const page_title = 'About US'
+- const page_title = '当寺について'
 - const relativePath = '..'
 - const meta_title = 'this is meta title'
 - const meta_keywords = 'this is meta keyworks'
-- const meta_description = 'this is meta description'
-- const meta_og_url = 'http://website.com/about/'
+- const meta_description = '当山は真言宗豊山派の寺院で萱田山 観音院 長福寺と号します。朱塗りの特徴のある山門から「萱田の赤寺」と呼ばれ、『八千代ふるさと50景』の一つとして地元の方々に親しまれております。'
+- const meta_og_url = 'http://website.com'
 - const currentPage = 'about'
 
 
@@ -12,7 +12,7 @@
 - const isJquery = true
 - const isWowEffects = false
 - const isSwiper = true
-- const isBootstrap = true
+- const isBootstrap = false
 
 
 doctype html
@@ -24,9 +24,10 @@ html(lang="ja")
     |
     body.topPage
         //- HEADER
-        include ../_inc/_siteHeader.pug
+        include ../_inc/_siteHeaderLower.pug
         |
         |
+        
 
         //- MAIN CONTENT
         main.siteContent(role="main")
