@@ -18,17 +18,17 @@ ul li {
   margin-bottom: 0;
 }
 
-.topSec {
+.cemetarySec {
   width: 100%;
 
   &__topCont {
     width: 100%;
-    background-image: url("../images/body_pc.jpg");
+    background-image: url("../images/cemetaryTopSec/body_pc.jpg");
     background-size: cover;
   }
 
   &__topContInr {
-    padding: 60px 0 188px;
+    padding: 60px 0 230px;
   }
 
   &__bottomCont {
@@ -45,29 +45,28 @@ ul li {
     padding-left: 0;
   }
 
-
   &__bottomContItemFig {
     width: 271px;
     margin-bottom: 0;
   }
 
-  &__topContInfo {
-    text-align: center;
-    padding-bottom: 52px;
-  }
-
   &__topContText {
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    -o-writing-mode: vertical-rl;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    margin: 0 auto;
     font-size: 20px;
     font-weight: 100;
     font-family: YuMincho, Yu Mincho, serif;
     border-left: 1.5px solid #910000;
     padding-bottom: 80px;
+    margin-left: 0;
+    -webkit-writing-mode: vertical-rl; /* 縦書きにする */
+    -ms-writing-mode: tb-rl; /* 縦書きにする */
+    writing-mode: vertical-rl; /* 縦書きにする */
+  }
+
+  &__topContInfo {
+    width: 20px;
+    height: 300px;
+    margin: 0 auto;
+    padding-bottom: 52px;
   }
 
   &__bottomContItemText {
@@ -78,14 +77,17 @@ ul li {
     text-align: center;
     color: #800707;
     font-size: 32px;
-    font-weight: 600px;
+    font-weight: 600;
     font-family :	YuMincho, Yu Mincho,  serif;
+    margin-bottom: 0;
+    line-height: 1.8;
+    letter-spacing: 2px;
   }
 
   &__bottomContTopText {
     color: #800707;
     font-size: 28px;
-    font-weight: 600px;
+    font-weight: 600;
     font-family :	YuMincho, Yu Mincho,  serif;
   }
 
@@ -98,7 +100,7 @@ ul li {
   }
 }
 
-.middleSec {
+.cemetaryMiddleSec {
   margin: 0 auto;
   background-color: #D9D8C4;
 
@@ -148,6 +150,7 @@ ul li {
     font-size: 18px;
     color: #000;
     line-height: 1.7;
+    letter-spacing: 2px;
   }
 
   &__itemTitleInfo {
@@ -190,16 +193,16 @@ ul li {
     font-size: 33px;
     font-weight: 600;
     font-family :	YuMincho, Yu Mincho, serif;
-    padding: 0 20px;
+    padding-right: 20px;
     line-height: 1;
 
-    & .middleSec__price {
+    & .cemetaryMiddleSec__price {
     font-size: 66px
   }
 }
 
 &__itemMiddleDescRight {
-  padding: 0 0 0 20px;
+  padding-left: 15px;
 }
 
 &__itemMiddleDescPriceDetails {
@@ -288,8 +291,9 @@ ul li {
     color: #fff;
     font-size: 24px;
     font-weight: 500;
-    padding: 10px 100px;
+    padding: 9px 100px;
     margin-bottom: 0;
+    line-height: 1;
   }
 
   &__itemMiddle {
@@ -313,7 +317,7 @@ ul li {
 }
 
 
-.bottomSec {
+.cemetaryBottomSec {
   width: 100%;
   background-color: #EDCA6A;
 
@@ -332,7 +336,11 @@ ul li {
   }
 
   &__leftHourText {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3;
   }
 
   &__leftTel {
