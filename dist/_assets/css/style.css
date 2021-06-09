@@ -1361,6 +1361,7 @@ aboutPage
 
 .funeralSec {
   padding-top: 40px;
+  padding-bottom: 72px;
   background: #E0DCEB;
 }
 .funeralSec__topTextBox {
@@ -1388,8 +1389,48 @@ aboutPage
 .funeralSec__topInner.mgb {
   margin-bottom: 40px;
 }
+.funeralSec__imgBox {
+  margin: 0 auto 61px;
+  width: 100%;
+  max-width: 834px;
+}
+.funeralSec__textBox {
+  text-align: center;
+}
+.funeralSec__textBoxText {
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 768px) {
+  .funeralSec__textBoxText {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+.funeralSec__textBoxText.u-colorRed {
+  font-size: 2rem;
+  color: #800707;
+}
+.funeralSec__textBoxText.u-border {
+  border: 1px solid #800707;
+  display: inline-block;
+  line-height: 1;
+  padding: 14px 26px;
+}
+.funeralSec__textBoxText.mgb25 {
+  margin-bottom: 25px;
+}
+.funeralSec__textBoxText.mgb10 {
+  margin-bottom: 10px;
+}
 
 .precinctsSec {
+  background: #F4F0E6;
   padding-top: 40px;
 }
 .precinctsSec__topTextBox {
@@ -1412,10 +1453,56 @@ aboutPage
 .precinctsSec__topInner {
   margin: 0 auto;
   width: 100%;
-  max-width: 860px;
+  max-width: 1020px;
 }
 .precinctsSec__topInner.mgb {
   margin-bottom: 40px;
+}
+.precinctsSec__imgBox {
+  margin: -160px auto 61px;
+  width: 100%;
+  max-width: 640px;
+  padding-right: 40px;
+}
+.precinctsSec__imgList {
+  margin: 0 auto;
+  width: 1020px;
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+}
+.precinctsSec__imgListItem {
+  width: 23%;
+  margin-bottom: 70px;
+}
+.precinctsSec__imgListImgCap {
+  margin-top: 8px;
+  text-align: center;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  color: #800707;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 768px) {
+  .precinctsSec__imgListImgCap {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+.precinctsSec__imgListImgCap.fs14 {
+  font-size: 1.4rem;
+}
+.precinctsSec__imgListImgCapBorder {
+  border: 1px solid #800707;
+  font-size: 1.2rem;
+  line-height: 0;
+  padding: 3px 24px;
 }
 
 /*====================================================================

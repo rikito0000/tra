@@ -233,6 +233,7 @@ aboutPage
 }
 .funeralSec {
   padding-top: 40px;
+  padding-bottom: 72px;
   background: $purple01;
   &__topTextBox {
     display: block;
@@ -259,8 +260,38 @@ aboutPage
       margin-bottom: 40px;
     }
   }
+  &__imgBox {
+    margin: 0 auto 61px;
+    width: 100%;
+    max-width: 834px;
+  }
+  &__textBox {
+    text-align: center;
+  }
+  &__textBoxText {
+    @include u-fontMincho;
+    @include u-articleText($color:$black ,$fz: 1.6rem, $fzSP: 1.6rem, $lh:2.5 ,$lts: 0.1rem);
+    &.u-colorRed {
+      font-size: 2rem;
+      color: $red01;
+    }
+    &.u-border {
+      border: 1px solid $red01;
+      display: inline-block;
+      line-height: 1;
+      padding: 14px 26px;
+    }
+    &.mgb25 {
+      margin-bottom: 25px;
+    }
+    &.mgb10 {
+      margin-bottom: 10px;
+    }
+
+  }
 }
 .precinctsSec {
+  background: $beige01;
   padding-top: 40px;
   &__topTextBox {
     display: block;
@@ -282,9 +313,42 @@ aboutPage
   &__topInner {
     margin: 0 auto;
     width: 100%;
-    max-width: 860px;
+    max-width: 1020px;
     &.mgb {
       margin-bottom: 40px;
     }
+  }
+  &__imgBox {
+    margin: -160px auto 61px;
+    width: 100%;
+    max-width: 640px;
+    padding-right: 40px;
+  }
+  &__imgList {
+    margin: 0 auto;
+    width: 1020px;
+    @include u-flex($jc: space-between,$fw: wrap);
+    padding-left: 0;
+
+  }
+  &__imgListItem {
+    width: 23%;
+    margin-bottom: 70px;
+  }
+  &__imgListImgCap {
+    margin-top: 8px;
+    text-align:center;
+    @include u-fontMincho;
+    @include u-articleText($color:$red01 ,$fz: 1.6rem, $fzSP: 1.6rem, $lh:2 ,$lts: 0.1rem);
+    &.fs14 {
+      font-size: 1.4rem;
+    }
+  }
+  &__imgListImgCapBorder {
+    border: 1px solid $red01;
+    font-size: 1.2rem;
+    line-height: 0;
+    padding: 3px 24px;
+
   }
 }
