@@ -27,14 +27,15 @@ html(lang="ja")
         include ../_inc/_siteHeaderLower.pug
         |
         |
-        
+
 
         //- MAIN CONTENT
         main
             section.aboutTopSec
                 div.aboutTopSec__topInner.mgb
-                    p.aboutTopSec__topText
-                        img.aboutTopSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_aboutTop_text_pc.png`, alt="長福寺について")
+                    div.aboutTopSec__topTextBox
+                        p.aboutTopSec__topText
+                            img.aboutTopSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_aboutTop_text_pc.png`, alt="長福寺について")
                     p.aboutTopSec__text
                         | 当山は真言宗豊山派の寺院で萱田山 観音院 長福寺と号し、本尊は木造阿彌陀如来坐像です。
                         br
@@ -64,7 +65,7 @@ html(lang="ja")
                             br
                             | 山門の朱塗りと共に、山内には初春の牡丹、梅、南天、桜、初夏には紫陽花、睡蓮、
                             br
-                            | 初秋には彼岸花やもみじ、銀杏の紅葉などが楽しめ、一年中彩のある境内が特徴です。
+                            | 初秋には彼岸花やもみじ、銀杏の紅葉などが楽しめ、一年中彩あc特徴です。
                         figure.aboutTopSec__topInnerImgBox.img01
                             img.u-pcDb(src=`${relativePath}/_assets/images/pc/about_aboutTop_bottom_pc_img01.png`, alt="")
                         figure.aboutTopSec__topInnerImgBox.img02
@@ -85,8 +86,9 @@ html(lang="ja")
 
             section.teachSec
                 div.teachSec__topInner.mgb
-                    p.teachSec__topText
-                        img.teachSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_teachSec_text_pc.png`, alt="真言宗の教え")
+                    div.aboutTopSec__topTextBox
+                        p.teachSec__topText
+                            img.teachSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_teachSec_text_pc.png`, alt="真言宗の教え")
                 div.teachSec__topArea
                     p.teachSec__topAreaText
                       | 宗　派：真言宗豊山派
@@ -119,25 +121,65 @@ html(lang="ja")
                                 | 般若理趣経・陀羅尼・般若心経・観音経などをお誦み致しております。
                     p.teachSec__bottomAreaBottomText
                         | 参考資料：宗派配布「このお寺の宗旨」より
-
-
-
             section.actionSec
                 div.actionSec__topInner.mgb
-                    p.actionSec__topText
-                        img.actionSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc.png`, alt="年中行事")
+                    div.aboutTopSec__topTextBox
+                        p.actionSec__topText
+                            img.actionSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc.png`, alt="年中行事")
+                div.actionSec__textListWrapper
+                    ul.actionSec__textList
+                        li.actionSec__textListItem
+                            p.actionSec__textListItemText
+                                img.actionSec__textListItemTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc_img01.png`, alt="修正会(一月一日〜三日）")
+                        li.actionSec__textListItem
+                            p.actionSec__textListItemText
+                                img.actionSec__textListItemTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc_img02.png`, alt="春季彼岸会（三月春分の日）")
+                        li.actionSec__textListItem
+                            p.actionSec__textListItemText
+                                img.actionSec__textListItemTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc_img03.png`, alt="こども研修会（七月下旬）")
+                        li.actionSec__textListItem
+                            p.actionSec__textListItemText
+                                img.actionSec__textListItemTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc_img04.png`, alt="施餓鬼会（八月十一日）")
+                        li.actionSec__textListItem
+                            p.actionSec__textListItemText
+                                img.actionSec__textListItemTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc_img05.png`, alt="秋季彼岸会（九月秋分の日）")
+                        li.actionSec__textListItem
+                            p.actionSec__textListItemText
+                                img.actionSec__textListItemTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc_img06.png`, alt="音楽会・寄席（九月秋彼岸中）")
+                        li.actionSec__textListItem
+                            p.actionSec__textListItemText
+                                img.actionSec__textListItemTextImg(src=`${relativePath}/_assets/images/pc/about_actionSec_text_pc_img07.png`, alt="月並護摩供（毎月二十八日）")
+                div.actionSec__imgListWrapper
+                    ul.actionSec__imgList
+                        li.actionSec__imgListItem
+                            figure.actionSec__imgListItemImgBox
+                                img.actionSec__imgListItemImg(src=`${relativePath}/_assets/images/pc/about_actionSec_bottom_pc_img01.jpg`, alt="")
+                        li.actionSec__imgListItem
+                            figure.actionSec__imgListItemImgBox
+                                img.actionSec__imgListItemImg(src=`${relativePath}/_assets/images/pc/about_actionSec_bottom_pc_img02.jpg`, alt="")
+                        li.actionSec__imgListItem
+                            figure.actionSec__imgListItemImgBox
+                                img.actionSec__imgListItemImg(src=`${relativePath}/_assets/images/pc/about_actionSec_bottom_pc_img03.jpg`, alt="")
+                        li.actionSec__imgListItem
+                            figure.actionSec__imgListItemImgBox
+                                img.actionSec__imgListItemImg(src=`${relativePath}/_assets/images/pc/about_actionSec_bottom_pc_img04.jpg`, alt="")
+
+
+
 
 
             section.funeralSec
                 div.funeralSec__topInner.mgb
-                    p.funeralSec__topText
-                        img.funeralSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_funeralSec_text_pc.png`, alt="ご葬儀について")
+                    div.aboutTopSec__topTextBox
+                        p.funeralSec__topText
+                            img.funeralSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_funeralSec_text_pc.png`, alt="ご葬儀について")
 
 
             section.precinctsSec
                 div.precinctsSec__topInner.mgb
-                    p.precinctsSec__topText
-                        img.precinctsSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_precinctsSec_text_pc.png`, alt="境内案内")
+                    div.aboutTopSec__topTextBox
+                        p.precinctsSec__topText
+                            img.precinctsSec__topTextImg(src=`${relativePath}/_assets/images/pc/about_precinctsSec_text_pc.png`, alt="境内案内")
 
 
 

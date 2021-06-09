@@ -3,9 +3,15 @@ aboutPage
 ====================================================================*/
 .aboutTopSec {
   padding-top: 40px;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
   &__topText {
     display: block;
-    margin: 0 auto 25px;
+    margin-bottom: 25px;
     width: 22px;
     height: 206px;
     padding-left: 5px;
@@ -97,9 +103,15 @@ aboutPage
   padding-top: 40px;
   padding-bottom: 50px;
   background: $gray01;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
   &__topText {
     display: block;
-    margin: 0 auto 25px;
+    margin-bottom: 25px;
     width: 22px;
     height: 206px;
     padding-left: 5px;
@@ -168,10 +180,17 @@ aboutPage
 
 }
 .actionSec {
-  padding-top: 40px;
+  padding-top: 255px;
+  padding-bottom: 29px;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
   &__topText {
     display: block;
-    margin: 0 auto 25px;
+    margin-bottom: 25px;
     width: 22px;
     height: 206px;
     padding-left: 5px;
@@ -188,12 +207,42 @@ aboutPage
       margin-bottom: 40px;
     }
   }
+  &__textList {
+    @include u-flex($fd:row-reverse,$jc:space-between);
+    width: 458px;
+    margin: 0 auto 23px;
+    padding-left: 0;
+  }
+  &__textListItem {
+  }
+  &__textListItemText {
+    width: 20px;
+  }
+  &__imgList {
+    @include u-flex($jc:space-between);
+    width: 1020px;
+    padding-left: 0;
+    margin: 0 auto;
+
+  }
+  &__imgListItemImgBox {
+    width: 248px;
+
+  }
+
 }
 .funeralSec {
   padding-top: 40px;
+  background: $purple01;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
   &__topText {
     display: block;
-    margin: 0 auto 25px;
+    margin-bottom: 25px;
     width: 22px;
     height: 206px;
     padding-left: 5px;
@@ -213,9 +262,15 @@ aboutPage
 }
 .precinctsSec {
   padding-top: 40px;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
   &__topText {
     display: block;
-    margin: 0 auto 25px;
+    margin-bottom: 25px;
     width: 22px;
     height: 206px;
     padding-left: 5px;

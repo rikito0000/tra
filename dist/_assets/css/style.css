@@ -1076,9 +1076,15 @@ aboutPage
 .aboutTopSec {
   padding-top: 40px;
 }
+.aboutTopSec__topTextBox {
+  display: block;
+  padding-left: 10px;
+  margin: 0 auto 25px;
+  width: 27px;
+}
 .aboutTopSec__topText {
   display: block;
-  margin: 0 auto 25px;
+  margin-bottom: 25px;
   width: 22px;
   height: 206px;
   padding-left: 5px;
@@ -1185,9 +1191,15 @@ aboutPage
   padding-bottom: 50px;
   background: #E5E5E5;
 }
+.teachSec__topTextBox {
+  display: block;
+  padding-left: 10px;
+  margin: 0 auto 25px;
+  width: 27px;
+}
 .teachSec__topText {
   display: block;
-  margin: 0 auto 25px;
+  margin-bottom: 25px;
   width: 22px;
   height: 206px;
   padding-left: 5px;
@@ -1292,11 +1304,18 @@ aboutPage
 }
 
 .actionSec {
-  padding-top: 40px;
+  padding-top: 255px;
+  padding-bottom: 29px;
+}
+.actionSec__topTextBox {
+  display: block;
+  padding-left: 10px;
+  margin: 0 auto 25px;
+  width: 27px;
 }
 .actionSec__topText {
   display: block;
-  margin: 0 auto 25px;
+  margin-bottom: 25px;
   width: 22px;
   height: 206px;
   padding-left: 5px;
@@ -1313,13 +1332,46 @@ aboutPage
 .actionSec__topInner.mgb {
   margin-bottom: 40px;
 }
+.actionSec__textList {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 458px;
+  margin: 0 auto 23px;
+  padding-left: 0;
+}
+.actionSec__textListItemText {
+  width: 20px;
+}
+.actionSec__imgList {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 1020px;
+  padding-left: 0;
+  margin: 0 auto;
+}
+.actionSec__imgListItemImgBox {
+  width: 248px;
+}
 
 .funeralSec {
   padding-top: 40px;
+  background: #E0DCEB;
+}
+.funeralSec__topTextBox {
+  display: block;
+  padding-left: 10px;
+  margin: 0 auto 25px;
+  width: 27px;
 }
 .funeralSec__topText {
   display: block;
-  margin: 0 auto 25px;
+  margin-bottom: 25px;
   width: 22px;
   height: 206px;
   padding-left: 5px;
@@ -1340,9 +1392,15 @@ aboutPage
 .precinctsSec {
   padding-top: 40px;
 }
+.precinctsSec__topTextBox {
+  display: block;
+  padding-left: 10px;
+  margin: 0 auto 25px;
+  width: 27px;
+}
 .precinctsSec__topText {
   display: block;
-  margin: 0 auto 25px;
+  margin-bottom: 25px;
   width: 22px;
   height: 206px;
   padding-left: 5px;
