@@ -3,11 +3,6 @@ COMMON LAYOUT
 ====================================================================*/
 html {
   font-size: 62.5%; // 1rem = 10px
-
-  // SP
-  @include u-mqMax {
-    font-size: calc(10vw / 3.75);
-  }
 }
 body {
   min-width: $contentCenter;

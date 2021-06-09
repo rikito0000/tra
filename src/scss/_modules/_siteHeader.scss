@@ -116,8 +116,8 @@ sp
       bottom: 0;
       left: 0;
       //test
-      // display: none;
-      display: block;
+      display: none;
+      // display: block;
     }
 
     &__nav {
@@ -131,8 +131,8 @@ sp
       height: 100vh;
       overflow-y: scroll;
       //test
-      // display: none;
-      display: block;
+      display: none;
+      // display: block;
     }
     &__nav__logo{
       width: 96px;
@@ -196,14 +196,12 @@ sp
     }
 
     &.is-animation {
-        background: rgba(51, 0, 0, 0.8);
+      background: rgba(128, 7, 7, 0.7);
     }
 
     &__nav__cont__menu{
       padding-left: 0;
     }
-
-
 
     &__nav__cont__menu__item{
     text-align: center;
@@ -227,8 +225,6 @@ sp
       padding-top: 25px;
       padding-bottom: 25px;
     }
-
-
   }
 
   .lowerKvSec{
