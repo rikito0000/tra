@@ -7,7 +7,7 @@ siteFooter
   background-image: url('../../_assets/images/pc/footer_bg.png');
   background-position: center 25%;
   background-repeat: no-repeat;
-  background-size: 115% auto;
+  background-size: 80% auto;
 
   &__inner {
     display: block;
@@ -28,10 +28,14 @@ siteFooter
     text-align: center;
     margin-bottom: 48px;
   }
-  &__address,
+  &__address {
+    color: $white;
+    @include u-articleText($color:$white,$fs: 1.6rem,$fzSP: 1.6rem,$lts: 0.5rem);
+    @include u-fontMincho;
+  }
   &__phoneNumber {
     color: $white;
-    @include u-articleText($color:$white,$fs: 1.6rem,$lts: 0.5rem);
+    @include u-articleText($color:$white,$fs: 1.6rem,$fzSP: 2rem,$lts: 0.5rem);
     @include u-fontMincho;
   }
 
@@ -78,7 +82,9 @@ siteFooter
     display: block;
   }
   &__snsListItemlink {
-    width: 100%;
+    display: block;
+    @include u-trs($duration: 0.3s);
+    @include u-hoverOp;
   }
 
 
@@ -94,42 +100,34 @@ sp
 @include u-mqMax{
 
   .siteFooter {
-    padding-bottom: 194px;
-    background-image: url('../../_assets/images/sp/footer_bg.png');
+    padding-top: 40px;
+    padding-bottom: 44px;
+    background-image: url('../../_assets/images/sp/footer_bg_sp.png');
+    background-position: center 15%;
+    background-size: 55% auto;
     &__inner {
       margin-left: 0;
       position: relative;
-      padding-left: 57px;
       padding-right: 0;
       width: 100%;
     }
-      &__innerBox{
-
-      }
     &__logo{
       display: block;
       width: 100%;
-      max-width: 70px;
-      margin-right: 60px;
+      max-width: 220px;
+      padding-left: 70px;
     }
     &__navi{
-      margin-top: 10px;
-
+      display: none;
     }
-    &__navItem{
-      padding-left: 40px;
-
-    }
-
     &__addressArea{
-      bottom: -100px;
-      left: -120px;
-      padding-left: 0;
+      margin-bottom: 31px;
     }
-    &__phoneNumber{
-      padding-left: 17px;
+    &__address {
+      letter-spacing: 0.7rem;
+      margin-bottom: 20px;
+    }
 
-    }
 
   }
 

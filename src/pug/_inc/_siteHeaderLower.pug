@@ -11,23 +11,23 @@ header.siteHeader.is-animation.u-pcDb
                     a.siteHeader__navItemLink(href="cemetery.html") 墓地案内
                 li.siteHeader__navItem
                     a.siteHeader__navItemLink(href="access.html") 交通案内
-header.siteHeaderSP.u-spDb
+header.siteHeaderSP.is-animation.u-spDb
     .siteHeaderSP__inner
-        h1.siteHeaderSP__logo
+        h1.siteHeaderSP__logo.is-animation
             a.siteHeaderSP__logoLink(href="index.html")
-                img(src="./_assets/images/pc/header_logo.png", alt="真言宗豊山派 萱田山 長福寺 AKADERA")
-        a.siteHeaderSP__wrap__openBtn.js-btn
+                img(src="../_assets/images/sp/header_logo_sp.svg", alt="真言宗豊山派 萱田山 長福寺 AKADERA")
+        a.siteHeaderSP__wrap__openBtn.js-btn.js-active
             span.siteHeaderSP__wrap__openBtnHamburger
             span.siteHeaderSP__wrap__openBtnHamburger
             span.siteHeaderSP__wrap__openBtnHamburger
     .siteHeaderSP__nav__wrapper.headerModal
         .siteHeaderSP__nav
-            h1.siteHeaderSP__nav__logo
-                a.siteHeaderSP__nav__logoLink(href="index.html")
-                    img(src="./_assets/images/pc/header_logo.png", alt="真言宗豊山派 萱田山 長福寺 AKADERA")
             a.siteHeaderSP__nav__closeBtn.js-closeBtn(href="javascript:void(0);")
                 span.siteHeaderSP__nav__closeBtnHamburger
                 span.siteHeaderSP__nav__closeBtnHamburger
+            h1.siteHeaderSP__nav__logo
+                a.siteHeaderSP__nav__logoLink(href="index.html")
+                    img(src="../_assets/images/sp/header_hamburger_logo_sp.svg", alt="真言宗豊山派 萱田山 長福寺 AKADERA")
             nav.siteHeaderSP__nav__cont(role='navigator')
                 ul.siteHeaderSP__nav__cont__menu
                     li.siteHeaderSP__nav__cont__menu__item
@@ -35,24 +35,9 @@ header.siteHeaderSP.u-spDb
                     li.siteHeaderSP__nav__cont__menu__item
                         a.siteHeaderSP__nav__cont__menu__item__link(href="about.html") 長福寺について
                     li.siteHeaderSP__nav__cont__menu__item
-                        a.siteHeaderSP__nav__cont__menu__item__link(href="gosyuin.html") 墓地案内
+                        a.siteHeaderSP__nav__cont__menu__item__link(href="cemetery.html") 墓地案内
                     li.siteHeaderSP__nav__cont__menu__item
                         a.siteHeaderSP__nav__cont__menu__item__link(href="access.html") 交通案内
                     li.siteHeaderSP__nav__cont__menu__item
                         a.siteHeaderSP__nav__cont__menu__item__link(href="info.html") お知らせ
 section.lowerKvSec
-    //- figure.lowerKvSec__imgBox
-    //-     img.u-pcDin(src="../_assets/images/pc/lowerHeader_img.jpg", alt="#")
-    //-     img.u-spDin(src="../_assets/images/sp/lowerHeader_img.jpg", alt="#")
-    //- if currentPage=='about'
-    //-     h2.lowerKvSec__title
-    //-         | 長福寺について
-    //- if currentPage=='info'
-    //-     h2.lowerKvSec__title
-    //-         | お知らせ
-    //- if currentPage=='access'
-    //-     h2.lowerKvSec__title
-    //-         | 交通情報
-    //- if currentPage=='infoArchive'
-    //-     h2.lowerKvSec__title
-    //-         | お知らせ一覧
