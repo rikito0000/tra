@@ -76,13 +76,3 @@ PC/SP
     display: table-cell;
   }
 }
-
-/*-----------------------------------------------
-main
-------------------------------------------------*/
-.siteContent {
-  @include u-mqMax {
-    min-height: calc(100vh - #{$footerHeightSP});
-    padding-top: $headerHeightSP;
-  }
-}
