@@ -687,12 +687,20 @@ sp
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
+    height: 54px;
     padding-left: 15px;
     padding-right: 22px;
+    background: rgba(128, 7, 7, 0.7);
+    position: relative;
   }
   .siteHeaderSP__logo {
-    width: 166px;
+    width: 95px;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+  .siteHeaderSP__logoLink {
+    display: block;
+    z-index: 1;
   }
   .siteHeaderSP__nav__wrapper {
     background-color: rgba(112, 112, 112, 0.44);
@@ -706,7 +714,7 @@ sp
     display: none;
   }
   .siteHeaderSP__nav {
-    padding: 65px 15px 95px 15px;
+    padding: 45px 15px 95px 15px;
     background-color: #800707;
     z-index: 11;
     position: fixed;
@@ -718,10 +726,8 @@ sp
     display: none;
   }
   .siteHeaderSP__nav__logo {
-    width: 166px;
-    position: absolute;
-    top: 13px;
-    left: 15px;
+    width: 96px;
+    margin: 0 auto;
   }
   .siteHeaderSP__wrap__openBtn {
     padding: 27px 22px;
@@ -771,76 +777,46 @@ sp
     transform: rotate(45deg);
   }
   .siteHeaderSP.is-animation {
-    background: rgba(51, 0, 0, 0.8);
+    background: rgba(128, 7, 7, 0.7);
   }
   .siteHeaderSP__nav__cont__menu {
     padding-left: 0;
   }
   .siteHeaderSP__nav__cont__menu__item {
     text-align: center;
-    margin-top: 53px;
-  }
-  .siteHeaderSP__nav__cont__menu__item:first-child {
-    margin-top: 70px;
-  }
-  .siteHeaderSP__nav__cont__menu__item:first-child .siteHeaderSP__nav__cont__menu__item__link {
-    padding-right: 60px;
-    padding-left: 60px;
-  }
-  .siteHeaderSP__nav__cont__menu__item:last-child {
-    margin-top: 70px;
-    margin-bottom: 0;
-    border-right: 0;
-    border-left: 0;
   }
   .siteHeaderSP__nav__cont__menu__item:last-child .siteHeaderSP__nav__cont__menu__item__link {
-    background-color: #008C91;
-    position: relative;
-    border-left: 0;
-    border-right: 0;
-    width: 237px;
-    padding-top: 27px;
-    padding-bottom: 23px;
-    padding-right: 38px;
-    padding-left: 35px;
-    font-size: 2.2rem;
-    font-weight: 600;
-    text-align: left;
-  }
-  .siteHeaderSP__nav__cont__menu__item:last-child .siteHeaderSP__nav__cont__menu__item__link::after {
-    content: "";
-    background-image: url("../../_assets/images/pc/header_mail_icon.png");
-    position: absolute;
-    right: 28px;
-    top: 50%;
-    transform: translate(0, -50%);
-    background-position: center;
-    width: 28px;
-    height: 22px;
-    background-size: contain;
+    border-bottom: none;
   }
   .siteHeaderSP__nav__cont__menu__item__link {
     font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-    font-size: 2.4rem;
-    font-weight: 400;
     color: #fff;
-    padding-right: 38px;
-    padding-left: 38px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: 2rem;
+    line-height: 1.8;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
     line-height: 1;
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     text-align: center;
-    border-right: 1px solid #fff;
-    border-left: 1px solid #fff;
-    letter-spacing: 0.05rem;
+    width: 192px;
+    border-bottom: 1px solid #fff;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
-
-  .lowerKvSec__title {
-    font-size: calc(20vw / 3.75);
-    margin-bottom: 0;
-    position: absolute;
-    top: 77%;
-    left: 50%;
-    transform: translate(-50%, -77%);
+}
+@media screen and (max-width: 768px) and (max-width: 768px) {
+  .siteHeaderSP__nav__cont__menu__item__link {
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lowerKvSec {
+    height: 65px;
+    background-image: url("../../_assets/images/sp/lowerHeader_img_sp.jpg");
   }
 }
 /*====================================================================
@@ -852,7 +828,7 @@ siteFooter
   background-image: url("../../_assets/images/pc/footer_bg.png");
   background-position: center 25%;
   background-repeat: no-repeat;
-  background-size: 115% auto;
+  background-size: 80% auto;
 }
 .siteFooter__inner {
   display: block;
@@ -871,7 +847,7 @@ siteFooter
   text-align: center;
   margin-bottom: 48px;
 }
-.siteFooter__address, .siteFooter__phoneNumber {
+.siteFooter__address {
   color: #fff;
   color: #fff;
   font-size: 1.5rem;
@@ -882,8 +858,24 @@ siteFooter
   font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
 }
 @media screen and (max-width: 768px) {
-  .siteFooter__address, .siteFooter__phoneNumber {
-    font-size: 1.2rem;
+  .siteFooter__address {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+.siteFooter__phoneNumber {
+  color: #fff;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: 0.5rem;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+}
+@media screen and (max-width: 768px) {
+  .siteFooter__phoneNumber {
+    font-size: 2rem;
     line-height: 1.8;
   }
 }
@@ -948,7 +940,13 @@ siteFooter
   display: block;
 }
 .siteFooter__snsListItemlink {
-  width: 100%;
+  display: block;
+  transition: all 0.3s ease-in-out 0s;
+}
+@media screen and (min-width: 769px) {
+  .siteFooter__snsListItemlink:hover {
+    opacity: 0.6;
+  }
 }
 
 /*====================================================================
@@ -956,35 +954,33 @@ sp
 ====================================================================*/
 @media screen and (max-width: 768px) {
   .siteFooter {
-    padding-bottom: 194px;
-    background-image: url("../../_assets/images/sp/footer_bg.png");
+    padding-top: 40px;
+    padding-bottom: 44px;
+    background-image: url("../../_assets/images/sp/footer_bg_sp.png");
+    background-position: center 15%;
+    background-size: 55% auto;
   }
   .siteFooter__inner {
     margin-left: 0;
     position: relative;
-    padding-left: 57px;
     padding-right: 0;
     width: 100%;
   }
   .siteFooter__logo {
     display: block;
     width: 100%;
-    max-width: 70px;
-    margin-right: 60px;
+    max-width: 220px;
+    padding-left: 70px;
   }
   .siteFooter__navi {
-    margin-top: 10px;
-  }
-  .siteFooter__navItem {
-    padding-left: 40px;
+    display: none;
   }
   .siteFooter__addressArea {
-    bottom: -100px;
-    left: -120px;
-    padding-left: 0;
+    margin-bottom: 31px;
   }
-  .siteFooter__phoneNumber {
-    padding-left: 17px;
+  .siteFooter__address {
+    letter-spacing: 0.7rem;
+    margin-bottom: 20px;
   }
 }
 /*====================================================================
@@ -992,11 +988,6 @@ COMMON LAYOUT
 ====================================================================*/
 html {
   font-size: 62.5%;
-}
-@media screen and (max-width: 768px) {
-  html {
-    font-size: calc(10vw / 3.75);
-  }
 }
 
 body {

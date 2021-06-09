@@ -1,12 +1,13 @@
 footer.siteFooter
     .siteFooter__inner
         p.siteFooter__logo
-            img.u-pcDin(src="../_assets/images/pc/footer_logo.png", alt="真言宗豊山派 萱田山 長福寺 AKADERA")
-            img.u-spDin(src="../_assets/images/sp/footer_logo.png", alt="真言宗豊山派 萱田山 長福寺 AKADERA")
+            img(src="../_assets/images/pc/footer_logo.png", alt="真言宗豊山派 萱田山 長福寺 AKADERA")
         .siteFooter__innerBox
             .siteFooter__addressArea
                 p.siteFooter__address
-                    | 〒276-0043 千葉県八千代市萱田１４２７
+                    | 〒276-0043
+                    br
+                    | 千葉県八千代市萱田１４２７
                 a(href="tel:047-485-4030").siteFooter__phoneNumber
                     | TEL: 047-485-4030
             nav.siteFooter__navi
@@ -22,10 +23,10 @@ footer.siteFooter
                             | 交通案内
             ul.siteFooter__snsList
                 li.siteFooter__snsListItem
-                    a(href="#").siteFooter__snsListItem
+                    a(href="#").siteFooter__snsListItemlink
                         img(src="../_assets/images/pc/instagram_icon.svg", alt="instagram")
                 li.siteFooter__snsListItem
-                    a(href="#").siteFooter__snsListItem
+                    a(href="#").siteFooter__snsListItemlink
                         img(src="../_assets/images/pc/facebook_icon.svg", alt="facebook")
 
 
@@ -46,5 +47,5 @@ if isBootstrap
 
 
 //-  MAIN SCRIPT
-script(src=`${relativePath}/_assets/js/bundle.js`)
+script(src=`${relativePath}/_assets/js/index.js`)
 //-  MAIN SCRIPT
