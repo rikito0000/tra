@@ -1385,3 +1385,293 @@ ul li {
 .bottomSec__rightContBtnIcon {
   width: 62px;
 }
+
+/*====================================================================
+aboutPage
+====================================================================*/
+.aboutTopSec {
+  padding-top: 40px;
+}
+.aboutTopSec__topText {
+  display: block;
+  margin: 0 auto 25px;
+  width: 22px;
+  height: 206px;
+  padding-left: 5px;
+  border-left: 1px solid #910000;
+}
+.aboutTopSec__topTextImg {
+  width: 18.76px;
+}
+.aboutTopSec__topInner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 860px;
+}
+.aboutTopSec__topInner.mgb {
+  margin-bottom: 40px;
+}
+.aboutTopSec__topInner.images {
+  position: relative;
+}
+.aboutTopSec__topInnerImgBox {
+  position: absolute;
+}
+.aboutTopSec__topInnerImgBox.img01 {
+  width: 158px;
+  top: -70px;
+  left: -40px;
+}
+.aboutTopSec__topInnerImgBox.img02 {
+  width: 142px;
+  top: 50px;
+  left: -170px;
+}
+.aboutTopSec__topInnerImgBox.img03 {
+  width: 122px;
+  top: 190px;
+  left: -50px;
+}
+.aboutTopSec__topInnerImgBox.img04 {
+  width: 172px;
+  top: -76px;
+  right: -70px;
+}
+.aboutTopSec__topInnerImgBox.img05 {
+  width: 142px;
+  top: 70px;
+  right: -180px;
+}
+.aboutTopSec__topInnerImgBox.img06 {
+  width: 122px;
+  top: 190px;
+  right: -50px;
+}
+.aboutTopSec__kv {
+  width: 100%;
+}
+.aboutTopSec__text {
+  text-align: center;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 768px) {
+  .aboutTopSec__text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+.aboutTopSec__kvBottom {
+  background: #F4F0E6;
+  padding: 100px 0 85px;
+}
+.aboutTopSec__bottom {
+  padding: 44px 0 70px;
+}
+.aboutTopSec__bottomImg {
+  width: 100%;
+  max-width: 464px;
+  margin: 0 auto;
+}
+.aboutTopSec__bottomImgCap {
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  color: #800707;
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  margin-top: 28px;
+}
+@media screen and (max-width: 768px) {
+  .aboutTopSec__bottomImgCap {
+    font-size: 2.4rem;
+    line-height: 1.8;
+  }
+}
+
+.teachSec {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: #E5E5E5;
+}
+.teachSec__topText {
+  display: block;
+  margin: 0 auto 25px;
+  width: 22px;
+  height: 206px;
+  padding-left: 5px;
+  border-left: 1px solid #910000;
+}
+.teachSec__topTextImg {
+  width: 18.76px;
+}
+.teachSec__topInner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 860px;
+}
+.teachSec__topInner.mgb {
+  margin-bottom: 40px;
+}
+.teachSec__topArea {
+  width: 420px;
+  margin: 0 auto 58px;
+}
+.teachSec__topAreaText {
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  padding-left: 3.7em;
+  text-indent: -3.7em;
+}
+@media screen and (max-width: 768px) {
+  .teachSec__topAreaText {
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+}
+.teachSec__bottomArea {
+  width: 1016px;
+  margin: 0 auto;
+}
+.teachSec__bottomList {
+  width: 100%;
+  padding-left: 0;
+}
+.teachSec__bottomListItem {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.teachSec__bottomListItem:first-child {
+  margin-bottom: 56px;
+}
+.teachSec__bottomListItem:nth-child(2) {
+  margin-bottom: 32px;
+}
+.teachSec__bottomListItemText {
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 768px) {
+  .teachSec__bottomListItemText {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+.teachSec__bottomListItemText.left {
+  width: 14%;
+  background: #fff;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.teachSec__bottomListItemText.right {
+  width: calc(100% - 14%);
+  padding-left: 14px;
+}
+.teachSec__bottomAreaBottomText {
+  text-align: right;
+  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.5;
+  letter-spacing: 0.1rem;
+}
+@media screen and (max-width: 768px) {
+  .teachSec__bottomAreaBottomText {
+    font-size: 1.6rem;
+    line-height: 1.8;
+  }
+}
+
+.actionSec {
+  padding-top: 40px;
+}
+.actionSec__topText {
+  display: block;
+  margin: 0 auto 25px;
+  width: 22px;
+  height: 206px;
+  padding-left: 5px;
+  border-left: 1px solid #910000;
+}
+.actionSec__topTextImg {
+  width: 18.76px;
+}
+.actionSec__topInner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 860px;
+}
+.actionSec__topInner.mgb {
+  margin-bottom: 40px;
+}
+
+.funeralSec {
+  padding-top: 40px;
+}
+.funeralSec__topText {
+  display: block;
+  margin: 0 auto 25px;
+  width: 22px;
+  height: 206px;
+  padding-left: 5px;
+  border-left: 1px solid #910000;
+}
+.funeralSec__topTextImg {
+  width: 18.76px;
+}
+.funeralSec__topInner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 860px;
+}
+.funeralSec__topInner.mgb {
+  margin-bottom: 40px;
+}
+
+.precinctsSec {
+  padding-top: 40px;
+}
+.precinctsSec__topText {
+  display: block;
+  margin: 0 auto 25px;
+  width: 22px;
+  height: 206px;
+  padding-left: 5px;
+  border-left: 1px solid #910000;
+}
+.precinctsSec__topTextImg {
+  width: 18.76px;
+}
+.precinctsSec__topInner {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 860px;
+}
+.precinctsSec__topInner.mgb {
+  margin-bottom: 40px;
+}
