@@ -1,3 +1,354 @@
-.aboutPage {
+/*====================================================================
+aboutPage
+====================================================================*/
+.aboutTopSec {
+  padding-top: 40px;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
+  &__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid $red02;
+  }
+  &__topTextImg {
+    width: 18.76px;
+  }
+  &__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px;
+    &.mgb {
+      margin-bottom: 40px;
+    }
+    &.images{
+      position: relative;
+    }
+  }
+  &__topInnerImgBox {
+    position: absolute;
+    &.img01 {
+      width: 158px;
+      top: -70px;
+      left: -40px;
+    }
+    &.img02 {
+      width: 142px;
+      top: 50px;
+      left: -170px;
+    }
+    &.img03 {
+      width: 122px;
+      top: 190px;
+      left: -50px;
+    }
+    &.img04 {
+      width: 172px;
+      top: -76px;
+      right: -70px;
+    }
+    &.img05 {
+      width: 142px;
+      top: 70px;
+      right: -180px;
+    }
 
+    &.img06 {
+      width: 122px;
+      top: 190px;
+      right: -50px;
+    }
+
+  }
+  &__kv {
+    width: 100%;
+  }
+  &__text {
+    text-align: center;
+    @include u-fontMincho;
+    @include u-articleText($color:$black,$fz: 1.6rem, $fzSP: 1.6rem, $lh:2.5 ,$lts: 0.1rem);
+  }
+
+  &__kvBottom {
+    background: $beige01;
+    padding: 100px 0 85px;
+  }
+
+  &__bottom {
+    padding: 44px 0 70px;
+  }
+
+  &__bottomImg {
+    width: 100%;
+    max-width: 464px;
+    margin: 0 auto;
+  }
+  &__bottomImgCap {
+    @include u-fontMincho;
+    @include u-articleText($color:$red01 ,$fz: 2.4rem, $fzSP: 2.4rem, $lh:1 ,$lts: 0.05rem);
+    text-align: center;
+    margin-top: 28px;
+  }
+
+}
+
+
+.teachSec {
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background: $gray01;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
+  &__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid $red02;
+  }
+  &__topTextImg {
+    width: 18.76px;
+  }
+  &__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px;
+    &.mgb {
+      margin-bottom: 40px;
+    }
+  }
+  &__topArea {
+    width: 420px;
+    margin: 0 auto 58px;
+  }
+  &__topAreaText {
+    @include u-fontMincho;
+    @include u-articleText($color:$black ,$fz: 2rem, $fzSP: 2rem, $lh:2 ,$lts: 0.1rem);
+    padding-left:3.7em;
+    text-indent:-3.7em;
+  }
+
+  &__bottomArea {
+    width: 1016px;
+    margin: 0 auto;
+  }
+
+  &__bottomList {
+    width: 100%;
+    padding-left: 0
+  }
+
+  &__bottomListItem {
+    @include u-flex;
+    &:first-child {
+      margin-bottom: 56px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 32px;
+    }
+  }
+  &__bottomListItemText {
+    @include u-fontMincho;
+    @include u-articleText($color:$black ,$fz: 1.6rem, $fzSP: 1.6rem, $lh:2.5 ,$lts: 0.1rem);
+    &.left {
+      width: 14%;
+      background: $white;
+      @include u-flex($ai:center,$jc:center);
+    }
+    &.right {
+      width: calc(100% - 14%);
+      padding-left: 14px;
+    }
+  }
+
+  &__bottomAreaBottomText {
+    text-align: right;
+    @include u-fontMincho;
+    @include u-articleText($color:$black ,$fz: 1.6rem, $fzSP: 1.6rem, $lh:2.5 ,$lts: 0.1rem);
+  }
+
+}
+.actionSec {
+  padding-top: 255px;
+  padding-bottom: 29px;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
+  &__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid $red02;
+  }
+  &__topTextImg {
+    width: 18.76px;
+  }
+  &__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px;
+    &.mgb {
+      margin-bottom: 40px;
+    }
+  }
+  &__textList {
+    @include u-flex($fd:row-reverse,$jc:space-between);
+    width: 458px;
+    margin: 0 auto 23px;
+    padding-left: 0;
+  }
+  &__textListItem {
+  }
+  &__textListItemText {
+    width: 20px;
+  }
+  &__imgList {
+    @include u-flex($jc:space-between);
+    width: 1020px;
+    padding-left: 0;
+    margin: 0 auto;
+
+  }
+  &__imgListItemImgBox {
+    width: 248px;
+
+  }
+
+}
+.funeralSec {
+  padding-top: 40px;
+  padding-bottom: 72px;
+  background: $purple01;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
+  &__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid $red02;
+  }
+  &__topTextImg {
+    width: 18.76px;
+  }
+  &__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px;
+    &.mgb {
+      margin-bottom: 40px;
+    }
+  }
+  &__imgBox {
+    margin: 0 auto 61px;
+    width: 100%;
+    max-width: 834px;
+  }
+  &__textBox {
+    text-align: center;
+  }
+  &__textBoxText {
+    @include u-fontMincho;
+    @include u-articleText($color:$black ,$fz: 1.6rem, $fzSP: 1.6rem, $lh:2.5 ,$lts: 0.1rem);
+    &.u-colorRed {
+      font-size: 2rem;
+      color: $red01;
+    }
+    &.u-border {
+      border: 1px solid $red01;
+      display: inline-block;
+      line-height: 1;
+      padding: 14px 26px;
+    }
+    &.mgb25 {
+      margin-bottom: 25px;
+    }
+    &.mgb10 {
+      margin-bottom: 10px;
+    }
+
+  }
+}
+.precinctsSec {
+  background: $beige01;
+  padding-top: 40px;
+  &__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px;
+  }
+  &__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid $red02;
+  }
+  &__topTextImg {
+    width: 18.76px;
+  }
+  &__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
+    &.mgb {
+      margin-bottom: 40px;
+    }
+  }
+  &__imgBox {
+    margin: -160px auto 61px;
+    width: 100%;
+    max-width: 640px;
+    padding-right: 40px;
+  }
+  &__imgList {
+    margin: 0 auto;
+    width: 1020px;
+    @include u-flex($jc: space-between,$fw: wrap);
+    padding-left: 0;
+
+  }
+  &__imgListItem {
+    width: 23%;
+    margin-bottom: 70px;
+  }
+  &__imgListImgCap {
+    margin-top: 8px;
+    text-align:center;
+    @include u-fontMincho;
+    @include u-articleText($color:$red01 ,$fz: 1.6rem, $fzSP: 1.6rem, $lh:2 ,$lts: 0.1rem);
+    &.fs14 {
+      font-size: 1.4rem;
+    }
+  }
+  &__imgListImgCapBorder {
+    border: 1px solid $red01;
+    font-size: 1.2rem;
+    line-height: 0;
+    padding: 3px 24px;
+
+  }
 }
