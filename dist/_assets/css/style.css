@@ -1508,6 +1508,9 @@ aboutPage
 /*====================================================================
 topPageFvSec
 ====================================================================*/
+/*====================
+共通
+====================*/
 img {
   width: 100%;
 }
@@ -1534,17 +1537,16 @@ ul li {
   margin-bottom: 0;
 }
 
-.cemeterySec {
-  width: 100%;
-}
+/*====================
+Top
+====================*/
 @media screen and (max-width: 768px) {
   .cemeterySec {
     background-image: url("../images/cemeteryTopSec/cemeteryBg_sp.jpg");
   }
 }
 .cemeterySec__topCont {
-  width: 100%;
-  background-image: url("../images/cemeteryTopSec/body_pc.jpg");
+  background: url("../images/cemeteryTopSec/body_pc.jpg");
   background-size: cover;
 }
 .cemeterySec__topContInr {
@@ -1575,7 +1577,6 @@ ul li {
 @media screen and (max-width: 768px) {
   .cemeterySec__bottomContList {
     flex-direction: column;
-    justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1592,10 +1593,7 @@ ul li {
   font-weight: 100;
   font-family: YuMincho, Yu Mincho, serif;
   margin-left: 0;
-  /* 縦書きにする */
-  /* 縦書きにする */
   writing-mode: vertical-rl;
-  /* 縦書きにする */
 }
 @media screen and (max-width: 768px) {
   .cemeterySec__topContText {
@@ -1624,13 +1622,9 @@ ul li {
   }
 }
 .cemeterySec__topContBottomText {
-  text-align: center;
-  color: #800707;
   font-size: 32px;
-  font-weight: 600;
-  font-family: YuMincho, Yu Mincho, serif;
+  text-align: center;
   padding-top: 52px;
-  margin-bottom: 0;
   line-height: 1.8;
   letter-spacing: 2px;
 }
@@ -1642,19 +1636,15 @@ ul li {
   }
 }
 .cemeterySec__bottomContTopText {
-  color: #800707;
   font-size: 28px;
-  font-weight: 600;
-  font-family: YuMincho, Yu Mincho, serif;
 }
 .cemeterySec__bottomContText {
-  color: #800707;
-  font-size: 20px;
   font-weight: 500px;
-  font-family: YuMincho, Yu Mincho, serif;
-  margin-bottom: 0;
 }
 
+/*====================
+middle
+====================*/
 .cemeteryMiddleSec {
   margin: 0 auto;
   background-color: #d9d8c4;
@@ -1683,10 +1673,13 @@ ul li {
   .cemeteryMiddleSec__contListItem:nth-of-type(1), .cemeteryMiddleSec__contListItem:nth-of-type(2) {
     margin-bottom: 3px;
   }
-  .cemeteryMiddleSec__contListItem:last-child {
+  .cemeteryMiddleSec__contListItem:nth-of-type(2) li .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
+    padding: 0 12px 0 0;
+  }
+  .cemeteryMiddleSec__contListItem:nth-of-type(3) {
     padding: 29px 11px 47px;
   }
-  .cemeteryMiddleSec__contListItem:last-child li {
+  .cemeteryMiddleSec__contListItem:nth-of-type(3) li {
     justify-content: start;
   }
 }
@@ -1764,13 +1757,11 @@ ul li {
 .cemeteryMiddleSec__itemMiddleDescPrice {
   color: #000;
   font-size: 33px;
-  font-weight: 600;
-  font-family: YuMincho, Yu Mincho, serif;
   line-height: 1;
 }
 @media screen and (max-width: 768px) {
   .cemeteryMiddleSec__itemMiddleDescPrice {
-    font-size: 27px;
+    font-size: 25px;
   }
 }
 .cemeteryMiddleSec__itemMiddleDescPrice .cemeteryMiddleSec__price {
@@ -1802,9 +1793,10 @@ ul li {
 }
 .cemeteryMiddleSec__itemMiddleDescPriceDetails.second {
   font-size: 16px;
+  transform: translateY(10px);
 }
 .cemeteryMiddleSec__itemMiddleDescPriceText {
-  width: 150px;
+  width: 145px;
   display: flex;
   justify-content: space-between;
   font-size: 24px;
@@ -1812,6 +1804,7 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .cemeteryMiddleSec__itemMiddleDescPriceText {
+    width: 120px;
     font-size: 20px;
   }
 }
@@ -1835,13 +1828,14 @@ ul li {
 }
 @media screen and (max-width: 768px) {
   .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
-    padding: 0 5px 0 10px;
+    padding: 0 0 0 11px;
   }
 }
 .cemeteryMiddleSec__itemMiddleDescWideDetails {
-  font-size: 12px;
-  color: #000;
+  display: inline-block;
   text-align: left;
+  color: #000;
+  font-size: 12px;
   margin-top: 10px;
 }
 .cemeteryMiddleSec__itemMiddleDesc {
@@ -1897,23 +1891,19 @@ ul li {
 }
 .cemeteryMiddleSec__itemMiddleDescPriceItem:last-child {
   border-bottom: 1px solid #888;
+  margin-bottom: 26px;
 }
 @media screen and (max-width: 768px) {
   .cemeteryMiddleSec__itemMiddleDescPriceItem {
     justify-content: space-around;
   }
-  .cemeteryMiddleSec__itemMiddleDescPriceItem:nth-of-type(5) {
-    justify-content: start;
-  }
-}
-.cemeteryMiddleSec .pd {
-  margin-bottom: 70px;
 }
 .cemeteryMiddleSec__itemMiddleDescPriceList {
   padding: 13px 0 0 0;
   line-height: 0.7;
 }
 .cemeteryMiddleSec__itemMiddleDescFig {
+  display: block;
   width: 437px;
   padding-bottom: 20px;
   margin-bottom: 0;
@@ -1960,6 +1950,9 @@ ul li {
   margin-bottom: 0;
 }
 
+/*====================
+bottom
+====================*/
 .cemeteryBottomSec {
   width: 100%;
   background-color: #edca6a;

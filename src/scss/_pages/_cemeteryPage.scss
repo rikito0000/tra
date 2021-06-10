@@ -1,6 +1,10 @@
 /*====================================================================
 topPageFvSec
 ====================================================================*/
+
+/*====================
+共通
+====================*/
 img {
   width: 100%;
 }
@@ -20,30 +24,29 @@ ul li {
 }
 
 .font {
-  color: #800707;
+  color: $red01;
   font-size: 20px;
   font-weight: 600;
   font-family: YuMincho, Yu Mincho, serif;
   margin-bottom: 0;
 }
 
+/*====================
+Top
+====================*/
 .cemeterySec {
-  width: 100%;
-
   // SP
   @include u-mqMax {
     background-image: url("../images/cemeteryTopSec/cemeteryBg_sp.jpg");
   }
 
   &__topCont {
-    width: 100%;
-    background-image: url("../images/cemeteryTopSec/body_pc.jpg");
+    background: url("../images/cemeteryTopSec/body_pc.jpg");
     background-size: cover;
   }
 
   &__topContInr {
     padding: 60px 0 230px;
-
     // SP
     @include u-mqMax {
       padding: 30px 0 230px;
@@ -54,7 +57,6 @@ ul li {
     width: 1075px;
     margin: 0 auto;
     text-align: center;
-
     // SP
     @include u-mqMax {
       width: 100%;
@@ -71,7 +73,6 @@ ul li {
     // SP
     @include u-mqMax {
       flex-direction: column;
-      justify-content: center;
     }
   }
 
@@ -91,9 +92,9 @@ ul li {
     font-weight: 100;
     font-family: YuMincho, Yu Mincho, serif;
     margin-left: 0;
-    -webkit-writing-mode: vertical-rl; /* 縦書きにする */
-    -ms-writing-mode: tb-rl; /* 縦書きにする */
-    writing-mode: vertical-rl; /* 縦書きにする */
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
 
     // SP
     @include u-mqMax {
@@ -125,39 +126,36 @@ ul li {
   }
 
   &__topContBottomText {
-    text-align: center;
-    color: #800707;
     font-size: 32px;
-    font-weight: 600;
-    font-family: YuMincho, Yu Mincho, serif;
+    text-align: center;
     padding-top: 52px;
-    margin-bottom: 0;
     line-height: 1.8;
     letter-spacing: 2px;
     // SP
     @include u-mqMax {
       font-size: 24px;
-      padding:  18px 79px 0 79px;
+      padding: 18px 79px 0 79px;
       letter-spacing: 0;
     }
   }
 
   &__bottomContTopText {
-    color: #800707;
     font-size: 28px;
-    font-weight: 600;
-    font-family: YuMincho, Yu Mincho, serif;
   }
 
   &__bottomContText {
-    color: #800707;
-    font-size: 20px;
     font-weight: 500px;
-    font-family: YuMincho, Yu Mincho, serif;
-    margin-bottom: 0;
   }
 }
 
+
+
+
+
+
+/*====================
+middle
+====================*/
 .cemeteryMiddleSec {
   margin: 0 auto;
   background-color: #d9d8c4;
@@ -189,7 +187,17 @@ ul li {
         margin-bottom: 3px;
       }
 
-      &:last-child {
+      &:nth-of-type(2) {
+        li {
+          .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
+            padding: 0 12px 0 0;
+          }
+        }
+      }
+
+
+
+      &:nth-of-type(3) {
         padding: 29px 11px 47px;
 
         li {
@@ -229,7 +237,7 @@ ul li {
     }
 
     &.red {
-      color: #800707;
+      color: $red01;
     }
 
     &.green {
@@ -243,7 +251,7 @@ ul li {
 
   &__itemTopDescText {
     font-size: 18px;
-    color: #000;
+    color: $black;
     line-height: 1.7;
     letter-spacing: 2px;
   }
@@ -285,14 +293,13 @@ ul li {
   }
 
   &__itemMiddleDescPrice {
-    color: #000;
+    color: $black;
     font-size: 33px;
-    font-weight: 600;
-    font-family: YuMincho, Yu Mincho, serif;
+
     line-height: 1;
     // SP
     @include u-mqMax {
-      font-size: 27px;
+      font-size: 25px;
     }
 
     & .cemeteryMiddleSec__price {
@@ -322,22 +329,25 @@ ul li {
 
   &__itemMiddleDescPriceDetails {
     font-size: 12px;
-    color: #000;
+    color: $black;
     transform: translateY(5px);
 
     &.second {
       font-size: 16px;
+      transform: translateY(10px);
     }
   }
 
   &__itemMiddleDescPriceText {
-    width: 150px;
+    width: 145px;
     display: flex;
     justify-content: space-between;
     font-size: 24px;
-    color: #000;
+    color: $black;
+
     // SP
     @include u-mqMax {
+      width: 120px;
       font-size: 20px;
     }
 
@@ -349,7 +359,7 @@ ul li {
 
   &__itemMiddleDescPriceTextSec {
     font-size: 24px;
-    color: #000;
+    color: $black;
     padding: 0 24px;
     // SP
     @include u-mqMax {
@@ -362,15 +372,16 @@ ul li {
 
       // SP
       @include u-mqMax {
-      padding: 0 5px 0 10px;
+        padding: 0 0 0 11px;
       }
     }
   }
 
   &__itemMiddleDescWideDetails {
-    font-size: 12px;
-    color: #000;
+    display: inline-block;
     text-align: left;
+    color: $black;
+    font-size: 12px;
     margin-top: 10px;
   }
 
@@ -414,7 +425,7 @@ ul li {
 
   &__itemMiddleText {
     font-size: 24px;
-    color: #000;
+    color: $black;
   }
 
   &__itemMiddleDescPriceItem {
@@ -429,20 +440,13 @@ ul li {
 
     &:last-child {
       border-bottom: 1px solid #888;
+      margin-bottom: 26px;
     }
 
     // SP
     @include u-mqMax {
       justify-content: space-around;
-
-      &:nth-of-type(5) {
-        justify-content: start;
-      }
     }
-  }
-
-  .pd {
-    margin-bottom: 70px;
   }
 
   &__itemMiddleDescPriceList {
@@ -450,7 +454,7 @@ ul li {
     line-height: 0.7;
   }
 
-  &__itemMiddleDescFig {
+  &__itemMiddleDescFig {display: block;
     width: 437px;
     padding-bottom: 20px;
     margin-bottom: 0;
@@ -502,6 +506,14 @@ ul li {
   }
 }
 
+
+
+
+
+
+/*====================
+bottom
+====================*/
 .cemeteryBottomSec {
   width: 100%;
   background-color: #edca6a;
@@ -524,7 +536,7 @@ ul li {
   &__rightContact,
   &__leftContact {
     font-size: 36px;
-    color: #000;
+    color: $black;
     line-height: 1;
     // SP
     @include u-mqMax {
@@ -535,7 +547,7 @@ ul li {
   &__leftHourText {
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
       "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    color: #000;
+    color: $black;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.3;
@@ -550,7 +562,7 @@ ul li {
 
   &__leftTel {
     font-size: 62px;
-    color: #000;
+    color: $black;
 
     // SP
     @include u-mqMax {
@@ -562,7 +574,7 @@ ul li {
 
   &__rightContactBtn {
     font-size: 34px;
-    color: #000;
+    color: $black;
     margin-left: 19px;
 
     // SP
