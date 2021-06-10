@@ -1882,17 +1882,9 @@ middle
   border-top: 1px solid #888;
   padding: 16px 0;
 }
-.cemeteryMiddleSec__itemMiddleDescPriceItem.second {
-  justify-content: space-around;
-}
 .cemeteryMiddleSec__itemMiddleDescPriceItem:last-child {
   border-bottom: 1px solid #888;
   margin-bottom: 26px;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescPriceItem {
-    justify-content: space-around;
-  }
 }
 .cemeteryMiddleSec__itemMiddleDescPriceList {
   padding: 13px 0 0 0;

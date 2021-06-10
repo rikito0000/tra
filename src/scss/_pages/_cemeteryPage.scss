@@ -430,19 +430,11 @@ middle
     border-top: 1px solid #888;
     padding: 16px 0;
 
-    &.second {
-      justify-content: space-around;
-    }
-
     &:last-child {
       border-bottom: 1px solid #888;
       margin-bottom: 26px;
     }
 
-    // SP
-    @include u-mqMax {
-      justify-content: space-around;
-    }
   }
 
   &__itemMiddleDescPriceList {
