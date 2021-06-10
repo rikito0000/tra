@@ -87,31 +87,26 @@ Top
     margin-bottom: 0;
   }
 
-  &__topContText {
-    font-size: 20px;
-    font-weight: 100;
-    font-family: YuMincho, Yu Mincho, serif;
-    margin-left: 0;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-
-    // SP
-    @include u-mqMax {
-      font-size: 16px;
-      padding: 0;
-    }
-  }
 
   &__topContInfo {
-    width: 20px;
+    width: 22px;
     height: 206px;
     margin: 0 auto;
-    border-left: 1.5px solid #910000;
+    padding-left: 5px;
+    border-left: 1px solid #910000;
 
     // SP
     @include u-mqMax {
       height: 172px;
+    }
+  }
+
+  &__topContInfoImg {
+    width: 19.18px;
+
+     // SP
+    @include u-mqMax {
+      width: 16px;
     }
   }
 
@@ -128,9 +123,10 @@ Top
   &__topContBottomText {
     font-size: 32px;
     text-align: center;
-    padding-top: 52px;
     line-height: 1.8;
     letter-spacing: 2px;
+    padding-top: 48px;
+
     // SP
     @include u-mqMax {
       font-size: 24px;

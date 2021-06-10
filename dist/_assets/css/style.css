@@ -1588,28 +1588,24 @@ Top
   width: 271px;
   margin-bottom: 0;
 }
-.cemeterySec__topContText {
-  font-size: 20px;
-  font-weight: 100;
-  font-family: YuMincho, Yu Mincho, serif;
-  margin-left: 0;
-  writing-mode: vertical-rl;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__topContText {
-    font-size: 16px;
-    padding: 0;
-  }
-}
 .cemeterySec__topContInfo {
-  width: 20px;
+  width: 22px;
   height: 206px;
   margin: 0 auto;
-  border-left: 1.5px solid #910000;
+  padding-left: 5px;
+  border-left: 1px solid #910000;
 }
 @media screen and (max-width: 768px) {
   .cemeterySec__topContInfo {
     height: 172px;
+  }
+}
+.cemeterySec__topContInfoImg {
+  width: 19.18px;
+}
+@media screen and (max-width: 768px) {
+  .cemeterySec__topContInfoImg {
+    width: 16px;
   }
 }
 .cemeterySec__bottomContItemText {
@@ -1624,9 +1620,9 @@ Top
 .cemeterySec__topContBottomText {
   font-size: 32px;
   text-align: center;
-  padding-top: 52px;
   line-height: 1.8;
   letter-spacing: 2px;
+  padding-top: 48px;
 }
 @media screen and (max-width: 768px) {
   .cemeterySec__topContBottomText {
