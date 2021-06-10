@@ -213,8 +213,7 @@ aboutPage
     margin: 0 auto 23px;
     padding-left: 0;
   }
-  &__textListItem {
-  }
+
   &__textListItemText {
     width: 20px;
   }
@@ -223,7 +222,6 @@ aboutPage
     width: 1020px;
     padding-left: 0;
     margin: 0 auto;
-
   }
   &__imgListItemImgBox {
     width: 248px;
@@ -329,8 +327,8 @@ aboutPage
     width: 1020px;
     @include u-flex($jc: space-between,$fw: wrap);
     padding-left: 0;
-
   }
+
   &__imgListItem {
     width: 23%;
     margin-bottom: 70px;
@@ -352,3 +350,5 @@ aboutPage
 
   }
 }
+
+
