@@ -1099,38 +1099,38 @@ ul li {
   margin-bottom: 0;
 }
 
-.cemetarySec {
+.cemeterySec {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec {
-    background-image: url("../images/cemetaryTopSec/cemetaryBg_sp.jpg");
+  .cemeterySec {
+    background-image: url("../images/cemeteryTopSec/cemeteryBg_sp.jpg");
   }
 }
-.cemetarySec__topCont {
+.cemeterySec__topCont {
   width: 100%;
-  background-image: url("../images/cemetaryTopSec/body_pc.jpg");
+  background-image: url("../images/cemeteryTopSec/body_pc.jpg");
   background-size: cover;
 }
-.cemetarySec__topContInr {
+.cemeterySec__topContInr {
   padding: 60px 0 230px;
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec__topContInr {
+  .cemeterySec__topContInr {
     padding: 30px 0 230px;
   }
 }
-.cemetarySec__bottomCont {
+.cemeterySec__bottomCont {
   width: 1075px;
   margin: 0 auto;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec__bottomCont {
+  .cemeterySec__bottomCont {
     width: 100%;
   }
 }
-.cemetarySec__bottomContList {
+.cemeterySec__bottomContList {
   display: flex;
   justify-content: space-around;
   margin-top: -150px;
@@ -1138,21 +1138,21 @@ ul li {
   padding-left: 0;
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec__bottomContList {
+  .cemeterySec__bottomContList {
     flex-direction: column;
     justify-content: center;
   }
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec__bottomContListItem {
+  .cemeterySec__bottomContListItem {
     margin: 0 auto;
   }
 }
-.cemetarySec__bottomContItemFig {
+.cemeterySec__bottomContItemFig {
   width: 271px;
   margin-bottom: 0;
 }
-.cemetarySec__topContText {
+.cemeterySec__topContText {
   font-size: 20px;
   font-weight: 100;
   font-family: YuMincho, Yu Mincho, serif;
@@ -1163,32 +1163,32 @@ ul li {
   /* 縦書きにする */
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec__topContText {
+  .cemeterySec__topContText {
     font-size: 16px;
     padding: 0;
   }
 }
-.cemetarySec__topContInfo {
+.cemeterySec__topContInfo {
   width: 20px;
   height: 206px;
   margin: 0 auto;
   border-left: 1.5px solid #910000;
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec__topContInfo {
+  .cemeterySec__topContInfo {
     height: 172px;
   }
 }
-.cemetarySec__bottomContItemText {
+.cemeterySec__bottomContItemText {
   padding: 29px 0 27px;
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec__bottomContItemText {
+  .cemeterySec__bottomContItemText {
     margin: 0 auto;
     padding: 29px 0 50px;
   }
 }
-.cemetarySec__topContBottomText {
+.cemeterySec__topContBottomText {
   text-align: center;
   color: #800707;
   font-size: 32px;
@@ -1200,19 +1200,19 @@ ul li {
   letter-spacing: 2px;
 }
 @media screen and (max-width: 768px) {
-  .cemetarySec__topContBottomText {
+  .cemeterySec__topContBottomText {
     font-size: 24px;
     padding: 18px 79px 0 79px;
     letter-spacing: 0;
   }
 }
-.cemetarySec__bottomContTopText {
+.cemeterySec__bottomContTopText {
   color: #800707;
   font-size: 28px;
   font-weight: 600;
   font-family: YuMincho, Yu Mincho, serif;
 }
-.cemetarySec__bottomContText {
+.cemeterySec__bottomContText {
   color: #800707;
   font-size: 20px;
   font-weight: 500px;
@@ -1220,54 +1220,54 @@ ul li {
   margin-bottom: 0;
 }
 
-.cemetaryMiddleSec {
+.cemeteryMiddleSec {
   margin: 0 auto;
   background-color: #d9d8c4;
 }
-.cemetaryMiddleSec__inr {
+.cemeteryMiddleSec__inr {
   width: 1075px;
   margin: 0 auto;
   padding: 78px 0;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__inr {
+  .cemeteryMiddleSec__inr {
     width: 100%;
     padding: 46px 10px 35px;
   }
 }
-.cemetaryMiddleSec__contListItem {
+.cemeteryMiddleSec__contListItem {
   background-color: #fff;
   padding: 39px 77px 26px;
   margin-bottom: 34px;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__contListItem {
+  .cemeteryMiddleSec__contListItem {
     padding: 29px 11px 18px;
     margin-bottom: 0;
   }
-  .cemetaryMiddleSec__contListItem:nth-of-type(1), .cemetaryMiddleSec__contListItem:nth-of-type(2) {
+  .cemeteryMiddleSec__contListItem:nth-of-type(1), .cemeteryMiddleSec__contListItem:nth-of-type(2) {
     margin-bottom: 3px;
   }
-  .cemetaryMiddleSec__contListItem:last-child {
+  .cemeteryMiddleSec__contListItem:last-child {
     padding: 29px 11px 47px;
   }
-  .cemetaryMiddleSec__contListItem:last-child li {
+  .cemeteryMiddleSec__contListItem:last-child li {
     justify-content: start;
   }
 }
-.cemetaryMiddleSec__contList {
+.cemeteryMiddleSec__contList {
   padding: 0;
 }
-.cemetaryMiddleSec__itemTitle {
+.cemeteryMiddleSec__itemTitle {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemTitle {
+  .cemeteryMiddleSec__itemTitle {
     flex-direction: column;
   }
 }
-.cemetaryMiddleSec__itemTitleText {
+.cemeteryMiddleSec__itemTitleText {
   font-size: 60px;
   font-weight: 600;
   font-family: YuMincho, Yu Mincho, serif;
@@ -1276,37 +1276,37 @@ ul li {
   line-height: 1;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemTitleText {
+  .cemeteryMiddleSec__itemTitleText {
     font-size: 32px;
     text-align: center;
     padding-bottom: 15px;
   }
 }
-.cemetaryMiddleSec__itemTitleText.red {
+.cemeteryMiddleSec__itemTitleText.red {
   color: #800707;
 }
-.cemetaryMiddleSec__itemTitleText.green {
+.cemeteryMiddleSec__itemTitleText.green {
   color: #25500f;
 }
-.cemetaryMiddleSec__itemTitleText.blue {
+.cemeteryMiddleSec__itemTitleText.blue {
   color: #0f1250;
 }
-.cemetaryMiddleSec__itemTopDescText {
+.cemeteryMiddleSec__itemTopDescText {
   font-size: 18px;
   color: #000;
   line-height: 1.7;
   letter-spacing: 2px;
 }
-.cemetaryMiddleSec__itemTitleInfo {
+.cemeteryMiddleSec__itemTitleInfo {
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemTitleInfo {
+  .cemeteryMiddleSec__itemTitleInfo {
     justify-content: center;
     padding-bottom: 23px;
   }
 }
-.cemetaryMiddleSec__itemTitleInfoLeft, .cemetaryMiddleSec__itemTitleInfoRight {
+.cemeteryMiddleSec__itemTitleInfoLeft, .cemeteryMiddleSec__itemTitleInfoRight {
   width: 168px;
   height: 50px;
   color: #fff;
@@ -1314,19 +1314,19 @@ ul li {
   line-height: 1;
   padding: 16px 0 13px;
 }
-.cemetaryMiddleSec__itemTitleInfoLeft.bgRed, .cemetaryMiddleSec__itemTitleInfoRight.bgRed {
+.cemeteryMiddleSec__itemTitleInfoLeft.bgRed, .cemeteryMiddleSec__itemTitleInfoRight.bgRed {
   background-color: #811102;
 }
-.cemetaryMiddleSec__itemTitleInfoLeft.bgGreen, .cemetaryMiddleSec__itemTitleInfoRight.bgGreen {
+.cemeteryMiddleSec__itemTitleInfoLeft.bgGreen, .cemeteryMiddleSec__itemTitleInfoRight.bgGreen {
   background-color: #25500f;
 }
-.cemetaryMiddleSec__itemTitleInfoLeft.bgBlue, .cemetaryMiddleSec__itemTitleInfoRight.bgBlue {
+.cemeteryMiddleSec__itemTitleInfoLeft.bgBlue, .cemeteryMiddleSec__itemTitleInfoRight.bgBlue {
   background-color: #0f1250;
 }
-.cemetaryMiddleSec__itemTitleInfoRight {
+.cemeteryMiddleSec__itemTitleInfoRight {
   margin-left: 12px;
 }
-.cemetaryMiddleSec__itemMiddleDescPrice {
+.cemeteryMiddleSec__itemMiddleDescPrice {
   color: #000;
   font-size: 33px;
   font-weight: 600;
@@ -1334,38 +1334,41 @@ ul li {
   line-height: 1;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescPrice {
+  .cemeteryMiddleSec__itemMiddleDescPrice {
     font-size: 27px;
   }
 }
-.cemetaryMiddleSec__itemMiddleDescPrice .cemetaryMiddleSec__price {
+.cemeteryMiddleSec__itemMiddleDescPrice .cemeteryMiddleSec__price {
   display: inline-block;
   font-size: 66px;
   line-height: 1;
   transform: translateY(5px);
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescPrice .cemetaryMiddleSec__price {
+  .cemeteryMiddleSec__itemMiddleDescPrice .cemeteryMiddleSec__price {
     font-size: 56px;
   }
 }
-.cemetaryMiddleSec__itemMiddleDescRight {
+.cemeteryMiddleSec__itemMiddleDescRight {
   text-align: center;
 }
-.cemetaryMiddleSec__itemMiddleDescRight.second {
+.cemeteryMiddleSec__itemMiddleDescRight.second {
   padding-right: 20px;
 }
-.cemetaryMiddleSec__itemMiddleDescPriceDetails {
+@media screen and (max-width: 768px) {
+  .cemeteryMiddleSec__itemMiddleDescRight.second {
+    padding-right: 0;
+  }
+}
+.cemeteryMiddleSec__itemMiddleDescPriceDetails {
   font-size: 12px;
-  padding-right: 20px;
   color: #000;
-  letter-spacing: 1px;
   transform: translateY(5px);
 }
-.cemetaryMiddleSec__itemMiddleDescPriceDetails.second {
+.cemeteryMiddleSec__itemMiddleDescPriceDetails.second {
   font-size: 16px;
 }
-.cemetaryMiddleSec__itemMiddleDescPriceText {
+.cemeteryMiddleSec__itemMiddleDescPriceText {
   width: 150px;
   display: flex;
   justify-content: space-between;
@@ -1373,119 +1376,119 @@ ul li {
   color: #000;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescPriceText {
+  .cemeteryMiddleSec__itemMiddleDescPriceText {
     font-size: 20px;
   }
 }
-.cemetaryMiddleSec__itemMiddleDescPriceText.second {
+.cemeteryMiddleSec__itemMiddleDescPriceText.second {
   width: 100px;
   display: block;
 }
-.cemetaryMiddleSec__itemMiddleDescPriceTextSec {
+.cemeteryMiddleSec__itemMiddleDescPriceTextSec {
   font-size: 24px;
   color: #000;
   padding: 0 24px;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescPriceTextSec {
+  .cemeteryMiddleSec__itemMiddleDescPriceTextSec {
     font-size: 20px;
     padding: 0 10px;
   }
 }
-.cemetaryMiddleSec__itemMiddleDescPriceTextSec.second {
+.cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
   padding: 0 35px 0 25px;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescPriceTextSec.second {
-    padding: 0;
+  .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
+    padding: 0 5px 0 10px;
   }
 }
-.cemetaryMiddleSec__itemMiddleDescWideDetails {
+.cemeteryMiddleSec__itemMiddleDescWideDetails {
   font-size: 12px;
   color: #000;
   text-align: left;
   margin-top: 10px;
 }
-.cemetaryMiddleSec__itemMiddleDesc {
+.cemeteryMiddleSec__itemMiddleDesc {
   display: flex;
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDesc {
+  .cemeteryMiddleSec__itemMiddleDesc {
     flex-direction: column;
   }
 }
-.cemetaryMiddleSec__itemMiddleDescBottom {
+.cemeteryMiddleSec__itemMiddleDescBottom {
   display: flex;
   justify-content: space-between;
   padding-bottom: 13px;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescBottom {
+  .cemeteryMiddleSec__itemMiddleDescBottom {
     padding: 0;
   }
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescBottom {
+  .cemeteryMiddleSec__itemMiddleDescBottom {
     flex-direction: column;
     margin: 0 auto;
   }
 }
-.cemetaryMiddleSec__itemMiddleDescBottomFig {
+.cemeteryMiddleSec__itemMiddleDescBottomFig {
   width: 444px;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescBottomFig {
+  .cemeteryMiddleSec__itemMiddleDescBottomFig {
     padding-bottom: 12px;
   }
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescBottomFig {
+  .cemeteryMiddleSec__itemMiddleDescBottomFig {
     width: 100%;
   }
 }
-.cemetaryMiddleSec__itemMiddleText {
+.cemeteryMiddleSec__itemMiddleText {
   font-size: 24px;
   color: #000;
 }
-.cemetaryMiddleSec__itemMiddleDescPriceItem {
+.cemeteryMiddleSec__itemMiddleDescPriceItem {
   display: flex;
   align-items: center;
   border-top: 1px solid #888;
   padding: 16px 0;
 }
-.cemetaryMiddleSec__itemMiddleDescPriceItem.second {
-  justify-content: space-between;
+.cemeteryMiddleSec__itemMiddleDescPriceItem.second {
+  justify-content: space-around;
 }
-.cemetaryMiddleSec__itemMiddleDescPriceItem:last-child {
+.cemeteryMiddleSec__itemMiddleDescPriceItem:last-child {
   border-bottom: 1px solid #888;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescPriceItem {
-    justify-content: space-between;
+  .cemeteryMiddleSec__itemMiddleDescPriceItem {
+    justify-content: space-around;
   }
-  .cemetaryMiddleSec__itemMiddleDescPriceItem:nth-of-type(5) {
+  .cemeteryMiddleSec__itemMiddleDescPriceItem:nth-of-type(5) {
     justify-content: start;
   }
 }
-.cemetaryMiddleSec .pd {
+.cemeteryMiddleSec .pd {
   margin-bottom: 70px;
 }
-.cemetaryMiddleSec__itemMiddleDescPriceList {
+.cemeteryMiddleSec__itemMiddleDescPriceList {
   padding: 13px 0 0 0;
   line-height: 0.7;
 }
-.cemetaryMiddleSec__itemMiddleDescFig {
+.cemeteryMiddleSec__itemMiddleDescFig {
   width: 437px;
   padding-bottom: 20px;
   margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescFig {
+  .cemeteryMiddleSec__itemMiddleDescFig {
     width: 100%;
   }
 }
-.cemetaryMiddleSec__itemMiddleDescText {
+.cemeteryMiddleSec__itemMiddleDescText {
   display: inline-block;
   background-color: #1e5a0c;
   color: #fff;
@@ -1496,25 +1499,25 @@ ul li {
   line-height: 1;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemMiddleDescText {
+  .cemeteryMiddleSec__itemMiddleDescText {
     width: 100%;
     text-align: center;
   }
 }
-.cemetaryMiddleSec__itemMiddle {
+.cemeteryMiddleSec__itemMiddle {
   padding-top: 45px;
 }
-.cemetaryMiddleSec__itemBottom {
+.cemeteryMiddleSec__itemBottom {
   background-color: #fcf3cf;
   padding: 17px 45px 9px;
   min-height: 111px;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryMiddleSec__itemBottom {
+  .cemeteryMiddleSec__itemBottom {
     padding: 13px 20px;
   }
 }
-.cemetaryMiddleSec__itemBottomText {
+.cemeteryMiddleSec__itemBottomText {
   color: #5c0404;
   font-size: 18px;
   font-weight: bold;
@@ -1522,11 +1525,11 @@ ul li {
   margin-bottom: 0;
 }
 
-.cemetaryBottomSec {
+.cemeteryBottomSec {
   width: 100%;
   background-color: #edca6a;
 }
-.cemetaryBottomSec__inr {
+.cemeteryBottomSec__inr {
   width: 1075px;
   margin: 0 auto;
   padding: 70px 0 64px;
@@ -1534,23 +1537,23 @@ ul li {
   justify-content: space-between;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryBottomSec__inr {
+  .cemeteryBottomSec__inr {
     width: 100%;
     flex-direction: column;
     padding: 34px 22px 23px;
   }
 }
-.cemetaryBottomSec__rightContact, .cemetaryBottomSec__leftContact {
+.cemeteryBottomSec__rightContact, .cemeteryBottomSec__leftContact {
   font-size: 36px;
   color: #000;
   line-height: 1;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryBottomSec__rightContact, .cemetaryBottomSec__leftContact {
+  .cemeteryBottomSec__rightContact, .cemeteryBottomSec__leftContact {
     font-size: 24px;
   }
 }
-.cemetaryBottomSec__leftHourText {
+.cemeteryBottomSec__leftHourText {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
   color: #000;
   font-size: 18px;
@@ -1558,39 +1561,39 @@ ul li {
   line-height: 1.3;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryBottomSec__leftHourText {
+  .cemeteryBottomSec__leftHourText {
     font-size: 12px;
     padding-bottom: 22px;
     border-bottom: solid 1px #fff;
   }
 }
-.cemetaryBottomSec__leftTel {
+.cemeteryBottomSec__leftTel {
   font-size: 62px;
   color: #000;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryBottomSec__leftTel {
+  .cemeteryBottomSec__leftTel {
     font-size: 43px;
     line-height: 1;
     padding: 17px 0 16px 0;
   }
 }
-.cemetaryBottomSec__rightContactBtn {
+.cemeteryBottomSec__rightContactBtn {
   font-size: 34px;
   color: #000;
   margin-left: 19px;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryBottomSec__rightContactBtn {
+  .cemeteryBottomSec__rightContactBtn {
     font-size: 23px;
   }
 }
 @media screen and (max-width: 768px) {
-  .cemetaryBottomSec__rightContact {
+  .cemeteryBottomSec__rightContact {
     padding-top: 21px;
   }
 }
-.cemetaryBottomSec__rightContactBtnLink {
+.cemeteryBottomSec__rightContactBtnLink {
   display: flex;
   align-items: center;
   padding: 42px 24px 44px 31px;
@@ -1599,20 +1602,20 @@ ul li {
   transition: 0.6s;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryBottomSec__rightContactBtnLink {
+  .cemeteryBottomSec__rightContactBtnLink {
     padding: 20px 18px 21px;
   }
 }
 @media screen and (min-width: 769px) {
-  .cemetaryBottomSec__rightContactBtnLink:hover:hover {
+  .cemeteryBottomSec__rightContactBtnLink:hover:hover {
     opacity: 0.8;
   }
 }
-.cemetaryBottomSec__rightContBtnIcon {
+.cemeteryBottomSec__rightContBtnIcon {
   width: 62px;
 }
 @media screen and (max-width: 768px) {
-  .cemetaryBottomSec__rightContBtnIcon {
+  .cemeteryBottomSec__rightContBtnIcon {
     width: 43px;
   }
 }

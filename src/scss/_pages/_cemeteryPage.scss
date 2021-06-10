@@ -27,17 +27,17 @@ ul li {
   margin-bottom: 0;
 }
 
-.cemetarySec {
+.cemeterySec {
   width: 100%;
 
   // SP
   @include u-mqMax {
-    background-image: url("../images/cemetaryTopSec/cemetaryBg_sp.jpg");
+    background-image: url("../images/cemeteryTopSec/cemeteryBg_sp.jpg");
   }
 
   &__topCont {
     width: 100%;
-    background-image: url("../images/cemetaryTopSec/body_pc.jpg");
+    background-image: url("../images/cemeteryTopSec/body_pc.jpg");
     background-size: cover;
   }
 
@@ -158,7 +158,7 @@ ul li {
   }
 }
 
-.cemetaryMiddleSec {
+.cemeteryMiddleSec {
   margin: 0 auto;
   background-color: #d9d8c4;
 
@@ -191,7 +191,7 @@ ul li {
 
       &:last-child {
         padding: 29px 11px 47px;
-        
+
         li {
           justify-content: start;
         }
@@ -295,7 +295,7 @@ ul li {
       font-size: 27px;
     }
 
-    & .cemetaryMiddleSec__price {
+    & .cemeteryMiddleSec__price {
       display: inline-block;
       font-size: 66px;
       line-height: 1;
@@ -313,14 +313,16 @@ ul li {
 
     &.second {
       padding-right: 20px;
+      // SP
+      @include u-mqMax {
+        padding-right: 0;
+      }
     }
   }
 
   &__itemMiddleDescPriceDetails {
     font-size: 12px;
-    padding-right: 20px;
     color: #000;
-    letter-spacing: 1px;
     transform: translateY(5px);
 
     &.second {
@@ -360,7 +362,7 @@ ul li {
 
       // SP
       @include u-mqMax {
-      padding: 0;
+      padding: 0 5px 0 10px;
       }
     }
   }
@@ -422,7 +424,7 @@ ul li {
     padding: 16px 0;
 
     &.second {
-      justify-content: space-between;
+      justify-content: space-around;
     }
 
     &:last-child {
@@ -431,7 +433,7 @@ ul li {
 
     // SP
     @include u-mqMax {
-      justify-content: space-between;
+      justify-content: space-around;
 
       &:nth-of-type(5) {
         justify-content: start;
@@ -500,7 +502,7 @@ ul li {
   }
 }
 
-.cemetaryBottomSec {
+.cemeteryBottomSec {
   width: 100%;
   background-color: #edca6a;
 
