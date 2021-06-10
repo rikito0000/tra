@@ -657,7 +657,7 @@ siteHeader
 }
 
 .lowerKvSec {
-  background-image: url("../../_assets/images/pc/lowerHeader_img.jpg");
+  background-image: url("../../_assets/images/common/lowerHeader_img.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -816,7 +816,7 @@ sp
 @media screen and (max-width: 768px) {
   .lowerKvSec {
     height: 65px;
-    background-image: url("../../_assets/images/sp/lowerHeader_img_sp.jpg");
+    background-image: url("../../_assets/images/common/lowerHeader_img_sp.jpg");
   }
 }
 /*====================================================================
