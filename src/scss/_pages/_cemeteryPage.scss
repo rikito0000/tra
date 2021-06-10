@@ -37,12 +37,17 @@ Top
 .cemeterySec {
   // SP
   @include u-mqMax {
-    background-image: url("../images/cemeteryTopSec/cemeteryBg_sp.jpg");
+    background-image: url("../images/cemetery/cemeteryBg_sp.jpg");
   }
 
   &__topCont {
-    background: url("../images/cemeteryTopSec/body_pc.jpg");
+    background: url("../images/cemetery/body_pc.jpg");
     background-size: cover;
+
+  // SP
+  @include u-mqMax {
+    background-image: none;
+  }
   }
 
   &__topContInr {
@@ -291,8 +296,14 @@ middle
   &__itemMiddleDescPrice {
     color: $black;
     font-size: 33px;
-
     line-height: 1;
+
+    @include hack-ie(ie11) {
+      #{$hack-ie11}, & {
+        transform: translateY(10px);
+      }
+    }
+
     // SP
     @include u-mqMax {
       font-size: 25px;
@@ -302,7 +313,6 @@ middle
       display: inline-block;
       font-size: 66px;
       line-height: 1;
-      transform: translateY(5px);
 
       // SP
       @include u-mqMax {
