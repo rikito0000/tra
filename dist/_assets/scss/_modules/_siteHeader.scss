@@ -1,0 +1,235 @@
+/*====================================================================
+siteHeader
+====================================================================*/
+.siteHeader {
+  position: fixed;
+  z-index: 300;
+  width: 100%;
+  @include u-trs($duration: 0.3s);
+
+  &__inner {
+    height: 114px;
+    display: flex;
+    padding-left: 44px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo{
+    display: block;
+    width: 153px;
+    @include u-trs($duration: 0.3s);
+    @include u-hoverOp;
+  }
+  &__nav{
+    height: 100%;
+  }
+
+  &__navList{
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    height: 100%;
+    margin-right: 44px;
+  }
+  &__navItem{
+    margin-top: 57px;
+    border-right: 1px solid $white;
+    margin-bottom: 41px;
+    &:first-child{
+      border-left: 1px solid $white;
+    }
+
+  }
+  &__navItemLink{
+    @include u-fontMincho;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: $white;
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 1;
+    display: block;
+    @include u-trs($duration: 0.3s);
+    @include u-hoverOp;
+  }
+
+  &.is-animation {
+      background: rgba(128, 7, 7, 0.7);
+  }
+
+}
+
+.lowerKvSec{
+  background-image: url("../../_assets/images/common/lowerHeader_img.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 172px;
+}
+
+/*====================================================================
+sp
+====================================================================*/
+@include u-mqMax{
+
+  .topPage .siteHeaderSP__logo{
+    visibility: hidden;
+    opacity: 0;
+      &.is-animation {
+        visibility: visible;
+        opacity: 1;
+      }
+  }
+
+  .siteHeaderSP {
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    @include u-trs($duration: 0.3s);
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 54px;
+      padding-left: 15px;
+      padding-right: 22px;
+      background: rgba(128, 7, 7, 0.7);
+      position: relative;
+    }
+    &__logo {
+      width: 95px;
+      margin-bottom: 0;
+      margin-top: 8px;
+    }
+    &__logoLink {
+      display: block;
+      z-index: 1;
+    }
+
+    &__nav__wrapper {
+      background-color: rgba(112, 112, 112, 0.44);
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      //test
+      display: none;
+      // display: block;
+    }
+
+    &__nav {
+      padding: 45px 15px 95px 15px;
+      background-color: $red01;
+      z-index: 11;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: scroll;
+      //test
+      display: none;
+      // display: block;
+    }
+    &__nav__logo{
+      width: 96px;
+      margin: 0 auto;
+    }
+
+    &__wrap__openBtn {
+      padding: 27px 22px;
+      position: relative;
+    }
+
+    &__wrap__openBtnHamburger {
+      display: block;
+      position: absolute;
+      background: $white;
+      width: 38px;
+      height: 2px;
+      border-radius: 5px;
+      left: 6px;
+    }
+
+    &__wrap__openBtnHamburger:nth-child(1) {
+      top: 13px;
+    }
+
+    &__wrap__openBtnHamburger:nth-child(2) {
+      top: 23px;
+    }
+
+    &__wrap__openBtnHamburger:nth-child(3) {
+      top: 33px;
+    }
+
+    &__nav__closeBtn {
+      padding: 20px 24px;
+      display: block;
+      width: 38px;
+      position: absolute;
+      top: 7px;
+      right: 2px;
+    }
+
+    &__nav__closeBtnHamburger {
+      display: block;
+      position: absolute;
+      background: $white;
+      width: 38px;
+      height: 2px;
+      border-radius: 5px;
+      left: 6px;
+      top: 25px;
+      left: -4px;
+    }
+
+    &__nav__closeBtnHamburger:nth-child(1) {
+      transform: rotate(-45deg);
+    }
+
+    &__nav__closeBtnHamburger:nth-child(2) {
+      transform: rotate(45deg);
+    }
+
+    &.is-animation {
+      background: rgba(128, 7, 7, 0.7);
+    }
+
+    &__nav__cont__menu{
+      padding-left: 0;
+    }
+
+    &__nav__cont__menu__item{
+    text-align: center;
+      &:last-child{
+        .siteHeaderSP__nav__cont__menu__item__link {
+          border-bottom: none;
+        }
+      }
+    }
+
+    &__nav__cont__menu__item__link {
+      @include u-fontMincho;
+      @include u-articleText($color:$white,$fs: 2rem,$fzSP: 2rem,$lts: 0.1rem);
+      font-weight: 400;
+      line-height: 1;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 192px;
+      border-bottom: 1px solid $white;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+
+  .lowerKvSec{
+    height: 65px;
+    background-image: url("../../_assets/images/common/lowerHeader_img_sp.jpg");
+  }
+
+}
