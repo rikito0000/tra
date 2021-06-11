@@ -1,0 +1,17 @@
+@mixin u-articleText($fzPC: 16px, $fzSP: 15px, $ff: mincho, $lh: 1.7, $lts: 0.05em,$color: $black, $fs: normal,$fw: 400) {
+    font-size: $fzPC;
+    line-height: $lh;
+    letter-spacing: $lts;
+    color: $color;
+    font-weight: $fw;
+    font-style: $fs;
+
+    @if $ff == mincho {@include u-fontMincho;}
+    @if $ff == gothic {@include u-fontGothic;}
+    @if $ff == notosans {@include u-fontNotoSans;}
+
+    // SP
+    @include u-mqMax {
+        font-size: $fzSP;
+    }
+}

@@ -1,0 +1,76 @@
+/*====================================================================
+topPageFvSec
+====================================================================*/
+.topPageFvSec {
+    position: relative;
+
+    &__logo {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        z-index: 10;
+        transform: translate(-50%, -50%);
+    }
+
+    &__logoPix {
+        width: 10vw;
+    }
+
+    &__bg {
+        background-color: $red01;
+        height: 138px;
+    }
+}
+
+/*====================================================================
+topPageInfoSec
+====================================================================*/
+.topPageInfoSec {
+    margin-bottom: 70px;
+    &__wrap {
+        margin-top: -300px;
+        z-index: 111;
+        position: relative;
+    }
+
+    &__cont {
+        @include u-contentCenter;
+        background-color: $white;
+        padding: 60px 94px 40px;
+        box-shadow: 10px 8px 7px 1px rgba($black,0.4);
+    }
+
+    &__contTitle {
+        width: 19px;
+        margin: 0 auto;
+    }
+
+    &__contInnerList {
+        border-top: 1px solid $red01;
+        margin-top: 36px;
+        padding-top: 36px;
+        @include u-flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__contInnerPix {
+        margin-bottom: 10px;
+    }
+
+    &__contInnerItem {
+        width: calc((100% - (34px * 2)) / 3);
+        margin-bottom: 36px;
+    }
+
+    &__contInnerTime {
+        @include u-articleText($ff: notosans);
+        font-size: 12px;
+    }
+
+    &__contInnerTitle {
+        @include u-articleText($ff: notosans);
+        color: $red01;
+        margin-top: 3px;
+    }
+}

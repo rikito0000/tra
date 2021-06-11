@@ -1,64 +1,62 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap");
-/*!
- * Bootstrap Reboot v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-*:focus,
-*::before:focus,
-*::after:focus {
-  outline: none;
-}
-
-html {
-  font-family: sans-serif;
-  line-height: 1.15;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-text-size-adjust: 100%;
-}
-
-article,
-aside,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section {
-  display: block;
-}
-
-body {
-  background-color: #fff;
-  color: #212529;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
+/*====================================================================
+Reset
+====================================================================*/
+*, html, body, div, figure, section, header, footer, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
-  text-align: left;
-}
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 10px;
+  font-family: Helvetica Neue, Helvetica, Arial, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  line-height: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  color: #333333; }
 
-[tabindex="-1"]:focus:not(:focus-visible) {
-  outline: 0 !important;
-}
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
 
-hr {
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
-}
+fieldset,
+img {
+  border: 0; }
+
+/*
+TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol,
+ul {
+  list-style: none; }
+
+caption,
+th {
+  text-align: left; }
 
 h1,
 h2,
@@ -66,603 +64,397 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.5rem;
-  margin-top: 0;
-}
+  font-size: 100%;
+  font-weight: normal; }
 
-p {
-  margin-bottom: 0;
-  margin-top: 0;
-}
+q:before,
+q:after {
+  content: ''; }
 
-abbr[title],
-abbr[data-original-title] {
-  border-bottom: 0;
-  cursor: help;
-  -webkit-text-decoration: underline dotted;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-  -webkit-text-decoration-skip-ink: none;
-  text-decoration-skip-ink: none;
-}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal; }
 
-address {
-  font-style: normal;
-  line-height: inherit;
-  margin-bottom: 1rem;
-}
-
-ol,
-ul,
-dl {
-  margin-bottom: 1rem;
-  margin-top: 0;
-}
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0;
-}
-
-dt {
-  font-weight: 700;
-}
-
-dd {
-  margin-bottom: 0.5rem;
-  margin-left: 0;
-}
-
-blockquote {
-  margin: 0 0 1rem;
-}
-
-b,
-strong {
-  font-weight: bolder;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
+  vertical-align: text-top; }
 
 sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-a {
-  background-color: transparent;
-  color: #007bff;
-  text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-a:not([href]):not([class]) {
-  color: inherit;
-  text-decoration: none;
-}
-
-a:not([href]):not([class]):hover {
-  color: inherit;
-  text-decoration: none;
-}
-
-pre,
-code,
-kbd,
-samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  font-size: 1em;
-}
-
-pre {
-  margin-bottom: 1rem;
-  margin-top: 0;
-  overflow: auto;
-  -ms-overflow-style: scrollbar;
-}
-
-figure {
-  margin: 0 0 0;
-}
-
-img {
-  border-style: none;
-  vertical-align: middle;
-}
-
-svg {
-  overflow: hidden;
-  vertical-align: middle;
-}
-
-table {
-  border-collapse: collapse;
-}
-
-caption {
-  caption-side: bottom;
-  color: #6c757d;
-  padding-bottom: 0.75rem;
-  padding-top: 0.75rem;
-  text-align: left;
-}
-
-th {
-  text-align: inherit;
-  text-align: -webkit-match-parent;
-}
-
-label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-}
-
-button {
-  border-radius: 0;
-}
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
+  vertical-align: text-bottom; }
 
 input,
-button,
-select,
-optgroup,
-textarea {
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
-  margin: 0;
-}
+  font-weight: inherit; }
 
-button,
-input {
-  overflow: visible;
-}
-
-button,
+input,
+textarea,
 select {
-  text-transform: none;
-}
-
-[role=button] {
-  cursor: pointer;
-}
-
-select {
-  word-wrap: normal;
-}
-
-button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
-
-button:not(:disabled),
-[type=button]:not(:disabled),
-[type=reset]:not(:disabled),
-[type=submit]:not(:disabled) {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner,
-[type=button]::-moz-focus-inner,
-[type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-input[type=radio],
-input[type=checkbox] {
-  box-sizing: border-box;
-  padding: 0;
-}
-
-textarea {
-  overflow: auto;
-  resize: vertical;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  min-width: 0;
-  padding: 0;
-}
+  *font-size: 100%; }
 
 legend {
-  color: inherit;
-  display: block;
-  font-size: 1.5rem;
-  line-height: inherit;
-  margin-bottom: 0.5rem;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
+  color: #101010; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
   width: 100%;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-[type=number]::-webkit-inner-spin-button,
-[type=number]::-webkit-outer-spin-button {
   height: auto;
-}
+  vertical-align: bottom; }
 
-[type=search] {
-  -webkit-appearance: none;
-  outline-offset: -2px;
-}
-
-[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
-}
-
-output {
-  display: inline-block;
-}
-
-summary {
-  cursor: pointer;
-  display: list-item;
-}
-
-template {
-  display: none;
-}
-
-[hidden] {
-  display: none !important;
-}
 /*-----------------------------------------------
 @keyframes
 ------------------------------------------------*/
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 @keyframes fadeIn {
   0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeInUp {
+  0% {
     opacity: 0;
-  }
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
   100% {
     opacity: 1;
-  }
-}
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(20px);
-  }
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px); }
   100% {
     opacity: 1;
-    transform: translateY(0);
-  }
-}
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
 @keyframes pulse {
   0% {
-    transform: scale(1);
-  }
+    -webkit-transform: scale(1);
+    transform: scale(1); }
   50% {
-    transform: scale(1.1);
-  }
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   100% {
-    transform: scale(1);
-  }
-}
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
+
+@-webkit-keyframes zoomOut {
+  0% {
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2); }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
 @keyframes zoomOut {
   0% {
-    transform: scale3d(1.2, 1.2, 1.2);
-  }
+    -webkit-transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1.2, 1.2, 1.2); }
   100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1); } }
+
+@-webkit-keyframes confetti {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+    transform: rotateZ(15deg) rotateY(0deg) translate(0, 0); }
+  25% {
+    opacity: 1;
+    -webkit-transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+    transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh); }
+  50% {
+    -webkit-transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 50vh);
+    transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 50vh); }
+  75% {
+    -webkit-transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 70vh);
+    transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 70vh); }
+  86% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 80vh);
+    transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 80vh); } }
+
 @keyframes confetti {
   0% {
     opacity: 0;
-    transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
-  }
+    -webkit-transform: rotateZ(15deg) rotateY(0deg) translate(0, 0);
+    transform: rotateZ(15deg) rotateY(0deg) translate(0, 0); }
   25% {
     opacity: 1;
-    transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
-  }
+    -webkit-transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh);
+    transform: rotateZ(5deg) rotateY(360deg) translate(-5vw, 20vh); }
   50% {
-    transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 50vh);
-  }
+    -webkit-transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 50vh);
+    transform: rotateZ(15deg) rotateY(720deg) translate(5vw, 50vh); }
   75% {
-    transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 70vh);
-  }
+    -webkit-transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 70vh);
+    transform: rotateZ(5deg) rotateY(1080deg) translate(-10vw, 70vh); }
   86% {
-    opacity: 1;
-  }
+    opacity: 1; }
   100% {
     opacity: 0;
-    transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 80vh);
-  }
-}
+    -webkit-transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 80vh);
+    transform: rotateZ(15deg) rotateY(1440deg) translate(10vw, 80vh); } }
+
 .u-wysiwygArea {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
   color: #000;
-  font-size: 1.5rem;
   font-weight: 400;
   font-style: normal;
-  line-height: 1.8;
-  letter-spacing: 0;
-}
-@media screen and (max-width: 768px) {
-  .u-wysiwygArea {
-    font-size: 1.2rem;
-    line-height: 1.8;
-  }
-}
-.u-wysiwygArea * + * {
-  margin-top: 1.75em;
-}
-.u-wysiwygArea br + * {
-  margin-top: 0;
-}
-.u-wysiwygArea a {
-  color: blue;
-}
-@media screen and (min-width: 769px) {
+  font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+  @media screen and (max-width: 768px) {
+    .u-wysiwygArea {
+      font-size: 15px; } }
+  .u-wysiwygArea * + * {
+    margin-top: 1.75em; }
+  .u-wysiwygArea br + * {
+    margin-top: 0; }
   .u-wysiwygArea a {
-    transition: all 0.6s ease-in-out 0s;
-  }
-}
-@media screen and (min-width: 769px) {
-  .u-wysiwygArea a:hover {
-    opacity: 0.6;
-  }
-}
-.u-wysiwygArea h1 {
-  font-size: 4.5rem;
-  line-height: 1.4;
-}
-.u-wysiwygArea h2 {
-  font-size: 3rem;
-  line-height: 1.6;
-  margin-top: 2em;
-}
-.u-wysiwygArea h3 {
-  color: blue;
-  font-size: 2.2rem;
-  font-weight: bold;
-  line-height: 1.6;
-}
-.u-wysiwygArea h4 {
-  font-size: 1.8rem;
-  line-height: 1.6;
-  padding-left: 25px;
-  position: relative;
-}
-.u-wysiwygArea h4::before {
-  background: blue;
-  content: "";
-  height: 17px;
-  left: 0;
-  position: absolute;
-  top: 3px;
-  width: 17px;
-}
-.u-wysiwygArea h5,
-.u-wysiwygArea h6 {
-  font-size: 1.6rem;
-  line-height: 1.6;
-}
-.u-wysiwygArea h1 + h2,
-.u-wysiwygArea h2 + h3,
-.u-wysiwygArea h3 + h4,
-.u-wysiwygArea h4 + h5,
-.u-wysiwygArea h5 + h6 {
-  margin-top: 0.5em;
-}
-.u-wysiwygArea p {
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.8;
-  letter-spacing: 0;
-}
-@media screen and (max-width: 768px) {
+    color: blue; }
+    @media screen and (min-width: 769px) {
+      .u-wysiwygArea a {
+        -webkit-transition: all 0.6s ease-in-out 0s;
+        -o-transition: all 0.6s ease-in-out 0s;
+        transition: all 0.6s ease-in-out 0s; } }
+    @media screen and (min-width: 769px) {
+      .u-wysiwygArea a:hover {
+        opacity: 0.6; } }
+  .u-wysiwygArea h1 {
+    font-size: 4.5rem;
+    line-height: 1.4; }
+  .u-wysiwygArea h2 {
+    font-size: 3rem;
+    line-height: 1.6;
+    margin-top: 2em; }
+  .u-wysiwygArea h3 {
+    color: blue;
+    font-size: 2.2rem;
+    font-weight: bold;
+    line-height: 1.6; }
+  .u-wysiwygArea h4 {
+    font-size: 1.8rem;
+    line-height: 1.6;
+    padding-left: 25px;
+    position: relative; }
+    .u-wysiwygArea h4::before {
+      background: blue;
+      content: '';
+      height: 17px;
+      left: 0;
+      position: absolute;
+      top: 3px;
+      width: 17px; }
+  .u-wysiwygArea h5,
+  .u-wysiwygArea h6 {
+    font-size: 1.6rem;
+    line-height: 1.6; }
+  .u-wysiwygArea h1 + h2,
+  .u-wysiwygArea h2 + h3,
+  .u-wysiwygArea h3 + h4,
+  .u-wysiwygArea h4 + h5,
+  .u-wysiwygArea h5 + h6 {
+    margin-top: 0.5em; }
   .u-wysiwygArea p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-  }
-}
-.u-wysiwygArea strong,
-.u-wysiwygArea strong * {
-  font-weight: bold;
-}
-.u-wysiwygArea em,
-.u-wysiwygArea em * {
-  font-style: italic;
-}
-.u-wysiwygArea ul {
-  list-style-type: none;
-}
-.u-wysiwygArea ol {
-  list-style-type: decimal;
-}
-.u-wysiwygArea ul,
-.u-wysiwygArea ol {
-  margin-top: 1em;
-  padding-left: 1.4em;
-}
-.u-wysiwygArea ul li,
-.u-wysiwygArea ol li {
-  line-height: 1.5;
-  margin-top: 0.6em;
-}
-.u-wysiwygArea sup,
-.u-wysiwygArea sub {
-  font-size: 1rem;
-  line-height: 1 !important;
-}
-.u-wysiwygArea hr {
-  background: #000;
-  display: block;
-  height: 1px;
-  width: 100%;
-}
-.u-wysiwygArea blockquote {
-  background: blue;
-  padding: 30px;
-}
-.u-wysiwygArea table {
-  background: blue;
-  border-collapse: collapse;
-  height: auto !important;
-  margin-top: 3em;
-  width: 100% !important;
-}
-.u-wysiwygArea table thead th,
-.u-wysiwygArea table thead td {
-  font-weight: bold;
-  text-align: center;
-}
-.u-wysiwygArea table tr th,
-.u-wysiwygArea table tr td {
-  border: #000 1px solid;
-  line-height: 1.5;
-  padding: 15px 20px;
-  text-align: left;
-  vertical-align: middle;
-}
-.u-wysiwygArea table tr th {
-  font-weight: bold;
-  text-align: center;
-  width: 25%;
-}
-.u-wysiwygArea img {
-  height: auto;
-  margin-top: 1em;
-  max-width: 100%;
-  width: auto;
-}
-.u-wysiwygArea img.aligncenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.u-wysiwygArea img.alignright {
-  display: block;
-  margin-left: auto;
-  margin-right: 0;
-}
-.u-wysiwygArea .gallery {
-  align-items: stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-.u-wysiwygArea .gallery-item {
-  float: none;
-  margin-top: 0;
-  text-align: center;
-}
-.u-wysiwygArea .gallery-columns-2 .gallery-item {
-  width: calc((100% - 40px) / 2);
-}
-.u-wysiwygArea .gallery-columns-3 .gallery-item {
-  width: calc((100% - (40px * 2)) / 3);
-}
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+    @media screen and (max-width: 768px) {
+      .u-wysiwygArea p {
+        font-size: 15px; } }
+  .u-wysiwygArea strong,
+  .u-wysiwygArea strong * {
+    font-weight: bold; }
+  .u-wysiwygArea em,
+  .u-wysiwygArea em * {
+    font-style: italic; }
+  .u-wysiwygArea ul {
+    list-style-type: none; }
+  .u-wysiwygArea ol {
+    list-style-type: decimal; }
+  .u-wysiwygArea ul,
+  .u-wysiwygArea ol {
+    margin-top: 1em;
+    padding-left: 1.4em; }
+    .u-wysiwygArea ul li,
+    .u-wysiwygArea ol li {
+      line-height: 1.5;
+      margin-top: 0.6em; }
+  .u-wysiwygArea sup,
+  .u-wysiwygArea sub {
+    font-size: 1rem;
+    line-height: 1 !important; }
+  .u-wysiwygArea hr {
+    background: #000;
+    display: block;
+    height: 1px;
+    width: 100%; }
+  .u-wysiwygArea blockquote {
+    background: blue;
+    padding: 30px; }
+  .u-wysiwygArea table {
+    background: blue;
+    border-collapse: collapse;
+    height: auto !important;
+    margin-top: 3em;
+    width: 100% !important; }
+    .u-wysiwygArea table thead th,
+    .u-wysiwygArea table thead td {
+      font-weight: bold;
+      text-align: center; }
+    .u-wysiwygArea table tr th,
+    .u-wysiwygArea table tr td {
+      border: #000 1px solid;
+      line-height: 1.5;
+      padding: 15px 20px;
+      text-align: left;
+      vertical-align: middle; }
+    .u-wysiwygArea table tr th {
+      font-weight: bold;
+      text-align: center;
+      width: 25%; }
+  .u-wysiwygArea img {
+    height: auto;
+    margin-top: 1em;
+    max-width: 100%;
+    width: auto; }
+    .u-wysiwygArea img.aligncenter {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; }
+    .u-wysiwygArea img.alignright {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; }
+  .u-wysiwygArea .gallery {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .u-wysiwygArea .gallery-item {
+    float: none;
+    margin-top: 0;
+    text-align: center; }
+  .u-wysiwygArea .gallery-columns-2 .gallery-item {
+    width: calc((100% - 40px) / 2); }
+  .u-wysiwygArea .gallery-columns-3 .gallery-item {
+    width: calc((100% - (40px * 2)) / 3); }
 
 /*====================================================================
 siteHeader
 ====================================================================*/
 .siteHeader {
   position: fixed;
-  z-index: 10;
+  z-index: 300;
   width: 100%;
-  transition: all 0.3s ease-in-out 0s;
-}
-.siteHeader__inner {
-  height: 114px;
-  display: flex;
-  padding-left: 44px;
-  justify-content: space-between;
-  align-items: center;
-}
-.siteHeader__logo {
-  display: block;
-  width: 153px;
-  transition: all 0.3s ease-in-out 0s;
-}
-@media screen and (min-width: 769px) {
-  .siteHeader__logo:hover {
-    opacity: 0.6;
-  }
-}
-.siteHeader__nav {
-  height: 100%;
-}
-.siteHeader__navList {
-  display: flex;
-  list-style: none;
-  margin-bottom: 0;
-  height: 100%;
-  margin-right: 44px;
-}
-.siteHeader__navItem {
-  margin-top: 57px;
-  border-right: 1px solid #fff;
-  margin-bottom: 41px;
-}
-.siteHeader__navItem:first-child {
-  border-left: 1px solid #fff;
-}
-.siteHeader__navItemLink {
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  color: #fff;
-  padding-right: 25px;
-  padding-left: 25px;
-  line-height: 1;
-  display: block;
-  transition: all 0.3s ease-in-out 0s;
-}
-@media screen and (min-width: 769px) {
-  .siteHeader__navItemLink:hover {
-    opacity: 0.6;
-  }
-}
-.siteHeader.is-animation {
-  background: rgba(128, 7, 7, 0.7);
-}
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+  .siteHeader__inner {
+    height: 114px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 44px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .siteHeader__logo {
+    display: block;
+    width: 153px;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+    @media screen and (min-width: 769px) {
+      .siteHeader__logo:hover {
+        opacity: 0.6; } }
+  .siteHeader__nav {
+    height: 100%; }
+  .siteHeader__navList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+    height: 100%;
+    margin-right: 44px; }
+  .siteHeader__navItem {
+    margin-top: 57px;
+    border-right: 1px solid #fff;
+    margin-bottom: 41px; }
+    .siteHeader__navItem:first-child {
+      border-left: 1px solid #fff; }
+  .siteHeader__navItemLink {
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #fff;
+    padding-right: 25px;
+    padding-left: 25px;
+    line-height: 1;
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+    @media screen and (min-width: 769px) {
+      .siteHeader__navItemLink:hover {
+        opacity: 0.6; } }
+  .siteHeader.is-animation {
+    background: rgba(128, 7, 7, 0.7); }
 
 .lowerKvSec {
   background-image: url("../../_assets/images/common/lowerHeader_img.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  height: 172px;
-}
+  height: 172px; }
 
 /*====================================================================
 sp
@@ -670,155 +462,140 @@ sp
 @media screen and (max-width: 768px) {
   .topPage .siteHeaderSP__logo {
     visibility: hidden;
-    opacity: 0;
-  }
-  .topPage .siteHeaderSP__logo.is-animation {
-    visibility: visible;
-    opacity: 1;
-  }
-
+    opacity: 0; }
+    .topPage .siteHeaderSP__logo.is-animation {
+      visibility: visible;
+      opacity: 1; }
   .siteHeaderSP {
     position: fixed;
     z-index: 10;
     width: 100%;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  .siteHeaderSP__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 54px;
-    padding-left: 15px;
-    padding-right: 22px;
-    background: rgba(128, 7, 7, 0.7);
-    position: relative;
-  }
-  .siteHeaderSP__logo {
-    width: 95px;
-    margin-bottom: 0;
-    margin-top: 8px;
-  }
-  .siteHeaderSP__logoLink {
-    display: block;
-    z-index: 1;
-  }
-  .siteHeaderSP__nav__wrapper {
-    background-color: rgba(112, 112, 112, 0.44);
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: none;
-  }
-  .siteHeaderSP__nav {
-    padding: 45px 15px 95px 15px;
-    background-color: #800707;
-    z-index: 11;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    display: none;
-  }
-  .siteHeaderSP__nav__logo {
-    width: 96px;
-    margin: 0 auto;
-  }
-  .siteHeaderSP__wrap__openBtn {
-    padding: 27px 22px;
-    position: relative;
-  }
-  .siteHeaderSP__wrap__openBtnHamburger {
-    display: block;
-    position: absolute;
-    background: #fff;
-    width: 38px;
-    height: 2px;
-    border-radius: 5px;
-    left: 6px;
-  }
-  .siteHeaderSP__wrap__openBtnHamburger:nth-child(1) {
-    top: 13px;
-  }
-  .siteHeaderSP__wrap__openBtnHamburger:nth-child(2) {
-    top: 23px;
-  }
-  .siteHeaderSP__wrap__openBtnHamburger:nth-child(3) {
-    top: 33px;
-  }
-  .siteHeaderSP__nav__closeBtn {
-    padding: 20px 24px;
-    display: block;
-    width: 38px;
-    position: absolute;
-    top: 7px;
-    right: 2px;
-  }
-  .siteHeaderSP__nav__closeBtnHamburger {
-    display: block;
-    position: absolute;
-    background: #fff;
-    width: 38px;
-    height: 2px;
-    border-radius: 5px;
-    left: 6px;
-    top: 25px;
-    left: -4px;
-  }
-  .siteHeaderSP__nav__closeBtnHamburger:nth-child(1) {
-    transform: rotate(-45deg);
-  }
-  .siteHeaderSP__nav__closeBtnHamburger:nth-child(2) {
-    transform: rotate(45deg);
-  }
-  .siteHeaderSP.is-animation {
-    background: rgba(128, 7, 7, 0.7);
-  }
-  .siteHeaderSP__nav__cont__menu {
-    padding-left: 0;
-  }
-  .siteHeaderSP__nav__cont__menu__item {
-    text-align: center;
-  }
-  .siteHeaderSP__nav__cont__menu__item:last-child .siteHeaderSP__nav__cont__menu__item__link {
-    border-bottom: none;
-  }
-  .siteHeaderSP__nav__cont__menu__item__link {
-    font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-style: 2rem;
-    line-height: 1.8;
-    letter-spacing: 0.1rem;
-    font-weight: 400;
-    line-height: 1;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    width: 192px;
-    border-bottom: 1px solid #fff;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-}
-@media screen and (max-width: 768px) and (max-width: 768px) {
-  .siteHeaderSP__nav__cont__menu__item__link {
-    font-size: 2rem;
-    line-height: 1.8;
-  }
-}
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+    .siteHeaderSP__inner {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 54px;
+      padding-left: 15px;
+      padding-right: 22px;
+      background: rgba(128, 7, 7, 0.7);
+      position: relative; }
+    .siteHeaderSP__logo {
+      width: 95px;
+      margin-bottom: 0;
+      margin-top: 8px; }
+    .siteHeaderSP__logoLink {
+      display: block;
+      z-index: 1; }
+    .siteHeaderSP__nav__wrapper {
+      background-color: rgba(112, 112, 112, 0.44);
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none; }
+    .siteHeaderSP__nav {
+      padding: 45px 15px 95px 15px;
+      background-color: #800707;
+      z-index: 11;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100vh;
+      overflow-y: scroll;
+      display: none; }
+    .siteHeaderSP__nav__logo {
+      width: 96px;
+      margin: 0 auto; }
+    .siteHeaderSP__wrap__openBtn {
+      padding: 27px 22px;
+      position: relative; }
+    .siteHeaderSP__wrap__openBtnHamburger {
+      display: block;
+      position: absolute;
+      background: #fff;
+      width: 38px;
+      height: 2px;
+      border-radius: 5px;
+      left: 6px; }
+    .siteHeaderSP__wrap__openBtnHamburger:nth-child(1) {
+      top: 13px; }
+    .siteHeaderSP__wrap__openBtnHamburger:nth-child(2) {
+      top: 23px; }
+    .siteHeaderSP__wrap__openBtnHamburger:nth-child(3) {
+      top: 33px; }
+    .siteHeaderSP__nav__closeBtn {
+      padding: 20px 24px;
+      display: block;
+      width: 38px;
+      position: absolute;
+      top: 7px;
+      right: 2px; }
+    .siteHeaderSP__nav__closeBtnHamburger {
+      display: block;
+      position: absolute;
+      background: #fff;
+      width: 38px;
+      height: 2px;
+      border-radius: 5px;
+      left: 6px;
+      top: 25px;
+      left: -4px; }
+    .siteHeaderSP__nav__closeBtnHamburger:nth-child(1) {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+    .siteHeaderSP__nav__closeBtnHamburger:nth-child(2) {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+    .siteHeaderSP.is-animation {
+      background: rgba(128, 7, 7, 0.7); }
+    .siteHeaderSP__nav__cont__menu {
+      padding-left: 0; }
+    .siteHeaderSP__nav__cont__menu__item {
+      text-align: center; }
+      .siteHeaderSP__nav__cont__menu__item:last-child .siteHeaderSP__nav__cont__menu__item__link {
+        border-bottom: none; }
+    .siteHeaderSP__nav__cont__menu__item__link {
+      font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+      font-size: 16px;
+      line-height: 1.7;
+      letter-spacing: 0.1rem;
+      color: #fff;
+      font-weight: 400;
+      font-style: 2rem;
+      font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+      font-weight: 400;
+      line-height: 1;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      width: 192px;
+      border-bottom: 1px solid #fff;
+      padding-top: 25px;
+      padding-bottom: 25px; } }
+    @media screen and (max-width: 768px) and (max-width: 768px) {
+      .siteHeaderSP__nav__cont__menu__item__link {
+        font-size: 2rem; } }
+
 @media screen and (max-width: 768px) {
   .lowerKvSec {
     height: 65px;
-    background-image: url("../../_assets/images/common/lowerHeader_img_sp.jpg");
-  }
-}
+    background-image: url("../../_assets/images/common/lowerHeader_img_sp.jpg"); } }
+
 /*====================================================================
 siteFooter
 ====================================================================*/
@@ -828,126 +605,126 @@ siteFooter
   background-image: url("../../_assets/images/pc/footer_bg.png");
   background-position: center 25%;
   background-repeat: no-repeat;
-  background-size: 80% auto;
-}
-.siteFooter__inner {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1080px;
-}
-.siteFooter__logo {
-  display: block;
-  width: 100%;
-  max-width: 240px;
-  padding-left: 50px;
-  margin: 0 auto 48px;
-}
-.siteFooter__addressArea {
-  text-align: center;
-  margin-bottom: 48px;
-}
-.siteFooter__address {
-  color: #fff;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-style: 1.6rem;
-  line-height: 1.8;
-  letter-spacing: 0.5rem;
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-}
-@media screen and (max-width: 768px) {
+  background-size: 80% auto; }
+  .siteFooter__inner {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1080px; }
+  .siteFooter__logo {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    padding-left: 50px;
+    margin: 0 auto 48px; }
+  .siteFooter__addressArea {
+    text-align: center;
+    margin-bottom: 48px; }
   .siteFooter__address {
-    font-size: 1.6rem;
-    line-height: 1.8;
-  }
-}
-.siteFooter__phoneNumber {
-  color: #fff;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-style: 1.6rem;
-  line-height: 1.8;
-  letter-spacing: 0.5rem;
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-}
-@media screen and (max-width: 768px) {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    font-weight: 400;
+    font-style: 1.6rem;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+    @media screen and (max-width: 768px) {
+      .siteFooter__address {
+        font-size: 1.6rem; } }
   .siteFooter__phoneNumber {
-    font-size: 2rem;
-    line-height: 1.8;
-  }
-}
-.siteFooter__navList {
-  padding-left: 0;
-  list-style: none;
-  width: 100%;
-  align-items: stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-.siteFooter__navItem {
-  margin-bottom: 18px;
-  position: relative;
-  border-right: 1px solid #fff;
-}
-.siteFooter__navItem:first-child {
-  border-left: 1px solid #fff;
-}
-.siteFooter__innerBox {
-  position: relative;
-  width: 100%;
-}
-.siteFooter__navItemLink {
-  display: block;
-  color: #fff;
-  font-size: 1.5rem;
-  font-weight: 400;
-  font-style: 1.6rem;
-  line-height: 1.8;
-  letter-spacing: 0;
-  padding-right: 25px;
-  padding-left: 25px;
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  transition: all 0.3s ease-in-out 0s;
-}
-@media screen and (max-width: 768px) {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    font-weight: 400;
+    font-style: 1.6rem;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+    @media screen and (max-width: 768px) {
+      .siteFooter__phoneNumber {
+        font-size: 2rem; } }
+  .siteFooter__navList {
+    padding-left: 0;
+    list-style: none;
+    width: 100%;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .siteFooter__navItem {
+    margin-bottom: 18px;
+    position: relative;
+    border-right: 1px solid #fff; }
+    .siteFooter__navItem:first-child {
+      border-left: 1px solid #fff; }
+  .siteFooter__innerBox {
+    position: relative;
+    width: 100%; }
   .siteFooter__navItemLink {
-    font-size: 1.2rem;
-    line-height: 1.8;
-  }
-}
-@media screen and (min-width: 769px) {
-  .siteFooter__navItemLink:hover {
-    opacity: 0.6;
-  }
-}
-.siteFooter__snsList {
-  align-items: stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 90px;
-  padding-left: 0;
-}
-.siteFooter__snsListItem {
-  width: 38px;
-  display: block;
-}
-.siteFooter__snsListItemlink {
-  display: block;
-  transition: all 0.3s ease-in-out 0s;
-}
-@media screen and (min-width: 769px) {
-  .siteFooter__snsListItemlink:hover {
-    opacity: 0.6;
-  }
-}
+    display: block;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    color: #fff;
+    font-weight: 400;
+    font-style: 1.6rem;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+    @media screen and (max-width: 768px) {
+      .siteFooter__navItemLink {
+        font-size: 15px; } }
+    @media screen and (min-width: 769px) {
+      .siteFooter__navItemLink:hover {
+        opacity: 0.6; } }
+  .siteFooter__snsList {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 90px;
+    padding-left: 0; }
+  .siteFooter__snsListItem {
+    width: 38px;
+    display: block; }
+  .siteFooter__snsListItemlink {
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -o-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+    @media screen and (min-width: 769px) {
+      .siteFooter__snsListItemlink:hover {
+        opacity: 0.6; } }
 
 /*====================================================================
 sp
@@ -958,74 +735,61 @@ sp
     padding-bottom: 44px;
     background-image: url("../../_assets/images/sp/footer_bg_sp.png");
     background-position: center 15%;
-    background-size: 55% auto;
-  }
-  .siteFooter__inner {
-    margin-left: 0;
-    position: relative;
-    padding-right: 0;
-    width: 100%;
-  }
-  .siteFooter__logo {
-    display: block;
-    width: 100%;
-    max-width: 220px;
-    padding-left: 70px;
-  }
-  .siteFooter__navi {
-    display: none;
-  }
-  .siteFooter__addressArea {
-    margin-bottom: 31px;
-  }
-  .siteFooter__address {
-    letter-spacing: 0.7rem;
-    margin-bottom: 20px;
-  }
-}
+    background-size: 55% auto; }
+    .siteFooter__inner {
+      margin-left: 0;
+      position: relative;
+      padding-right: 0;
+      width: 100%; }
+    .siteFooter__logo {
+      display: block;
+      width: 100%;
+      max-width: 220px;
+      padding-left: 70px; }
+    .siteFooter__navi {
+      display: none; }
+    .siteFooter__addressArea {
+      margin-bottom: 31px; }
+    .siteFooter__address {
+      letter-spacing: 0.7rem;
+      margin-bottom: 20px; } }
+
 /*====================================================================
 COMMON LAYOUT
 ====================================================================*/
 html {
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
-  min-width: 1140px;
-  font-feature-settings: "palt" 1;
-}
-@media screen and (max-width: 768px) {
-  body {
-    min-width: inherit;
-  }
-}
+  min-width: 1060px;
+  -webkit-font-feature-settings: 'palt' 1;
+  font-feature-settings: 'palt' 1; }
+  @media screen and (max-width: 768px) {
+    body {
+      min-width: inherit; } }
 
 /*-----------------------------------------------
 PC/SP
 ------------------------------------------------*/
 .u-pcDb {
-  display: block;
-}
+  display: block; }
 
 .u-pcDib {
-  display: inline-block;
-}
+  display: inline-block; }
 
 .u-pcDin {
-  display: inline;
-}
+  display: inline; }
 
 .u-pcDf {
-  display: flex;
-}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .u-pcDt {
-  display: table;
-}
+  display: table; }
 
 .u-pcDtc {
-  display: table-cell;
-}
+  display: table-cell; }
 
 .u-spDb,
 .u-spDib,
@@ -1033,477 +797,530 @@ PC/SP
 .u-spDf,
 .u-spDt,
 .u-spDtc {
-  display: none;
-}
+  display: none; }
 
 @media screen and (max-width: 768px) {
   .u-pcDb,
-.u-pcDib,
-.u-pcDin,
-.u-pcDf,
-.u-pcDt,
-.u-pcDtc {
-    display: none;
-  }
-
+  .u-pcDib,
+  .u-pcDin,
+  .u-pcDf,
+  .u-pcDt,
+  .u-pcDtc {
+    display: none; }
   .u-spDb {
-    display: block;
-  }
-
+    display: block; }
   .u-spDib {
-    display: inline-block;
-  }
-
+    display: inline-block; }
   .u-spDin {
-    display: inline;
-  }
-
+    display: inline; }
   .u-spDf {
-    display: flex;
-  }
-
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .u-spDt {
-    display: table;
-  }
-
+    display: table; }
   .u-spDtc {
-    display: table-cell;
-  }
-}
+    display: table-cell; } }
+
+/*====================================================================
+topPageFvSec
+====================================================================*/
+.topPageFvSec {
+  position: relative; }
+  .topPageFvSec__logo {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    z-index: 10;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+  .topPageFvSec__logoPix {
+    width: 10vw; }
+  .topPageFvSec__bg {
+    background-color: #800707;
+    height: 138px; }
+
+/*====================================================================
+topPageInfoSec
+====================================================================*/
+.topPageInfoSec {
+  margin-bottom: 70px; }
+  .topPageInfoSec__wrap {
+    margin-top: -300px;
+    z-index: 111;
+    position: relative; }
+  .topPageInfoSec__cont {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 1060px;
+    background-color: #fff;
+    padding: 60px 94px 40px;
+    -webkit-box-shadow: 10px 8px 7px 1px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 8px 7px 1px rgba(0, 0, 0, 0.4); }
+    @media screen and (max-width: 768px) {
+      .topPageInfoSec__cont {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%; } }
+  .topPageInfoSec__contTitle {
+    width: 19px;
+    margin: 0 auto; }
+  .topPageInfoSec__contInnerList {
+    border-top: 1px solid #800707;
+    margin-top: 36px;
+    padding-top: 36px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .topPageInfoSec__contInnerPix {
+    margin-bottom: 10px; }
+  .topPageInfoSec__contInnerItem {
+    width: calc((100% - (34px * 2)) / 3);
+    margin-bottom: 36px; }
+  .topPageInfoSec__contInnerTime {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Noto Sans JP', Meiryo, serif;
+    font-size: 12px; }
+    @media screen and (max-width: 768px) {
+      .topPageInfoSec__contInnerTime {
+        font-size: 15px; } }
+  .topPageInfoSec__contInnerTitle {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Noto Sans JP', Meiryo, serif;
+    color: #800707;
+    margin-top: 3px; }
+    @media screen and (max-width: 768px) {
+      .topPageInfoSec__contInnerTitle {
+        font-size: 15px; } }
+
 /*====================================================================
 aboutPage
 ====================================================================*/
 .aboutTopSec {
-  padding-top: 40px;
-}
-.aboutTopSec__topTextBox {
-  display: block;
-  padding-left: 10px;
-  margin: 0 auto 25px;
-  width: 27px;
-}
-.aboutTopSec__topText {
-  display: block;
-  margin-bottom: 25px;
-  width: 22px;
-  height: 206px;
-  padding-left: 5px;
-  border-left: 1px solid #910000;
-}
-.aboutTopSec__topTextImg {
-  width: 18.76px;
-}
-.aboutTopSec__topInner {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 860px;
-}
-.aboutTopSec__topInner.mgb {
-  margin-bottom: 40px;
-}
-.aboutTopSec__topInner.images {
-  position: relative;
-}
-.aboutTopSec__topInnerImgBox {
-  position: absolute;
-}
-.aboutTopSec__topInnerImgBox.img01 {
-  width: 158px;
-  top: -70px;
-  left: -40px;
-}
-.aboutTopSec__topInnerImgBox.img02 {
-  width: 142px;
-  top: 50px;
-  left: -170px;
-}
-.aboutTopSec__topInnerImgBox.img03 {
-  width: 122px;
-  top: 190px;
-  left: -50px;
-}
-.aboutTopSec__topInnerImgBox.img04 {
-  width: 172px;
-  top: -76px;
-  right: -70px;
-}
-.aboutTopSec__topInnerImgBox.img05 {
-  width: 142px;
-  top: 70px;
-  right: -180px;
-}
-.aboutTopSec__topInnerImgBox.img06 {
-  width: 122px;
-  top: 190px;
-  right: -50px;
-}
-.aboutTopSec__kv {
-  width: 100%;
-}
-.aboutTopSec__text {
-  text-align: center;
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  color: #000;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: 0.1rem;
-}
-@media screen and (max-width: 768px) {
+  padding-top: 40px; }
+  .aboutTopSec__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px; }
+  .aboutTopSec__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid #910000; }
+  .aboutTopSec__topTextImg {
+    width: 18.76px; }
+  .aboutTopSec__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px; }
+    .aboutTopSec__topInner.mgb {
+      margin-bottom: 40px; }
+    .aboutTopSec__topInner.images {
+      position: relative; }
+  .aboutTopSec__topInnerImgBox {
+    position: absolute; }
+    .aboutTopSec__topInnerImgBox.img01 {
+      width: 158px;
+      top: -70px;
+      left: -40px; }
+    .aboutTopSec__topInnerImgBox.img02 {
+      width: 142px;
+      top: 50px;
+      left: -170px; }
+    .aboutTopSec__topInnerImgBox.img03 {
+      width: 122px;
+      top: 190px;
+      left: -50px; }
+    .aboutTopSec__topInnerImgBox.img04 {
+      width: 172px;
+      top: -76px;
+      right: -70px; }
+    .aboutTopSec__topInnerImgBox.img05 {
+      width: 142px;
+      top: 70px;
+      right: -180px; }
+    .aboutTopSec__topInnerImgBox.img06 {
+      width: 122px;
+      top: 190px;
+      right: -50px; }
+  .aboutTopSec__kv {
+    width: 100%; }
   .aboutTopSec__text {
+    text-align: center;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
     font-size: 1.6rem;
-    line-height: 1.8;
-  }
-}
-.aboutTopSec__kvBottom {
-  background: #F4F0E6;
-  padding: 100px 0 85px;
-}
-.aboutTopSec__bottom {
-  padding: 44px 0 70px;
-}
-.aboutTopSec__bottomImg {
-  width: 100%;
-  max-width: 464px;
-  margin: 0 auto;
-}
-.aboutTopSec__bottomImgCap {
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  color: #800707;
-  font-size: 2.4rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: 0.05rem;
-  text-align: center;
-  margin-top: 28px;
-}
-@media screen and (max-width: 768px) {
+    line-height: 2.5;
+    letter-spacing: 0.1rem;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+    @media screen and (max-width: 768px) {
+      .aboutTopSec__text {
+        font-size: 1.6rem; } }
+  .aboutTopSec__kvBottom {
+    background: #F4F0E6;
+    padding: 100px 0 85px; }
+  .aboutTopSec__bottom {
+    padding: 44px 0 70px; }
+  .aboutTopSec__bottomImg {
+    width: 100%;
+    max-width: 464px;
+    margin: 0 auto; }
   .aboutTopSec__bottomImgCap {
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
     font-size: 2.4rem;
-    line-height: 1.8;
-  }
-}
+    line-height: 1;
+    letter-spacing: 0.05rem;
+    color: #800707;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    text-align: center;
+    margin-top: 28px; }
+    @media screen and (max-width: 768px) {
+      .aboutTopSec__bottomImgCap {
+        font-size: 2.4rem; } }
 
 .teachSec {
   padding-top: 40px;
   padding-bottom: 50px;
-  background: #E5E5E5;
-}
-.teachSec__topTextBox {
-  display: block;
-  padding-left: 10px;
-  margin: 0 auto 25px;
-  width: 27px;
-}
-.teachSec__topText {
-  display: block;
-  margin-bottom: 25px;
-  width: 22px;
-  height: 206px;
-  padding-left: 5px;
-  border-left: 1px solid #910000;
-}
-.teachSec__topTextImg {
-  width: 18.76px;
-}
-.teachSec__topInner {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 860px;
-}
-.teachSec__topInner.mgb {
-  margin-bottom: 40px;
-}
-.teachSec__topArea {
-  width: 420px;
-  margin: 0 auto 58px;
-}
-.teachSec__topAreaText {
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  color: #000;
-  font-size: 2rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: 0.1rem;
-  padding-left: 3.7em;
-  text-indent: -3.7em;
-}
-@media screen and (max-width: 768px) {
+  background: #E5E5E5; }
+  .teachSec__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px; }
+  .teachSec__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid #910000; }
+  .teachSec__topTextImg {
+    width: 18.76px; }
+  .teachSec__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px; }
+    .teachSec__topInner.mgb {
+      margin-bottom: 40px; }
+  .teachSec__topArea {
+    width: 420px;
+    margin: 0 auto 58px; }
   .teachSec__topAreaText {
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
     font-size: 2rem;
-    line-height: 1.8;
-  }
-}
-.teachSec__bottomArea {
-  width: 1016px;
-  margin: 0 auto;
-}
-.teachSec__bottomList {
-  width: 100%;
-  padding-left: 0;
-}
-.teachSec__bottomListItem {
-  align-items: stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-}
-.teachSec__bottomListItem:first-child {
-  margin-bottom: 56px;
-}
-.teachSec__bottomListItem:nth-child(2) {
-  margin-bottom: 32px;
-}
-.teachSec__bottomListItemText {
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  color: #000;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: 0.1rem;
-}
-@media screen and (max-width: 768px) {
+    line-height: 2;
+    letter-spacing: 0.1rem;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    padding-left: 3.7em;
+    text-indent: -3.7em; }
+    @media screen and (max-width: 768px) {
+      .teachSec__topAreaText {
+        font-size: 2rem; } }
+  .teachSec__bottomArea {
+    width: 1016px;
+    margin: 0 auto; }
+  .teachSec__bottomList {
+    width: 100%;
+    padding-left: 0; }
+  .teachSec__bottomListItem {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
+    .teachSec__bottomListItem:first-child {
+      margin-bottom: 56px; }
+    .teachSec__bottomListItem:nth-child(2) {
+      margin-bottom: 32px; }
   .teachSec__bottomListItemText {
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
     font-size: 1.6rem;
-    line-height: 1.8;
-  }
-}
-.teachSec__bottomListItemText.left {
-  width: 14%;
-  background: #fff;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-.teachSec__bottomListItemText.right {
-  width: calc(100% - 14%);
-  padding-left: 14px;
-}
-.teachSec__bottomAreaBottomText {
-  text-align: right;
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  color: #000;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: 0.1rem;
-}
-@media screen and (max-width: 768px) {
+    line-height: 2.5;
+    letter-spacing: 0.1rem;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+    @media screen and (max-width: 768px) {
+      .teachSec__bottomListItemText {
+        font-size: 1.6rem; } }
+    .teachSec__bottomListItemText.left {
+      width: 14%;
+      background: #fff;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+    .teachSec__bottomListItemText.right {
+      width: calc(100% - 14%);
+      padding-left: 14px; }
   .teachSec__bottomAreaBottomText {
+    text-align: right;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
     font-size: 1.6rem;
-    line-height: 1.8;
-  }
-}
+    line-height: 2.5;
+    letter-spacing: 0.1rem;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+    @media screen and (max-width: 768px) {
+      .teachSec__bottomAreaBottomText {
+        font-size: 1.6rem; } }
 
 .actionSec {
   padding-top: 255px;
-  padding-bottom: 29px;
-}
-.actionSec__topTextBox {
-  display: block;
-  padding-left: 10px;
-  margin: 0 auto 25px;
-  width: 27px;
-}
-.actionSec__topText {
-  display: block;
-  margin-bottom: 25px;
-  width: 22px;
-  height: 206px;
-  padding-left: 5px;
-  border-left: 1px solid #910000;
-}
-.actionSec__topTextImg {
-  width: 18.76px;
-}
-.actionSec__topInner {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 860px;
-}
-.actionSec__topInner.mgb {
-  margin-bottom: 40px;
-}
-.actionSec__textList {
-  align-items: stretch;
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 458px;
-  margin: 0 auto 23px;
-  padding-left: 0;
-}
-.actionSec__textListItemText {
-  width: 20px;
-}
-.actionSec__imgList {
-  align-items: stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  width: 1020px;
-  padding-left: 0;
-  margin: 0 auto;
-}
-.actionSec__imgListItemImgBox {
-  width: 248px;
-}
+  padding-bottom: 29px; }
+  .actionSec__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px; }
+  .actionSec__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid #910000; }
+  .actionSec__topTextImg {
+    width: 18.76px; }
+  .actionSec__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px; }
+    .actionSec__topInner.mgb {
+      margin-bottom: 40px; }
+  .actionSec__textList {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 458px;
+    margin: 0 auto 23px;
+    padding-left: 0; }
+  .actionSec__textListItemText {
+    width: 20px; }
+  .actionSec__imgList {
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 1020px;
+    padding-left: 0;
+    margin: 0 auto; }
+  .actionSec__imgListItemImgBox {
+    width: 248px; }
 
 .funeralSec {
   padding-top: 40px;
   padding-bottom: 72px;
-  background: #E0DCEB;
-}
-.funeralSec__topTextBox {
-  display: block;
-  padding-left: 10px;
-  margin: 0 auto 25px;
-  width: 27px;
-}
-.funeralSec__topText {
-  display: block;
-  margin-bottom: 25px;
-  width: 22px;
-  height: 206px;
-  padding-left: 5px;
-  border-left: 1px solid #910000;
-}
-.funeralSec__topTextImg {
-  width: 18.76px;
-}
-.funeralSec__topInner {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 860px;
-}
-.funeralSec__topInner.mgb {
-  margin-bottom: 40px;
-}
-.funeralSec__imgBox {
-  margin: 0 auto 61px;
-  width: 100%;
-  max-width: 834px;
-}
-.funeralSec__textBox {
-  text-align: center;
-}
-.funeralSec__textBoxText {
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  color: #000;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 2.5;
-  letter-spacing: 0.1rem;
-}
-@media screen and (max-width: 768px) {
+  background: #E0DCEB; }
+  .funeralSec__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px; }
+  .funeralSec__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid #910000; }
+  .funeralSec__topTextImg {
+    width: 18.76px; }
+  .funeralSec__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 860px; }
+    .funeralSec__topInner.mgb {
+      margin-bottom: 40px; }
+  .funeralSec__imgBox {
+    margin: 0 auto 61px;
+    width: 100%;
+    max-width: 834px; }
+  .funeralSec__textBox {
+    text-align: center; }
   .funeralSec__textBoxText {
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
     font-size: 1.6rem;
-    line-height: 1.8;
-  }
-}
-.funeralSec__textBoxText.u-colorRed {
-  font-size: 2rem;
-  color: #800707;
-}
-.funeralSec__textBoxText.u-border {
-  border: 1px solid #800707;
-  display: inline-block;
-  line-height: 1;
-  padding: 14px 26px;
-}
-.funeralSec__textBoxText.mgb25 {
-  margin-bottom: 25px;
-}
-.funeralSec__textBoxText.mgb10 {
-  margin-bottom: 10px;
-}
+    line-height: 2.5;
+    letter-spacing: 0.1rem;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+    @media screen and (max-width: 768px) {
+      .funeralSec__textBoxText {
+        font-size: 1.6rem; } }
+    .funeralSec__textBoxText.u-colorRed {
+      font-size: 2rem;
+      color: #800707; }
+    .funeralSec__textBoxText.u-border {
+      border: 1px solid #800707;
+      display: inline-block;
+      line-height: 1;
+      padding: 14px 26px; }
+    .funeralSec__textBoxText.mgb25 {
+      margin-bottom: 25px; }
+    .funeralSec__textBoxText.mgb10 {
+      margin-bottom: 10px; }
 
 .precinctsSec {
   background: #F4F0E6;
-  padding-top: 40px;
-}
-.precinctsSec__topTextBox {
-  display: block;
-  padding-left: 10px;
-  margin: 0 auto 25px;
-  width: 27px;
-}
-.precinctsSec__topText {
-  display: block;
-  margin-bottom: 25px;
-  width: 22px;
-  height: 206px;
-  padding-left: 5px;
-  border-left: 1px solid #910000;
-}
-.precinctsSec__topTextImg {
-  width: 18.76px;
-}
-.precinctsSec__topInner {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1020px;
-}
-.precinctsSec__topInner.mgb {
-  margin-bottom: 40px;
-}
-.precinctsSec__imgBox {
-  margin: -160px auto 61px;
-  width: 100%;
-  max-width: 640px;
-  padding-right: 40px;
-}
-.precinctsSec__imgList {
-  margin: 0 auto;
-  width: 1020px;
-  align-items: stretch;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-left: 0;
-}
-.precinctsSec__imgListItem {
-  width: 23%;
-  margin-bottom: 70px;
-}
-.precinctsSec__imgListImgCap {
-  margin-top: 8px;
-  text-align: center;
-  font-family: "Times New Roman", "游明朝", YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
-  color: #800707;
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 2;
-  letter-spacing: 0.1rem;
-}
-@media screen and (max-width: 768px) {
+  padding-top: 40px; }
+  .precinctsSec__topTextBox {
+    display: block;
+    padding-left: 10px;
+    margin: 0 auto 25px;
+    width: 27px; }
+  .precinctsSec__topText {
+    display: block;
+    margin-bottom: 25px;
+    width: 22px;
+    height: 206px;
+    padding-left: 5px;
+    border-left: 1px solid #910000; }
+  .precinctsSec__topTextImg {
+    width: 18.76px; }
+  .precinctsSec__topInner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px; }
+    .precinctsSec__topInner.mgb {
+      margin-bottom: 40px; }
+  .precinctsSec__imgBox {
+    margin: -160px auto 61px;
+    width: 100%;
+    max-width: 640px;
+    padding-right: 40px; }
+  .precinctsSec__imgList {
+    margin: 0 auto;
+    width: 1020px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 0; }
+  .precinctsSec__imgListItem {
+    width: 23%;
+    margin-bottom: 70px; }
   .precinctsSec__imgListImgCap {
+    margin-top: 8px;
+    text-align: center;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
     font-size: 1.6rem;
-    line-height: 1.8;
-  }
-}
-.precinctsSec__imgListImgCap.fs14 {
-  font-size: 1.4rem;
-}
-.precinctsSec__imgListImgCapBorder {
-  border: 1px solid #800707;
-  font-size: 1.2rem;
-  line-height: 0;
-  padding: 3px 24px;
-}
+    line-height: 2;
+    letter-spacing: 0.1rem;
+    color: #800707;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif; }
+    @media screen and (max-width: 768px) {
+      .precinctsSec__imgListImgCap {
+        font-size: 1.6rem; } }
+    .precinctsSec__imgListImgCap.fs14 {
+      font-size: 1.4rem; }
+  .precinctsSec__imgListImgCapBorder {
+    border: 1px solid #800707;
+    font-size: 1.2rem;
+    line-height: 0;
+    padding: 3px 24px; }
 
 /*====================================================================
 topPageFvSec
@@ -1512,535 +1329,462 @@ topPageFvSec
 共通
 ====================*/
 img {
-  width: 100%;
-}
+  width: 100%; }
 
 ul li {
   list-style-type: none;
-  list-style: none;
-}
+  list-style: none; }
 
 .br_sp {
-  display: none;
-}
-@media screen and (max-width: 768px) {
-  .br_sp {
-    display: block;
-  }
-}
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .br_sp {
+      display: block; } }
 
 .font {
   color: #800707;
   font-size: 20px;
   font-weight: 600;
   font-family: YuMincho, Yu Mincho, serif;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 /*====================
 Top
 ====================*/
 @media screen and (max-width: 768px) {
   .cemeterySec {
-    background-image: url("../images/cemetery/cemeteryBg_sp.jpg");
-  }
-}
+    background-image: url("../images/cemetery/cemeteryBg_sp.jpg"); } }
+
 .cemeterySec__topCont {
   background: url("../images/cemetery/body_pc.jpg");
-  background-size: cover;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__topCont {
-    background-image: none;
-  }
-}
+  background-size: cover; }
+  @media screen and (max-width: 768px) {
+    .cemeterySec__topCont {
+      background-image: none; } }
+
 .cemeterySec__topContInr {
-  padding: 60px 0 230px;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__topContInr {
-    padding: 30px 0 230px;
-  }
-}
+  padding: 60px 0 230px; }
+  @media screen and (max-width: 768px) {
+    .cemeterySec__topContInr {
+      padding: 30px 0 230px; } }
+
 .cemeterySec__bottomCont {
   width: 1075px;
   margin: 0 auto;
-  text-align: center;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__bottomCont {
-    width: 100%;
-  }
-}
+  text-align: center; }
+  @media screen and (max-width: 768px) {
+    .cemeterySec__bottomCont {
+      width: 100%; } }
+
 .cemeterySec__bottomContList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   margin-top: -150px;
   margin-bottom: 0;
-  padding-left: 0;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__bottomContList {
-    flex-direction: column;
-  }
-}
+  padding-left: 0; }
+  @media screen and (max-width: 768px) {
+    .cemeterySec__bottomContList {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
 @media screen and (max-width: 768px) {
   .cemeterySec__bottomContListItem {
-    margin: 0 auto;
-  }
-}
+    margin: 0 auto; } }
+
 .cemeterySec__bottomContItemFig {
   width: 271px;
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
+
 .cemeterySec__topContInfo {
   width: 22px;
   height: 206px;
   margin: 0 auto;
   padding-left: 5px;
-  border-left: 1px solid #910000;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__topContInfo {
-    height: 172px;
-  }
-}
+  border-left: 1px solid #910000; }
+  @media screen and (max-width: 768px) {
+    .cemeterySec__topContInfo {
+      height: 172px; } }
+
 .cemeterySec__topContInfoImg {
-  width: 19.18px;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__topContInfoImg {
-    width: 16px;
-  }
-}
+  width: 19.18px; }
+  @media screen and (max-width: 768px) {
+    .cemeterySec__topContInfoImg {
+      width: 16px; } }
+
 .cemeterySec__bottomContItemText {
-  padding: 29px 0 27px;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__bottomContItemText {
-    margin: 0 auto;
-    padding: 29px 0 50px;
-  }
-}
+  padding: 29px 0 27px; }
+  @media screen and (max-width: 768px) {
+    .cemeterySec__bottomContItemText {
+      margin: 0 auto;
+      padding: 29px 0 50px; } }
+
 .cemeterySec__topContBottomText {
   font-size: 32px;
   text-align: center;
   line-height: 1.8;
   letter-spacing: 2px;
-  padding-top: 48px;
-}
-@media screen and (max-width: 768px) {
-  .cemeterySec__topContBottomText {
-    font-size: 24px;
-    padding: 18px 79px 0 79px;
-    letter-spacing: 0;
-  }
-}
+  padding-top: 48px; }
+  @media screen and (max-width: 768px) {
+    .cemeterySec__topContBottomText {
+      font-size: 24px;
+      padding: 18px 79px 0 79px;
+      letter-spacing: 0; } }
+
 .cemeterySec__bottomContTopText {
-  font-size: 28px;
-}
+  font-size: 28px; }
+
 .cemeterySec__bottomContText {
-  font-weight: 500px;
-}
+  font-weight: 500px; }
 
 /*====================
 middle
 ====================*/
 .cemeteryMiddleSec {
   margin: 0 auto;
-  background-color: #d9d8c4;
-}
-.cemeteryMiddleSec__inr {
-  width: 1075px;
-  margin: 0 auto;
-  padding: 78px 0;
-}
-@media screen and (max-width: 768px) {
+  background-color: #d9d8c4; }
   .cemeteryMiddleSec__inr {
-    width: 100%;
-    padding: 46px 10px 35px;
-  }
-}
-.cemeteryMiddleSec__contListItem {
-  background-color: #fff;
-  padding: 39px 77px 26px;
-  margin-bottom: 34px;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__contListItem {
-    padding: 29px 11px 18px;
-    margin-bottom: 0;
-  }
-  .cemeteryMiddleSec__contListItem:nth-of-type(1), .cemeteryMiddleSec__contListItem:nth-of-type(2) {
-    margin-bottom: 3px;
-  }
-  .cemeteryMiddleSec__contListItem:nth-of-type(2) li .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
-    padding: 0 12px 0 0;
-  }
-  .cemeteryMiddleSec__contListItem:nth-of-type(3) {
-    padding: 29px 11px 47px;
-  }
-  .cemeteryMiddleSec__contListItem:nth-of-type(3) li {
-    justify-content: start;
-  }
-}
-.cemeteryMiddleSec__contList {
-  padding: 0;
-}
-.cemeteryMiddleSec__itemTitle {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemTitle {
-    flex-direction: column;
-  }
-}
-.cemeteryMiddleSec__itemTitleText {
-  font-size: 60px;
-  font-weight: 600;
-  font-family: YuMincho, Yu Mincho, serif;
-  margin-bottom: 0;
-  padding-bottom: 35px;
-  line-height: 1;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemTitleText {
-    font-size: 32px;
-    text-align: center;
-    padding-bottom: 15px;
-  }
-}
-.cemeteryMiddleSec__itemTitleText.red {
-  color: #800707;
-}
-.cemeteryMiddleSec__itemTitleText.green {
-  color: #25500f;
-}
-.cemeteryMiddleSec__itemTitleText.blue {
-  color: #0f1250;
-}
-.cemeteryMiddleSec__itemTopDescText {
-  font-size: 18px;
-  color: #000;
-  line-height: 1.7;
-  letter-spacing: 2px;
-}
-.cemeteryMiddleSec__itemTitleInfo {
-  display: flex;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemTitleInfo {
-    justify-content: center;
-    padding-bottom: 23px;
-  }
-}
-.cemeteryMiddleSec__itemTitleInfoLeft, .cemeteryMiddleSec__itemTitleInfoRight {
-  width: 168px;
-  height: 50px;
-  color: #fff;
-  text-align: center;
-  line-height: 1;
-  padding: 16px 0 13px;
-}
-.cemeteryMiddleSec__itemTitleInfoLeft.bgRed, .cemeteryMiddleSec__itemTitleInfoRight.bgRed {
-  background-color: #811102;
-}
-.cemeteryMiddleSec__itemTitleInfoLeft.bgGreen, .cemeteryMiddleSec__itemTitleInfoRight.bgGreen {
-  background-color: #25500f;
-}
-.cemeteryMiddleSec__itemTitleInfoLeft.bgBlue, .cemeteryMiddleSec__itemTitleInfoRight.bgBlue {
-  background-color: #0f1250;
-}
-.cemeteryMiddleSec__itemTitleInfoRight {
-  margin-left: 12px;
-}
-.cemeteryMiddleSec__itemMiddleDescPrice {
-  color: #000;
-  font-size: 33px;
-  line-height: 1;
-}
-@media all and (-ms-high-contrast: none\0 ) {
-  .cemeteryMiddleSec__itemMiddleDescPrice *::-ms-backdrop, .cemeteryMiddleSec__itemMiddleDescPrice {
-    transform: translateY(10px);
-  }
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescPrice {
-    font-size: 25px;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescPrice .cemeteryMiddleSec__price {
-  display: inline-block;
-  font-size: 66px;
-  line-height: 1;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescPrice .cemeteryMiddleSec__price {
-    font-size: 56px;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescRight {
-  text-align: center;
-}
-.cemeteryMiddleSec__itemMiddleDescRight.second {
-  padding-right: 20px;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescRight.second {
-    padding-right: 0;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescPriceDetails {
-  font-size: 12px;
-  color: #000;
-  transform: translateY(5px);
-}
-.cemeteryMiddleSec__itemMiddleDescPriceDetails.second {
-  font-size: 16px;
-  transform: translateY(10px);
-}
-.cemeteryMiddleSec__itemMiddleDescPriceText {
-  width: 145px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 24px;
-  color: #000;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescPriceText {
-    width: 120px;
-    font-size: 20px;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescPriceText.second {
-  width: 100px;
-  display: block;
-}
-.cemeteryMiddleSec__itemMiddleDescPriceTextSec {
-  font-size: 24px;
-  color: #000;
-  padding: 0 24px;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescPriceTextSec {
-    font-size: 20px;
-    padding: 0 10px;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
-  padding: 0 35px 0 25px;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
-    padding: 0 0 0 11px;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescWideDetails {
-  display: inline-block;
-  text-align: left;
-  color: #000;
-  font-size: 12px;
-  margin-top: 10px;
-}
-.cemeteryMiddleSec__itemMiddleDesc {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDesc {
-    flex-direction: column;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescBottom {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 13px;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescBottom {
-    padding: 0;
-  }
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescBottom {
-    flex-direction: column;
+    width: 1075px;
     margin: 0 auto;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescBottomFig {
-  width: 444px;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescBottomFig {
-    padding-bottom: 12px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescBottomFig {
-    width: 100%;
-  }
-}
-.cemeteryMiddleSec__itemMiddleText {
-  font-size: 24px;
-  color: #000;
-}
-.cemeteryMiddleSec__itemMiddleDescPriceItem {
-  display: flex;
-  align-items: center;
-  border-top: 1px solid #888;
-  padding: 16px 0;
-}
-.cemeteryMiddleSec__itemMiddleDescPriceItem:last-child {
-  border-bottom: 1px solid #888;
-  margin-bottom: 26px;
-}
-.cemeteryMiddleSec__itemMiddleDescPriceList {
-  padding: 13px 0 0 0;
-  line-height: 0.7;
-}
-.cemeteryMiddleSec__itemMiddleDescFig {
-  display: block;
-  width: 437px;
-  padding-bottom: 20px;
-  margin-bottom: 0;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescFig {
-    width: 100%;
-  }
-}
-.cemeteryMiddleSec__itemMiddleDescText {
-  display: inline-block;
-  background-color: #1e5a0c;
-  color: #fff;
-  font-size: 24px;
-  font-weight: 500;
-  padding: 9px 100px;
-  margin-bottom: 0;
-  line-height: 1;
-}
-@media screen and (max-width: 768px) {
-  .cemeteryMiddleSec__itemMiddleDescText {
-    width: 100%;
+    padding: 78px 0; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__inr {
+        width: 100%;
+        padding: 46px 10px 35px; } }
+  .cemeteryMiddleSec__contListItem {
+    background-color: #fff;
+    padding: 39px 77px 26px;
+    margin-bottom: 34px; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__contListItem {
+        padding: 29px 11px 18px;
+        margin-bottom: 0; }
+        .cemeteryMiddleSec__contListItem:nth-of-type(1), .cemeteryMiddleSec__contListItem:nth-of-type(2) {
+          margin-bottom: 3px; }
+        .cemeteryMiddleSec__contListItem:nth-of-type(2) li .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
+          padding: 0 12px 0 0; }
+        .cemeteryMiddleSec__contListItem:nth-of-type(3) {
+          padding: 29px 11px 47px; }
+          .cemeteryMiddleSec__contListItem:nth-of-type(3) li {
+            -webkit-box-pack: start;
+            -ms-flex-pack: start;
+            justify-content: start; } }
+  .cemeteryMiddleSec__contList {
+    padding: 0; }
+  .cemeteryMiddleSec__itemTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemTitle {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  .cemeteryMiddleSec__itemTitleText {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: YuMincho, Yu Mincho, serif;
+    margin-bottom: 0;
+    padding-bottom: 35px;
+    line-height: 1; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemTitleText {
+        font-size: 32px;
+        text-align: center;
+        padding-bottom: 15px; } }
+    .cemeteryMiddleSec__itemTitleText.red {
+      color: #800707; }
+    .cemeteryMiddleSec__itemTitleText.green {
+      color: #25500f; }
+    .cemeteryMiddleSec__itemTitleText.blue {
+      color: #0f1250; }
+  .cemeteryMiddleSec__itemTopDescText {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.7;
+    letter-spacing: 2px; }
+  .cemeteryMiddleSec__itemTitleInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemTitleInfo {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding-bottom: 23px; } }
+  .cemeteryMiddleSec__itemTitleInfoLeft, .cemeteryMiddleSec__itemTitleInfoRight {
+    width: 168px;
+    height: 50px;
+    color: #fff;
     text-align: center;
-  }
-}
-.cemeteryMiddleSec__itemMiddle {
-  padding-top: 45px;
-}
-.cemeteryMiddleSec__itemBottom {
-  background-color: #fcf3cf;
-  padding: 17px 45px 9px;
-  min-height: 111px;
-}
-@media screen and (max-width: 768px) {
+    line-height: 1;
+    padding: 16px 0 13px; }
+    .cemeteryMiddleSec__itemTitleInfoLeft.bgRed, .cemeteryMiddleSec__itemTitleInfoRight.bgRed {
+      background-color: #811102; }
+    .cemeteryMiddleSec__itemTitleInfoLeft.bgGreen, .cemeteryMiddleSec__itemTitleInfoRight.bgGreen {
+      background-color: #25500f; }
+    .cemeteryMiddleSec__itemTitleInfoLeft.bgBlue, .cemeteryMiddleSec__itemTitleInfoRight.bgBlue {
+      background-color: #0f1250; }
+  .cemeteryMiddleSec__itemTitleInfoRight {
+    margin-left: 12px; }
+  .cemeteryMiddleSec__itemMiddleDescPrice {
+    color: #000;
+    font-size: 33px;
+    line-height: 1; }
+    @media all and (-ms-high-contrast: none\0) {
+      .cemeteryMiddleSec__itemMiddleDescPrice *::-ms-backdrop, .cemeteryMiddleSec__itemMiddleDescPrice {
+        -ms-transform: translateY(10px);
+        transform: translateY(10px); } }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescPrice {
+        font-size: 25px; } }
+    .cemeteryMiddleSec__itemMiddleDescPrice .cemeteryMiddleSec__price {
+      display: inline-block;
+      font-size: 66px;
+      line-height: 1; }
+      @media screen and (max-width: 768px) {
+        .cemeteryMiddleSec__itemMiddleDescPrice .cemeteryMiddleSec__price {
+          font-size: 56px; } }
+  .cemeteryMiddleSec__itemMiddleDescRight {
+    text-align: center; }
+    .cemeteryMiddleSec__itemMiddleDescRight.second {
+      padding-right: 20px; }
+      @media screen and (max-width: 768px) {
+        .cemeteryMiddleSec__itemMiddleDescRight.second {
+          padding-right: 0; } }
+  .cemeteryMiddleSec__itemMiddleDescPriceDetails {
+    font-size: 12px;
+    color: #000;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px); }
+    .cemeteryMiddleSec__itemMiddleDescPriceDetails.second {
+      font-size: 16px;
+      -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+      transform: translateY(10px); }
+  .cemeteryMiddleSec__itemMiddleDescPriceText {
+    width: 145px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 24px;
+    color: #000; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescPriceText {
+        width: 120px;
+        font-size: 20px; } }
+    .cemeteryMiddleSec__itemMiddleDescPriceText.second {
+      width: 100px;
+      display: block; }
+  .cemeteryMiddleSec__itemMiddleDescPriceTextSec {
+    font-size: 24px;
+    color: #000;
+    padding: 0 24px; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescPriceTextSec {
+        font-size: 20px;
+        padding: 0 10px; } }
+    .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
+      padding: 0 35px 0 25px; }
+      @media screen and (max-width: 768px) {
+        .cemeteryMiddleSec__itemMiddleDescPriceTextSec.second {
+          padding: 0 0 0 11px; } }
+  .cemeteryMiddleSec__itemMiddleDescWideDetails {
+    display: inline-block;
+    text-align: left;
+    color: #000;
+    font-size: 12px;
+    margin-top: 10px; }
+  .cemeteryMiddleSec__itemMiddleDesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDesc {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
+  .cemeteryMiddleSec__itemMiddleDescBottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-bottom: 13px; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescBottom {
+        padding: 0; } }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescBottom {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0 auto; } }
+  .cemeteryMiddleSec__itemMiddleDescBottomFig {
+    width: 444px; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescBottomFig {
+        padding-bottom: 12px; } }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescBottomFig {
+        width: 100%; } }
+  .cemeteryMiddleSec__itemMiddleText {
+    font-size: 24px;
+    color: #000; }
+  .cemeteryMiddleSec__itemMiddleDescPriceItem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #888;
+    padding: 16px 0; }
+    .cemeteryMiddleSec__itemMiddleDescPriceItem:last-child {
+      border-bottom: 1px solid #888;
+      margin-bottom: 26px; }
+  .cemeteryMiddleSec__itemMiddleDescPriceList {
+    padding: 13px 0 0 0;
+    line-height: 0.7; }
+  .cemeteryMiddleSec__itemMiddleDescFig {
+    display: block;
+    width: 437px;
+    padding-bottom: 20px;
+    margin-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescFig {
+        width: 100%; } }
+  .cemeteryMiddleSec__itemMiddleDescText {
+    display: inline-block;
+    background-color: #1e5a0c;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 9px 100px;
+    margin-bottom: 0;
+    line-height: 1; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemMiddleDescText {
+        width: 100%;
+        text-align: center; } }
+  .cemeteryMiddleSec__itemMiddle {
+    padding-top: 45px; }
   .cemeteryMiddleSec__itemBottom {
-    padding: 13px 20px;
-  }
-}
-.cemeteryMiddleSec__itemBottomText {
-  color: #5c0404;
-  font-size: 18px;
-  font-weight: bold;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  margin-bottom: 0;
-}
+    background-color: #fcf3cf;
+    padding: 17px 45px 9px;
+    min-height: 111px; }
+    @media screen and (max-width: 768px) {
+      .cemeteryMiddleSec__itemBottom {
+        padding: 13px 20px; } }
+  .cemeteryMiddleSec__itemBottomText {
+    color: #5c0404;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    margin-bottom: 0; }
 
 /*====================
 bottom
 ====================*/
 .cemeteryBottomSec {
   width: 100%;
-  background-color: #edca6a;
-}
-.cemeteryBottomSec__inr {
-  width: 1075px;
-  margin: 0 auto;
-  padding: 70px 0 64px;
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 768px) {
+  background-color: #edca6a; }
   .cemeteryBottomSec__inr {
-    width: 100%;
-    flex-direction: column;
-    padding: 34px 22px 23px;
-  }
-}
-.cemeteryBottomSec__rightContact, .cemeteryBottomSec__leftContact {
-  font-size: 36px;
-  color: #000;
-  line-height: 1;
-}
-@media screen and (max-width: 768px) {
+    width: 1075px;
+    margin: 0 auto;
+    padding: 70px 0 64px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .cemeteryBottomSec__inr {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 34px 22px 23px; } }
   .cemeteryBottomSec__rightContact, .cemeteryBottomSec__leftContact {
-    font-size: 24px;
-  }
-}
-.cemeteryBottomSec__leftHourText {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-  color: #000;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 1.3;
-}
-@media screen and (max-width: 768px) {
+    font-size: 36px;
+    color: #000;
+    line-height: 1; }
+    @media screen and (max-width: 768px) {
+      .cemeteryBottomSec__rightContact, .cemeteryBottomSec__leftContact {
+        font-size: 24px; } }
   .cemeteryBottomSec__leftHourText {
-    font-size: 12px;
-    padding-bottom: 22px;
-    border-bottom: solid 1px #fff;
-  }
-}
-.cemeteryBottomSec__leftTel {
-  font-size: 62px;
-  color: #000;
-}
-@media screen and (max-width: 768px) {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.3; }
+    @media screen and (max-width: 768px) {
+      .cemeteryBottomSec__leftHourText {
+        font-size: 12px;
+        padding-bottom: 22px;
+        border-bottom: solid 1px #fff; } }
   .cemeteryBottomSec__leftTel {
-    font-size: 43px;
-    line-height: 1;
-    padding: 17px 0 16px 0;
-  }
-}
-.cemeteryBottomSec__rightContactBtn {
-  font-size: 34px;
-  color: #000;
-  margin-left: 19px;
-}
-@media screen and (max-width: 768px) {
+    font-size: 62px;
+    color: #000; }
+    @media screen and (max-width: 768px) {
+      .cemeteryBottomSec__leftTel {
+        font-size: 43px;
+        line-height: 1;
+        padding: 17px 0 16px 0; } }
   .cemeteryBottomSec__rightContactBtn {
-    font-size: 23px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .cemeteryBottomSec__rightContact {
-    padding-top: 21px;
-  }
-}
-.cemeteryBottomSec__rightContactBtnLink {
-  display: flex;
-  align-items: center;
-  padding: 42px 24px 44px 31px;
-  background-color: #fff;
-  margin-top: 13px;
-  transition: 0.6s;
-}
-@media screen and (max-width: 768px) {
+    font-size: 34px;
+    color: #000;
+    margin-left: 19px; }
+    @media screen and (max-width: 768px) {
+      .cemeteryBottomSec__rightContactBtn {
+        font-size: 23px; } }
+  @media screen and (max-width: 768px) {
+    .cemeteryBottomSec__rightContact {
+      padding-top: 21px; } }
   .cemeteryBottomSec__rightContactBtnLink {
-    padding: 20px 18px 21px;
-  }
-}
-@media screen and (min-width: 769px) {
-  .cemeteryBottomSec__rightContactBtnLink:hover:hover {
-    opacity: 0.8;
-  }
-}
-.cemeteryBottomSec__rightContBtnIcon {
-  width: 62px;
-}
-@media screen and (max-width: 768px) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 42px 24px 44px 31px;
+    background-color: #fff;
+    margin-top: 13px;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s; }
+    @media screen and (max-width: 768px) {
+      .cemeteryBottomSec__rightContactBtnLink {
+        padding: 20px 18px 21px; } }
+    @media screen and (min-width: 769px) {
+      .cemeteryBottomSec__rightContactBtnLink:hover:hover {
+        opacity: 0.8; } }
   .cemeteryBottomSec__rightContBtnIcon {
-    width: 43px;
-  }
-}
+    width: 62px; }
+    @media screen and (max-width: 768px) {
+      .cemeteryBottomSec__rightContBtnIcon {
+        width: 43px; } }
+
+/*# sourceMappingURL=style.css.map */

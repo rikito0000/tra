@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+$NotosansJP: 'Noto Sans JP', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;300;400;500;600;700;900&display=swap');
+
+$NotoserifJP: 'Noto Serif JP', serif;
+
+@mixin u-fontGothic {
+  font-family: Helvetica Neue, Helvetica, Arial, '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+@mixin u-fontMincho {
+  font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+}
+@mixin u-fontNotoSans {
+  font-family: 'Noto Sans JP', Meiryo, serif;
+}
