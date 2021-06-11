@@ -847,7 +847,7 @@ topPageInfoSec
 .topPageInfoSec {
   margin-bottom: 70px; }
   .topPageInfoSec__wrap {
-    margin-top: -300px;
+    margin-top: -25vh;
     z-index: 111;
     position: relative; }
   .topPageInfoSec__cont {
@@ -922,6 +922,172 @@ topPageInfoSec
     @media screen and (max-width: 768px) {
       .topPageInfoSec__contInnerTitle {
         font-size: 15px; } }
+
+/*====================================================================
+topPageInstaglamSec
+====================================================================*/
+.topPageInstaglamSec__wrapTitle {
+  text-align: center; }
+
+.topPageInstaglamSec__wrapTitleImg {
+  width: 38px;
+  margin: 3px auto; }
+
+.topPageInstaglamSec__wrapTitleitem {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.1em; }
+  @media screen and (max-width: 768px) {
+    .topPageInstaglamSec__wrapTitleitem {
+      font-size: 15px; } }
+
+.topPageInstaglamSec__cont {
+  padding: 50px 0;
+  border-top: 1px solid #800707;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../images/toppage/toppage-img04.jpg"); }
+
+.topPageInstaglamSec__contInnr {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1060px;
+  margin-bottom: 40px; }
+  @media screen and (max-width: 768px) {
+    .topPageInstaglamSec__contInnr {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%; } }
+
+.topPageInstaglamSec__contLinkitem {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.05em;
+  color: #000;
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  -webkit-transition: all 0.6s ease-in-out 0s;
+  -o-transition: all 0.6s ease-in-out 0s;
+  transition: all 0.6s ease-in-out 0s; }
+  @media screen and (max-width: 768px) {
+    .topPageInstaglamSec__contLinkitem {
+      font-size: 15px; } }
+  @media screen and (min-width: 769px) {
+    .topPageInstaglamSec__contLinkitem:hover {
+      color: #800707; } }
+
+/*====================================================================
+topPageAboutSec
+====================================================================*/
+.topPageAboutSec {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F4F0E6), color-stop(50%, #F4F0E6), color-stop(50%, #7C688B), to(#7C688B));
+  background: -webkit-linear-gradient(top, #F4F0E6 0%, #F4F0E6 50%, #7C688B 50%, #7C688B 100%);
+  background: -o-linear-gradient(top, #F4F0E6 0%, #F4F0E6 50%, #7C688B 50%, #7C688B 100%);
+  background: linear-gradient(180deg, #F4F0E6 0%, #F4F0E6 50%, #7C688B 50%, #7C688B 100%);
+  padding: 110px 0 60px;
+  position: relative; }
+  .topPageAboutSec__cont {
+    z-index: 11;
+    position: relative; }
+  .topPageAboutSec__contPix {
+    width: 100%;
+    padding: 0 60px;
+    max-width: 1440px;
+    margin: 50px auto 180px;
+    position: relative; }
+  .topPageAboutSec__contTitle {
+    display: block;
+    width: 19px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 300; }
+    .topPageAboutSec__contTitle::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -7px;
+      width: 1px;
+      height: 240px;
+      background-color: #910000; }
+  .topPageAboutSec__contCatArea {
+    position: absolute;
+    width: 720px;
+    top: 90%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    background-color: #fff;
+    z-index: 222;
+    padding: 40px 0 30px; }
+  .topPageAboutSec__contCatAreaText {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    text-align: center;
+    margin-bottom: 30px; }
+    @media screen and (max-width: 768px) {
+      .topPageAboutSec__contCatAreaText {
+        font-size: 15px; } }
+  .topPageAboutSec__contCatAreaLinkitem {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    color: #000;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Times New Roman', '游明朝', YuMincho, 'Hiragino Mincho ProN', Meiryo, serif;
+    font-size: 14px;
+    text-align: center;
+    width: 226px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #707070;
+    padding: 16px 10px 16px 5px;
+    position: relative; }
+    @media screen and (max-width: 768px) {
+      .topPageAboutSec__contCatAreaLinkitem {
+        font-size: 15px; } }
+    .topPageAboutSec__contCatAreaLinkitem::after {
+      content: '';
+      position: absolute;
+      top: 21px;
+      right: 18px;
+      width: 28px;
+      height: 8px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../images/common/bnr-icon.png");
+      -webkit-transition: all 0.6s ease-in-out 0s;
+      -o-transition: all 0.6s ease-in-out 0s;
+      transition: all 0.6s ease-in-out 0s; }
+    @media screen and (min-width: 769px) {
+      .topPageAboutSec__contCatAreaLinkitem:hover {
+        border: 1px solid #800707; }
+        .topPageAboutSec__contCatAreaLinkitem:hover::after {
+          right: 10px; } }
 
 /*====================================================================
 aboutPage
